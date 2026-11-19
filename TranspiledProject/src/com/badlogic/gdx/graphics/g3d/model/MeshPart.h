@@ -1,0 +1,79 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g3d_model_MeshPart
+#define HEADER_com_badlogic_gdx_graphics_g3d_model_MeshPart
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g3d_model_MeshPart {
+	java_lang_Object parent;
+	jref F_id;
+	jint F_primitiveType;
+	jint F_offset;
+	jint F_size;
+	jref F_mesh;
+	jref F_center;
+	jref F_halfExtents;
+	jfloat F_radius;
+} com_badlogic_gdx_graphics_g3d_model_MeshPart;
+
+extern Class class_com_badlogic_gdx_graphics_g3d_model_MeshPart;
+
+extern jobject SF_com_badlogic_gdx_graphics_g3d_model_MeshPart_bounds;
+
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_set_com_badlogic_gdx_graphics_g3d_model_MeshPart_R_com_badlogic_gdx_graphics_g3d_model_MeshPart 11
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_set_com_badlogic_gdx_graphics_g3d_model_MeshPart_R_com_badlogic_gdx_graphics_g3d_model_MeshPart)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_set_java_lang_String_com_badlogic_gdx_graphics_Mesh_int_int_int_R_com_badlogic_gdx_graphics_g3d_model_MeshPart 12
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_set_java_lang_String_com_badlogic_gdx_graphics_Mesh_int_int_int_R_com_badlogic_gdx_graphics_g3d_model_MeshPart)(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jint param3, jint param4);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_update 13
+typedef void (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_update)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_equals_com_badlogic_gdx_graphics_g3d_model_MeshPart_R_boolean 14
+typedef jbool (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_equals_com_badlogic_gdx_graphics_g3d_model_MeshPart_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_render_com_badlogic_gdx_graphics_glutils_ShaderProgram_boolean 15
+typedef void (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_render_com_badlogic_gdx_graphics_glutils_ShaderProgram_boolean)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_model_MeshPart_render_com_badlogic_gdx_graphics_glutils_ShaderProgram 16
+typedef void (*func_com_badlogic_gdx_graphics_g3d_model_MeshPart_render_com_badlogic_gdx_graphics_glutils_ShaderProgram)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_graphics_g3d_model_MeshPart(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g3d_model_MeshPart(jcontext ctx);
+void init_com_badlogic_gdx_graphics_g3d_model_MeshPart(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_graphics_g3d_model_MeshPart_java_lang_String_com_badlogic_gdx_graphics_Mesh_int_int_int(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jint param3, jint param4);
+void init_com_badlogic_gdx_graphics_g3d_model_MeshPart_com_badlogic_gdx_graphics_g3d_model_MeshPart(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_g3d_model_MeshPart_set_com_badlogic_gdx_graphics_g3d_model_MeshPart_R_com_badlogic_gdx_graphics_g3d_model_MeshPart(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_g3d_model_MeshPart_set_java_lang_String_com_badlogic_gdx_graphics_Mesh_int_int_int_R_com_badlogic_gdx_graphics_g3d_model_MeshPart(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jint param3, jint param4);
+void M_com_badlogic_gdx_graphics_g3d_model_MeshPart_update(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_g3d_model_MeshPart_equals_com_badlogic_gdx_graphics_g3d_model_MeshPart_R_boolean(jcontext ctx, jobject self, jobject param0);
+jbool M_com_badlogic_gdx_graphics_g3d_model_MeshPart_equals_java_lang_Object_R_boolean(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g3d_model_MeshPart_render_com_badlogic_gdx_graphics_glutils_ShaderProgram_boolean(jcontext ctx, jobject self, jobject param0, jbool param1);
+void M_com_badlogic_gdx_graphics_g3d_model_MeshPart_render_com_badlogic_gdx_graphics_glutils_ShaderProgram(jcontext ctx, jobject self, jobject param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

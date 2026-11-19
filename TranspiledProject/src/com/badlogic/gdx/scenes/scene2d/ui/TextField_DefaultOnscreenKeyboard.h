@@ -1,0 +1,56 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard
+#define HEADER_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/scenes/scene2d/ui/TextField_OnscreenKeyboard.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard {
+	java_lang_Object parent;
+} com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard;
+
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_show_com_badlogic_gdx_scenes_scene2d_ui_TextField 11
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_show_com_badlogic_gdx_scenes_scene2d_ui_TextField)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_close 12
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_close)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_show_com_badlogic_gdx_scenes_scene2d_ui_TextField(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_TextField$DefaultOnscreenKeyboard_close(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

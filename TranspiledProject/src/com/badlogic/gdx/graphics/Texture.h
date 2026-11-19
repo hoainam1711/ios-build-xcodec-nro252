@@ -1,0 +1,132 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_Texture
+#define HEADER_com_badlogic_gdx_graphics_Texture
+
+#include "Clearwing.h"
+#include "com/badlogic/gdx/graphics/GLTexture.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_Texture {
+	com_badlogic_gdx_graphics_GLTexture parent;
+	jref F_data;
+} com_badlogic_gdx_graphics_Texture;
+
+extern Class class_com_badlogic_gdx_graphics_Texture;
+
+extern jobject SF_com_badlogic_gdx_graphics_Texture_assetManager;
+extern jobject SF_com_badlogic_gdx_graphics_Texture_managedTextures;
+
+#define VTABLE_com_badlogic_gdx_graphics_Texture_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_Texture_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_Texture_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_Texture_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_Texture_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_Texture_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_Texture_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_Texture_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_Texture_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_Texture_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_Texture_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_Texture_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_dispose 11
+typedef void (*func_com_badlogic_gdx_graphics_Texture_dispose)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_getWidth_R_int 12
+typedef jint (*func_com_badlogic_gdx_graphics_Texture_getWidth_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_getHeight_R_int 13
+typedef jint (*func_com_badlogic_gdx_graphics_Texture_getHeight_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_getDepth_R_int 14
+typedef jint (*func_com_badlogic_gdx_graphics_Texture_getDepth_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_isManaged_R_boolean 15
+typedef jbool (*func_com_badlogic_gdx_graphics_Texture_isManaged_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_reload 16
+typedef void (*func_com_badlogic_gdx_graphics_Texture_reload)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_bind 17
+typedef void (*func_com_badlogic_gdx_graphics_Texture_bind)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_bind_int 18
+typedef void (*func_com_badlogic_gdx_graphics_Texture_bind_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_getMinFilter_R_com_badlogic_gdx_graphics_Texture$TextureFilter 19
+typedef jobject (*func_com_badlogic_gdx_graphics_Texture_getMinFilter_R_com_badlogic_gdx_graphics_Texture$TextureFilter)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_getMagFilter_R_com_badlogic_gdx_graphics_Texture$TextureFilter 20
+typedef jobject (*func_com_badlogic_gdx_graphics_Texture_getMagFilter_R_com_badlogic_gdx_graphics_Texture$TextureFilter)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_getUWrap_R_com_badlogic_gdx_graphics_Texture$TextureWrap 21
+typedef jobject (*func_com_badlogic_gdx_graphics_Texture_getUWrap_R_com_badlogic_gdx_graphics_Texture$TextureWrap)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_getVWrap_R_com_badlogic_gdx_graphics_Texture$TextureWrap 22
+typedef jobject (*func_com_badlogic_gdx_graphics_Texture_getVWrap_R_com_badlogic_gdx_graphics_Texture$TextureWrap)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_getTextureObjectHandle_R_int 23
+typedef jint (*func_com_badlogic_gdx_graphics_Texture_getTextureObjectHandle_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_unsafeSetWrap_com_badlogic_gdx_graphics_Texture$TextureWrap_com_badlogic_gdx_graphics_Texture$TextureWrap 24
+typedef void (*func_com_badlogic_gdx_graphics_Texture_unsafeSetWrap_com_badlogic_gdx_graphics_Texture$TextureWrap_com_badlogic_gdx_graphics_Texture$TextureWrap)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_unsafeSetWrap_com_badlogic_gdx_graphics_Texture$TextureWrap_com_badlogic_gdx_graphics_Texture$TextureWrap_boolean 25
+typedef void (*func_com_badlogic_gdx_graphics_Texture_unsafeSetWrap_com_badlogic_gdx_graphics_Texture$TextureWrap_com_badlogic_gdx_graphics_Texture$TextureWrap_boolean)(jcontext ctx, jobject self, jobject param0, jobject param1, jbool param2);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_setWrap_com_badlogic_gdx_graphics_Texture$TextureWrap_com_badlogic_gdx_graphics_Texture$TextureWrap 26
+typedef void (*func_com_badlogic_gdx_graphics_Texture_setWrap_com_badlogic_gdx_graphics_Texture$TextureWrap_com_badlogic_gdx_graphics_Texture$TextureWrap)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_unsafeSetFilter_com_badlogic_gdx_graphics_Texture$TextureFilter_com_badlogic_gdx_graphics_Texture$TextureFilter 27
+typedef void (*func_com_badlogic_gdx_graphics_Texture_unsafeSetFilter_com_badlogic_gdx_graphics_Texture$TextureFilter_com_badlogic_gdx_graphics_Texture$TextureFilter)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_unsafeSetFilter_com_badlogic_gdx_graphics_Texture$TextureFilter_com_badlogic_gdx_graphics_Texture$TextureFilter_boolean 28
+typedef void (*func_com_badlogic_gdx_graphics_Texture_unsafeSetFilter_com_badlogic_gdx_graphics_Texture$TextureFilter_com_badlogic_gdx_graphics_Texture$TextureFilter_boolean)(jcontext ctx, jobject self, jobject param0, jobject param1, jbool param2);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_setFilter_com_badlogic_gdx_graphics_Texture$TextureFilter_com_badlogic_gdx_graphics_Texture$TextureFilter 29
+typedef void (*func_com_badlogic_gdx_graphics_Texture_setFilter_com_badlogic_gdx_graphics_Texture$TextureFilter_com_badlogic_gdx_graphics_Texture$TextureFilter)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_unsafeSetAnisotropicFilter_float_R_float 30
+typedef jfloat (*func_com_badlogic_gdx_graphics_Texture_unsafeSetAnisotropicFilter_float_R_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_unsafeSetAnisotropicFilter_float_boolean_R_float 31
+typedef jfloat (*func_com_badlogic_gdx_graphics_Texture_unsafeSetAnisotropicFilter_float_boolean_R_float)(jcontext ctx, jobject self, jfloat param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_setAnisotropicFilter_float_R_float 32
+typedef jfloat (*func_com_badlogic_gdx_graphics_Texture_setAnisotropicFilter_float_R_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_getAnisotropicFilter_R_float 33
+typedef jfloat (*func_com_badlogic_gdx_graphics_Texture_getAnisotropicFilter_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_delete 34
+typedef void (*func_com_badlogic_gdx_graphics_Texture_delete)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_load_com_badlogic_gdx_graphics_TextureData 35
+typedef void (*func_com_badlogic_gdx_graphics_Texture_load_com_badlogic_gdx_graphics_TextureData)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_draw_com_badlogic_gdx_graphics_Pixmap_int_int 36
+typedef void (*func_com_badlogic_gdx_graphics_Texture_draw_com_badlogic_gdx_graphics_Pixmap_int_int)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define VTABLE_com_badlogic_gdx_graphics_Texture_getTextureData_R_com_badlogic_gdx_graphics_TextureData 37
+typedef jobject (*func_com_badlogic_gdx_graphics_Texture_getTextureData_R_com_badlogic_gdx_graphics_TextureData)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_Texture(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_Texture(jcontext ctx);
+void init_com_badlogic_gdx_graphics_Texture(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_graphics_Texture_java_lang_String(jcontext ctx, jobject self, jobject param0);
+void init_com_badlogic_gdx_graphics_Texture_com_badlogic_gdx_files_FileHandle(jcontext ctx, jobject self, jobject param0);
+void init_com_badlogic_gdx_graphics_Texture_com_badlogic_gdx_files_FileHandle_boolean(jcontext ctx, jobject self, jobject param0, jbool param1);
+void init_com_badlogic_gdx_graphics_Texture_com_badlogic_gdx_files_FileHandle_com_badlogic_gdx_graphics_Pixmap$Format_boolean(jcontext ctx, jobject self, jobject param0, jobject param1, jbool param2);
+void init_com_badlogic_gdx_graphics_Texture_com_badlogic_gdx_graphics_Pixmap(jcontext ctx, jobject self, jobject param0);
+void init_com_badlogic_gdx_graphics_Texture_com_badlogic_gdx_graphics_Pixmap_boolean(jcontext ctx, jobject self, jobject param0, jbool param1);
+void init_com_badlogic_gdx_graphics_Texture_com_badlogic_gdx_graphics_Pixmap_com_badlogic_gdx_graphics_Pixmap$Format_boolean(jcontext ctx, jobject self, jobject param0, jobject param1, jbool param2);
+void init_com_badlogic_gdx_graphics_Texture_int_int_com_badlogic_gdx_graphics_Pixmap$Format(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void init_com_badlogic_gdx_graphics_Texture_com_badlogic_gdx_graphics_TextureData(jcontext ctx, jobject self, jobject param0);
+void init_com_badlogic_gdx_graphics_Texture_int_int_com_badlogic_gdx_graphics_TextureData(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_badlogic_gdx_graphics_Texture_load_com_badlogic_gdx_graphics_TextureData(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_Texture_reload(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_Texture_draw_com_badlogic_gdx_graphics_Pixmap_int_int(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+jint M_com_badlogic_gdx_graphics_Texture_getWidth_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_Texture_getHeight_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_Texture_getDepth_R_int(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_Texture_getTextureData_R_com_badlogic_gdx_graphics_TextureData(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_Texture_isManaged_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_Texture_dispose(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_Texture_toString_R_java_lang_String(jcontext ctx, jobject self);
+void SM_com_badlogic_gdx_graphics_Texture_addManagedTexture_com_badlogic_gdx_Application_com_badlogic_gdx_graphics_Texture(jcontext ctx, jobject param0, jobject param1);
+void SM_com_badlogic_gdx_graphics_Texture_clearAllTextures_com_badlogic_gdx_Application(jcontext ctx, jobject param0);
+void SM_com_badlogic_gdx_graphics_Texture_invalidateAllTextures_com_badlogic_gdx_Application(jcontext ctx, jobject param0);
+void SM_com_badlogic_gdx_graphics_Texture_setAssetManager_com_badlogic_gdx_assets_AssetManager(jcontext ctx, jobject param0);
+jobject SM_com_badlogic_gdx_graphics_Texture_getManagedStatus_R_java_lang_String(jcontext ctx);
+jint SM_com_badlogic_gdx_graphics_Texture_getNumManagedTextures_R_int(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

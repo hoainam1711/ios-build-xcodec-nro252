@@ -1,0 +1,80 @@
+#ifndef HEADER_nro_CreateCharScr
+#define HEADER_nro_CreateCharScr
+
+#include "Clearwing.h"
+#include "nro/mScreen.h"
+#include "nro/IActionListener.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct nro_CreateCharScr {
+	nro_mScreen parent;
+	jref F_b;
+	jint F_c;
+	jint F_cx;
+	jint F_cy;
+	jint F_dy;
+	jref F_cmdSelectSv;
+	jref F_bgID;
+	jref F_i;
+	jint F_cp1;
+} nro_CreateCharScr;
+
+extern Class class_nro_CreateCharScr;
+
+extern jbool SF_nro_CreateCharScr_isCreateChar;
+
+#define VTABLE_nro_CreateCharScr_hashCode_R_int 0
+typedef jint (*func_nro_CreateCharScr_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_nro_CreateCharScr_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_nro_CreateCharScr_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_nro_CreateCharScr_clone_R_java_lang_Object 2
+typedef jobject (*func_nro_CreateCharScr_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_nro_CreateCharScr_getClass_R_java_lang_Class 3
+typedef jobject (*func_nro_CreateCharScr_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_nro_CreateCharScr_toString_R_java_lang_String 4
+typedef jobject (*func_nro_CreateCharScr_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_nro_CreateCharScr_finalize 5
+typedef void (*func_nro_CreateCharScr_finalize)(jcontext ctx, jobject self);
+#define VTABLE_nro_CreateCharScr_notify 6
+typedef void (*func_nro_CreateCharScr_notify)(jcontext ctx, jobject self);
+#define VTABLE_nro_CreateCharScr_notifyAll 7
+typedef void (*func_nro_CreateCharScr_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_nro_CreateCharScr_wait 8
+typedef void (*func_nro_CreateCharScr_wait)(jcontext ctx, jobject self);
+#define VTABLE_nro_CreateCharScr_wait_long 9
+typedef void (*func_nro_CreateCharScr_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_nro_CreateCharScr_wait_long_int 10
+typedef void (*func_nro_CreateCharScr_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_nro_CreateCharScr_switchToMe 11
+typedef void (*func_nro_CreateCharScr_switchToMe)(jcontext ctx, jobject self);
+#define VTABLE_nro_CreateCharScr_keyPress_int 12
+typedef void (*func_nro_CreateCharScr_keyPress_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_nro_CreateCharScr_update 13
+typedef void (*func_nro_CreateCharScr_update)(jcontext ctx, jobject self);
+#define VTABLE_nro_CreateCharScr_updateKey 14
+typedef void (*func_nro_CreateCharScr_updateKey)(jcontext ctx, jobject self);
+#define VTABLE_nro_CreateCharScr_paint_lib_mGraphics 15
+typedef void (*func_nro_CreateCharScr_paint_lib_mGraphics)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_nro_CreateCharScr_perform_int_java_lang_Object 16
+typedef void (*func_nro_CreateCharScr_perform_int_java_lang_Object)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_nro_CreateCharScr_SetInfoChar_nro_Char 17
+typedef void (*func_nro_CreateCharScr_SetInfoChar_nro_Char)(jcontext ctx, jobject self, jobject param0);
+
+void mark_nro_CreateCharScr(jobject object, jint mark, jint depth);
+void clinit_nro_CreateCharScr(jcontext ctx);
+void SM_nro_CreateCharScr_loadMapTableFromResource_Array1_byte(jcontext ctx, jobject param0);
+void init_nro_CreateCharScr(jcontext ctx, jobject self);
+void M_nro_CreateCharScr_SetInfoChar_nro_Char(jcontext ctx, jobject self, jobject param0);
+void M_nro_CreateCharScr_switchToMe(jcontext ctx, jobject self);
+void M_nro_CreateCharScr_paint_lib_mGraphics(jcontext ctx, jobject self, jobject param0);
+void M_nro_CreateCharScr_update(jcontext ctx, jobject self);
+void M_nro_CreateCharScr_perform_int_java_lang_Object(jcontext ctx, jobject self, jint param0, jobject param1);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

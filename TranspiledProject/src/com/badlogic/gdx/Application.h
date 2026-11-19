@@ -1,0 +1,82 @@
+#ifndef HEADER_com_badlogic_gdx_Application
+#define HEADER_com_badlogic_gdx_Application
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_Application {
+	java_lang_Object parent;
+} com_badlogic_gdx_Application;
+
+extern Class class_com_badlogic_gdx_Application;
+
+extern jint SF_com_badlogic_gdx_Application_LOG_NONE;
+extern jint SF_com_badlogic_gdx_Application_LOG_DEBUG;
+extern jint SF_com_badlogic_gdx_Application_LOG_INFO;
+extern jint SF_com_badlogic_gdx_Application_LOG_ERROR;
+
+#define INDEX_com_badlogic_gdx_Application_getApplicationListener_R_com_badlogic_gdx_ApplicationListener 0
+typedef jobject (*func_com_badlogic_gdx_Application_getApplicationListener_R_com_badlogic_gdx_ApplicationListener)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_getGraphics_R_com_badlogic_gdx_Graphics 1
+typedef jobject (*func_com_badlogic_gdx_Application_getGraphics_R_com_badlogic_gdx_Graphics)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_getAudio_R_com_badlogic_gdx_Audio 2
+typedef jobject (*func_com_badlogic_gdx_Application_getAudio_R_com_badlogic_gdx_Audio)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_getInput_R_com_badlogic_gdx_Input 3
+typedef jobject (*func_com_badlogic_gdx_Application_getInput_R_com_badlogic_gdx_Input)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_getFiles_R_com_badlogic_gdx_Files 4
+typedef jobject (*func_com_badlogic_gdx_Application_getFiles_R_com_badlogic_gdx_Files)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_getNet_R_com_badlogic_gdx_Net 5
+typedef jobject (*func_com_badlogic_gdx_Application_getNet_R_com_badlogic_gdx_Net)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_log_java_lang_String_java_lang_String 6
+typedef void (*func_com_badlogic_gdx_Application_log_java_lang_String_java_lang_String)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define INDEX_com_badlogic_gdx_Application_log_java_lang_String_java_lang_String_java_lang_Throwable 7
+typedef void (*func_com_badlogic_gdx_Application_log_java_lang_String_java_lang_String_java_lang_Throwable)(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2);
+#define INDEX_com_badlogic_gdx_Application_error_java_lang_String_java_lang_String 8
+typedef void (*func_com_badlogic_gdx_Application_error_java_lang_String_java_lang_String)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define INDEX_com_badlogic_gdx_Application_error_java_lang_String_java_lang_String_java_lang_Throwable 9
+typedef void (*func_com_badlogic_gdx_Application_error_java_lang_String_java_lang_String_java_lang_Throwable)(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2);
+#define INDEX_com_badlogic_gdx_Application_debug_java_lang_String_java_lang_String 10
+typedef void (*func_com_badlogic_gdx_Application_debug_java_lang_String_java_lang_String)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define INDEX_com_badlogic_gdx_Application_debug_java_lang_String_java_lang_String_java_lang_Throwable 11
+typedef void (*func_com_badlogic_gdx_Application_debug_java_lang_String_java_lang_String_java_lang_Throwable)(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2);
+#define INDEX_com_badlogic_gdx_Application_setLogLevel_int 12
+typedef void (*func_com_badlogic_gdx_Application_setLogLevel_int)(jcontext ctx, jobject self, jint param0);
+#define INDEX_com_badlogic_gdx_Application_getLogLevel_R_int 13
+typedef jint (*func_com_badlogic_gdx_Application_getLogLevel_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_setApplicationLogger_com_badlogic_gdx_ApplicationLogger 14
+typedef void (*func_com_badlogic_gdx_Application_setApplicationLogger_com_badlogic_gdx_ApplicationLogger)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Application_getApplicationLogger_R_com_badlogic_gdx_ApplicationLogger 15
+typedef jobject (*func_com_badlogic_gdx_Application_getApplicationLogger_R_com_badlogic_gdx_ApplicationLogger)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_getType_R_com_badlogic_gdx_Application$ApplicationType 16
+typedef jobject (*func_com_badlogic_gdx_Application_getType_R_com_badlogic_gdx_Application$ApplicationType)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_getVersion_R_int 17
+typedef jint (*func_com_badlogic_gdx_Application_getVersion_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_getJavaHeap_R_long 18
+typedef jlong (*func_com_badlogic_gdx_Application_getJavaHeap_R_long)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_getNativeHeap_R_long 19
+typedef jlong (*func_com_badlogic_gdx_Application_getNativeHeap_R_long)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_getPreferences_java_lang_String_R_com_badlogic_gdx_Preferences 20
+typedef jobject (*func_com_badlogic_gdx_Application_getPreferences_java_lang_String_R_com_badlogic_gdx_Preferences)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Application_getClipboard_R_com_badlogic_gdx_utils_Clipboard 21
+typedef jobject (*func_com_badlogic_gdx_Application_getClipboard_R_com_badlogic_gdx_utils_Clipboard)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_postRunnable_java_lang_Runnable 22
+typedef void (*func_com_badlogic_gdx_Application_postRunnable_java_lang_Runnable)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Application_exit 23
+typedef void (*func_com_badlogic_gdx_Application_exit)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Application_addLifecycleListener_com_badlogic_gdx_LifecycleListener 24
+typedef void (*func_com_badlogic_gdx_Application_addLifecycleListener_com_badlogic_gdx_LifecycleListener)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Application_removeLifecycleListener_com_badlogic_gdx_LifecycleListener 25
+typedef void (*func_com_badlogic_gdx_Application_removeLifecycleListener_com_badlogic_gdx_LifecycleListener)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_Application(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_Application(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

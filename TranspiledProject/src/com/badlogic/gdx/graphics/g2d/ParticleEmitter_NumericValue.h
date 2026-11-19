@@ -1,0 +1,75 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue
+#define HEADER_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue
+
+#include "Clearwing.h"
+#include "com/badlogic/gdx/graphics/g2d/ParticleEmitter_ParticleValue.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue {
+	com_badlogic_gdx_graphics_g2d_ParticleEmitter$ParticleValue parent;
+	jfloat F_value;
+} com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue;
+
+extern Class class_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue;
+
+
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_setAlwaysActive_boolean 11
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_setAlwaysActive_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_isAlwaysActive_R_boolean 12
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_isAlwaysActive_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_isActive_R_boolean 13
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_isActive_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_setActive_boolean 14
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_setActive_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_save_java_io_Writer 15
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_save_java_io_Writer)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_load_java_io_BufferedReader 16
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_load_java_io_BufferedReader)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_load_com_badlogic_gdx_graphics_g2d_ParticleEmitter$ParticleValue 17
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_load_com_badlogic_gdx_graphics_g2d_ParticleEmitter$ParticleValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_getValue_R_float 18
+typedef jfloat (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_getValue_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_setValue_float 19
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_setValue_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_load_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue 20
+typedef void (*func_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_load_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue(jcontext ctx);
+void init_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue(jcontext ctx, jobject self);
+jfloat M_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_getValue_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_setValue_float(jcontext ctx, jobject self, jfloat param0);
+void M_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_save_java_io_Writer(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_load_java_io_BufferedReader(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue_load_com_badlogic_gdx_graphics_g2d_ParticleEmitter$NumericValue(jcontext ctx, jobject self, jobject param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

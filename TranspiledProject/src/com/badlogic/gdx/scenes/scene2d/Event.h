@@ -1,0 +1,109 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_Event
+#define HEADER_com_badlogic_gdx_scenes_scene2d_Event
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/utils/Pool_Poolable.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_Event {
+	java_lang_Object parent;
+	jref F_stage;
+	jref F_targetActor;
+	jref F_listenerActor;
+	jbool F_capture;
+	jbool F_bubbles;
+	jbool F_handled;
+	jbool F_stopped;
+	jbool F_cancelled;
+} com_badlogic_gdx_scenes_scene2d_Event;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_Event;
+
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_Event_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_Event_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_Event_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_Event_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_Event_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_reset 11
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_reset)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_handle 12
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_handle)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_cancel 13
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_cancel)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_stop 14
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_stop)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_getTarget_R_com_badlogic_gdx_scenes_scene2d_Actor 15
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_Event_getTarget_R_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_setTarget_com_badlogic_gdx_scenes_scene2d_Actor 16
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_setTarget_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_getListenerActor_R_com_badlogic_gdx_scenes_scene2d_Actor 17
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_Event_getListenerActor_R_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_setListenerActor_com_badlogic_gdx_scenes_scene2d_Actor 18
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_setListenerActor_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_getBubbles_R_boolean 19
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_Event_getBubbles_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_setBubbles_boolean 20
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_setBubbles_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_isHandled_R_boolean 21
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_Event_isHandled_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_isStopped_R_boolean 22
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_Event_isStopped_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_isCancelled_R_boolean 23
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_Event_isCancelled_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_setCapture_boolean 24
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_setCapture_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_isCapture_R_boolean 25
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_Event_isCapture_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_setStage_com_badlogic_gdx_scenes_scene2d_Stage 26
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_Event_setStage_com_badlogic_gdx_scenes_scene2d_Stage)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_Event_getStage_R_com_badlogic_gdx_scenes_scene2d_Stage 27
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_Event_getStage_R_com_badlogic_gdx_scenes_scene2d_Stage)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_scenes_scene2d_Event(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_Event(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_Event(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_Event_handle(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_Event_cancel(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_Event_stop(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_Event_reset(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_scenes_scene2d_Event_getTarget_R_com_badlogic_gdx_scenes_scene2d_Actor(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_Event_setTarget_com_badlogic_gdx_scenes_scene2d_Actor(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_scenes_scene2d_Event_getListenerActor_R_com_badlogic_gdx_scenes_scene2d_Actor(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_Event_setListenerActor_com_badlogic_gdx_scenes_scene2d_Actor(jcontext ctx, jobject self, jobject param0);
+jbool M_com_badlogic_gdx_scenes_scene2d_Event_getBubbles_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_Event_setBubbles_boolean(jcontext ctx, jobject self, jbool param0);
+jbool M_com_badlogic_gdx_scenes_scene2d_Event_isHandled_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_scenes_scene2d_Event_isStopped_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_scenes_scene2d_Event_isCancelled_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_Event_setCapture_boolean(jcontext ctx, jobject self, jbool param0);
+jbool M_com_badlogic_gdx_scenes_scene2d_Event_isCapture_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_Event_setStage_com_badlogic_gdx_scenes_scene2d_Stage(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_scenes_scene2d_Event_getStage_R_com_badlogic_gdx_scenes_scene2d_Stage(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

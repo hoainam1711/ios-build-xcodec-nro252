@@ -1,0 +1,57 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_glutils_InstanceData
+#define HEADER_com_badlogic_gdx_graphics_glutils_InstanceData
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/utils/Disposable.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_glutils_InstanceData {
+	java_lang_Object parent;
+} com_badlogic_gdx_graphics_glutils_InstanceData;
+
+extern Class class_com_badlogic_gdx_graphics_glutils_InstanceData;
+
+
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_getNumInstances_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_InstanceData_getNumInstances_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_getNumMaxInstances_R_int 1
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_InstanceData_getNumMaxInstances_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_getAttributes_R_com_badlogic_gdx_graphics_VertexAttributes 2
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_InstanceData_getAttributes_R_com_badlogic_gdx_graphics_VertexAttributes)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_setInstanceData_Array1_float_int_int 3
+typedef void (*func_com_badlogic_gdx_graphics_glutils_InstanceData_setInstanceData_Array1_float_int_int)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_updateInstanceData_int_Array1_float_int_int 4
+typedef void (*func_com_badlogic_gdx_graphics_glutils_InstanceData_updateInstanceData_int_Array1_float_int_int)(jcontext ctx, jobject self, jint param0, jobject param1, jint param2, jint param3);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_setInstanceData_java_nio_FloatBuffer_int 5
+typedef void (*func_com_badlogic_gdx_graphics_glutils_InstanceData_setInstanceData_java_nio_FloatBuffer_int)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_updateInstanceData_int_java_nio_FloatBuffer_int_int 6
+typedef void (*func_com_badlogic_gdx_graphics_glutils_InstanceData_updateInstanceData_int_java_nio_FloatBuffer_int_int)(jcontext ctx, jobject self, jint param0, jobject param1, jint param2, jint param3);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_getBuffer_R_java_nio_FloatBuffer 7
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_InstanceData_getBuffer_R_java_nio_FloatBuffer)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_getBuffer_boolean_R_java_nio_FloatBuffer 8
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_InstanceData_getBuffer_boolean_R_java_nio_FloatBuffer)(jcontext ctx, jobject self, jbool param0);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_bind_com_badlogic_gdx_graphics_glutils_ShaderProgram 9
+typedef void (*func_com_badlogic_gdx_graphics_glutils_InstanceData_bind_com_badlogic_gdx_graphics_glutils_ShaderProgram)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_bind_com_badlogic_gdx_graphics_glutils_ShaderProgram_Array1_int 10
+typedef void (*func_com_badlogic_gdx_graphics_glutils_InstanceData_bind_com_badlogic_gdx_graphics_glutils_ShaderProgram_Array1_int)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_unbind_com_badlogic_gdx_graphics_glutils_ShaderProgram 11
+typedef void (*func_com_badlogic_gdx_graphics_glutils_InstanceData_unbind_com_badlogic_gdx_graphics_glutils_ShaderProgram)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_unbind_com_badlogic_gdx_graphics_glutils_ShaderProgram_Array1_int 12
+typedef void (*func_com_badlogic_gdx_graphics_glutils_InstanceData_unbind_com_badlogic_gdx_graphics_glutils_ShaderProgram_Array1_int)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_invalidate 13
+typedef void (*func_com_badlogic_gdx_graphics_glutils_InstanceData_invalidate)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_glutils_InstanceData_dispose 14
+typedef void (*func_com_badlogic_gdx_graphics_glutils_InstanceData_dispose)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_glutils_InstanceData(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_glutils_InstanceData(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

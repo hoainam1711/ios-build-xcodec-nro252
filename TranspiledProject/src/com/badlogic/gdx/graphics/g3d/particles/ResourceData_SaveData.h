@@ -1,0 +1,73 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData
+#define HEADER_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/utils/Json_Serializable.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData {
+	java_lang_Object parent;
+	jref F_data;
+	jref F_assets;
+	jint F_loadIndex;
+	jref F_resources;
+} com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData;
+
+extern Class class_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData;
+
+
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_write_com_badlogic_gdx_utils_Json 11
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_write_com_badlogic_gdx_utils_Json)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_read_com_badlogic_gdx_utils_Json_com_badlogic_gdx_utils_JsonValue 12
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_read_com_badlogic_gdx_utils_Json_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_saveAsset_java_lang_String_java_lang_Class 13
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_saveAsset_java_lang_String_java_lang_Class)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_save_java_lang_String_java_lang_Object 14
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_save_java_lang_String_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_loadAsset_R_com_badlogic_gdx_assets_AssetDescriptor 15
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_loadAsset_R_com_badlogic_gdx_assets_AssetDescriptor)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_load_java_lang_String_R_java_lang_Object 16
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_load_java_lang_String_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData(jcontext ctx);
+void init_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_com_badlogic_gdx_graphics_g3d_particles_ResourceData(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_saveAsset_java_lang_String_java_lang_Class(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_save_java_lang_String_java_lang_Object(jcontext ctx, jobject self, jobject param0, jobject param1);
+jobject M_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_loadAsset_R_com_badlogic_gdx_assets_AssetDescriptor(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_load_java_lang_String_R_java_lang_Object(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_write_com_badlogic_gdx_utils_Json(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g3d_particles_ResourceData$SaveData_read_com_badlogic_gdx_utils_Json_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0, jobject param1);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

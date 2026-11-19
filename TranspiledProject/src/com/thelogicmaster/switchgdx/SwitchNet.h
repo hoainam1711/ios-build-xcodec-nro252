@@ -1,0 +1,71 @@
+#ifndef HEADER_com_thelogicmaster_switchgdx_SwitchNet
+#define HEADER_com_thelogicmaster_switchgdx_SwitchNet
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/Net.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_thelogicmaster_switchgdx_SwitchNet {
+	java_lang_Object parent;
+} com_thelogicmaster_switchgdx_SwitchNet;
+
+extern Class class_com_thelogicmaster_switchgdx_SwitchNet;
+
+
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_hashCode_R_int 0
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchNet_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchNet_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_clone_R_java_lang_Object 2
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchNet_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchNet_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_toString_R_java_lang_String 4
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchNet_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_finalize 5
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchNet_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_notify 6
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchNet_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_notifyAll 7
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchNet_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_wait 8
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchNet_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_wait_long 9
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchNet_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_wait_long_int 10
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchNet_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_sendHttpRequest_com_badlogic_gdx_Net$HttpRequest_com_badlogic_gdx_Net$HttpResponseListener 11
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchNet_sendHttpRequest_com_badlogic_gdx_Net$HttpRequest_com_badlogic_gdx_Net$HttpResponseListener)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_cancelHttpRequest_com_badlogic_gdx_Net$HttpRequest 12
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchNet_cancelHttpRequest_com_badlogic_gdx_Net$HttpRequest)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_isHttpRequestPending_com_badlogic_gdx_Net$HttpRequest_R_boolean 13
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchNet_isHttpRequestPending_com_badlogic_gdx_Net$HttpRequest_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_newServerSocket_com_badlogic_gdx_Net$Protocol_java_lang_String_int_com_badlogic_gdx_net_ServerSocketHints_R_com_badlogic_gdx_net_ServerSocket 14
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchNet_newServerSocket_com_badlogic_gdx_Net$Protocol_java_lang_String_int_com_badlogic_gdx_net_ServerSocketHints_R_com_badlogic_gdx_net_ServerSocket)(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_newServerSocket_com_badlogic_gdx_Net$Protocol_int_com_badlogic_gdx_net_ServerSocketHints_R_com_badlogic_gdx_net_ServerSocket 15
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchNet_newServerSocket_com_badlogic_gdx_Net$Protocol_int_com_badlogic_gdx_net_ServerSocketHints_R_com_badlogic_gdx_net_ServerSocket)(jcontext ctx, jobject self, jobject param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_newClientSocket_com_badlogic_gdx_Net$Protocol_java_lang_String_int_com_badlogic_gdx_net_SocketHints_R_com_badlogic_gdx_net_Socket 16
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchNet_newClientSocket_com_badlogic_gdx_Net$Protocol_java_lang_String_int_com_badlogic_gdx_net_SocketHints_R_com_badlogic_gdx_net_Socket)(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchNet_openURI_java_lang_String_R_boolean 17
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchNet_openURI_java_lang_String_R_boolean)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_thelogicmaster_switchgdx_SwitchNet(jobject object, jint mark, jint depth);
+void clinit_com_thelogicmaster_switchgdx_SwitchNet(jcontext ctx);
+void init_com_thelogicmaster_switchgdx_SwitchNet(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchNet_sendHttpRequest_com_badlogic_gdx_Net$HttpRequest_com_badlogic_gdx_Net$HttpResponseListener(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchNet_cancelHttpRequest_com_badlogic_gdx_Net$HttpRequest(jcontext ctx, jobject self, jobject param0);
+jbool M_com_thelogicmaster_switchgdx_SwitchNet_isHttpRequestPending_com_badlogic_gdx_Net$HttpRequest_R_boolean(jcontext ctx, jobject self, jobject param0);
+jobject M_com_thelogicmaster_switchgdx_SwitchNet_newServerSocket_com_badlogic_gdx_Net$Protocol_java_lang_String_int_com_badlogic_gdx_net_ServerSocketHints_R_com_badlogic_gdx_net_ServerSocket(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jobject param3);
+jobject M_com_thelogicmaster_switchgdx_SwitchNet_newServerSocket_com_badlogic_gdx_Net$Protocol_int_com_badlogic_gdx_net_ServerSocketHints_R_com_badlogic_gdx_net_ServerSocket(jcontext ctx, jobject self, jobject param0, jint param1, jobject param2);
+jobject M_com_thelogicmaster_switchgdx_SwitchNet_newClientSocket_com_badlogic_gdx_Net$Protocol_java_lang_String_int_com_badlogic_gdx_net_SocketHints_R_com_badlogic_gdx_net_Socket(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jobject param3);
+jbool M_com_thelogicmaster_switchgdx_SwitchNet_openURI_java_lang_String_R_boolean(jcontext ctx, jobject self, jobject param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

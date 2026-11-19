@@ -1,0 +1,40 @@
+#ifndef HEADER_com_badlogic_gdx_Net
+#define HEADER_com_badlogic_gdx_Net
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_Net {
+	java_lang_Object parent;
+} com_badlogic_gdx_Net;
+
+extern Class class_com_badlogic_gdx_Net;
+
+
+#define INDEX_com_badlogic_gdx_Net_sendHttpRequest_com_badlogic_gdx_Net$HttpRequest_com_badlogic_gdx_Net$HttpResponseListener 0
+typedef void (*func_com_badlogic_gdx_Net_sendHttpRequest_com_badlogic_gdx_Net$HttpRequest_com_badlogic_gdx_Net$HttpResponseListener)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define INDEX_com_badlogic_gdx_Net_cancelHttpRequest_com_badlogic_gdx_Net$HttpRequest 1
+typedef void (*func_com_badlogic_gdx_Net_cancelHttpRequest_com_badlogic_gdx_Net$HttpRequest)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Net_isHttpRequestPending_com_badlogic_gdx_Net$HttpRequest_R_boolean 2
+typedef jbool (*func_com_badlogic_gdx_Net_isHttpRequestPending_com_badlogic_gdx_Net$HttpRequest_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Net_newServerSocket_com_badlogic_gdx_Net$Protocol_java_lang_String_int_com_badlogic_gdx_net_ServerSocketHints_R_com_badlogic_gdx_net_ServerSocket 3
+typedef jobject (*func_com_badlogic_gdx_Net_newServerSocket_com_badlogic_gdx_Net$Protocol_java_lang_String_int_com_badlogic_gdx_net_ServerSocketHints_R_com_badlogic_gdx_net_ServerSocket)(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jobject param3);
+#define INDEX_com_badlogic_gdx_Net_newServerSocket_com_badlogic_gdx_Net$Protocol_int_com_badlogic_gdx_net_ServerSocketHints_R_com_badlogic_gdx_net_ServerSocket 4
+typedef jobject (*func_com_badlogic_gdx_Net_newServerSocket_com_badlogic_gdx_Net$Protocol_int_com_badlogic_gdx_net_ServerSocketHints_R_com_badlogic_gdx_net_ServerSocket)(jcontext ctx, jobject self, jobject param0, jint param1, jobject param2);
+#define INDEX_com_badlogic_gdx_Net_newClientSocket_com_badlogic_gdx_Net$Protocol_java_lang_String_int_com_badlogic_gdx_net_SocketHints_R_com_badlogic_gdx_net_Socket 5
+typedef jobject (*func_com_badlogic_gdx_Net_newClientSocket_com_badlogic_gdx_Net$Protocol_java_lang_String_int_com_badlogic_gdx_net_SocketHints_R_com_badlogic_gdx_net_Socket)(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jobject param3);
+#define INDEX_com_badlogic_gdx_Net_openURI_java_lang_String_R_boolean 6
+typedef jbool (*func_com_badlogic_gdx_Net_openURI_java_lang_String_R_boolean)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_Net(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_Net(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

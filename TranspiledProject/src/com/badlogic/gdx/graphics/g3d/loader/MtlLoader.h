@@ -1,0 +1,59 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g3d_loader_MtlLoader
+#define HEADER_com_badlogic_gdx_graphics_g3d_loader_MtlLoader
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g3d_loader_MtlLoader {
+	java_lang_Object parent;
+	jref F_materials;
+} com_badlogic_gdx_graphics_g3d_loader_MtlLoader;
+
+extern Class class_com_badlogic_gdx_graphics_g3d_loader_MtlLoader;
+
+
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_load_com_badlogic_gdx_files_FileHandle 11
+typedef void (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_load_com_badlogic_gdx_files_FileHandle)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_parseColor_Array1_java_lang_String_R_com_badlogic_gdx_graphics_Color 12
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_parseColor_Array1_java_lang_String_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_getMaterial_java_lang_String_R_com_badlogic_gdx_graphics_g3d_model_data_ModelMaterial 13
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_getMaterial_java_lang_String_R_com_badlogic_gdx_graphics_g3d_model_data_ModelMaterial)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_graphics_g3d_loader_MtlLoader(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g3d_loader_MtlLoader(jcontext ctx);
+void init_com_badlogic_gdx_graphics_g3d_loader_MtlLoader(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_load_com_badlogic_gdx_files_FileHandle(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_parseColor_Array1_java_lang_String_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_g3d_loader_MtlLoader_getMaterial_java_lang_String_R_com_badlogic_gdx_graphics_g3d_model_data_ModelMaterial(jcontext ctx, jobject self, jobject param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

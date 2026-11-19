@@ -1,0 +1,49 @@
+#ifndef HEADER_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter
+#define HEADER_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter
+
+#include "Clearwing.h"
+#include "com/badlogic/gdx/assets/AssetLoaderParameters.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter {
+	com_badlogic_gdx_assets_AssetLoaderParameters parent;
+} com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter;
+
+extern Class class_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter;
+
+
+#define VTABLE_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_finalize 5
+typedef void (*func_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_notify 6
+typedef void (*func_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_notifyAll 7
+typedef void (*func_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_wait 8
+typedef void (*func_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_wait_long 9
+typedef void (*func_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+
+void mark_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter(jcontext ctx);
+void init_com_badlogic_gdx_assets_loaders_SoundLoader$SoundParameter(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

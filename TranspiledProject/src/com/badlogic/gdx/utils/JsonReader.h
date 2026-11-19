@@ -1,0 +1,128 @@
+#ifndef HEADER_com_badlogic_gdx_utils_JsonReader
+#define HEADER_com_badlogic_gdx_utils_JsonReader
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/utils/BaseJsonReader.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_utils_JsonReader {
+	java_lang_Object parent;
+	jref F_elements;
+	jref F_root;
+	jref F_current;
+	jbool F_stop;
+} com_badlogic_gdx_utils_JsonReader;
+
+extern Class class_com_badlogic_gdx_utils_JsonReader;
+
+extern jobject SF_com_badlogic_gdx_utils_JsonReader__json_actions;
+extern jobject SF_com_badlogic_gdx_utils_JsonReader__json_key_offsets;
+extern jobject SF_com_badlogic_gdx_utils_JsonReader__json_trans_keys;
+extern jobject SF_com_badlogic_gdx_utils_JsonReader__json_single_lengths;
+extern jobject SF_com_badlogic_gdx_utils_JsonReader__json_range_lengths;
+extern jobject SF_com_badlogic_gdx_utils_JsonReader__json_index_offsets;
+extern jobject SF_com_badlogic_gdx_utils_JsonReader__json_indicies;
+extern jobject SF_com_badlogic_gdx_utils_JsonReader__json_trans_targs;
+extern jobject SF_com_badlogic_gdx_utils_JsonReader__json_trans_actions;
+extern jobject SF_com_badlogic_gdx_utils_JsonReader__json_eof_actions;
+extern jint SF_com_badlogic_gdx_utils_JsonReader_json_start;
+extern jint SF_com_badlogic_gdx_utils_JsonReader_json_first_final;
+extern jint SF_com_badlogic_gdx_utils_JsonReader_json_error;
+extern jint SF_com_badlogic_gdx_utils_JsonReader_json_en_object;
+extern jint SF_com_badlogic_gdx_utils_JsonReader_json_en_array;
+extern jint SF_com_badlogic_gdx_utils_JsonReader_json_en_main;
+
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_utils_JsonReader_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_utils_JsonReader_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_utils_JsonReader_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_utils_JsonReader_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_utils_JsonReader_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_finalize 5
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_notify 6
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_notifyAll 7
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_wait 8
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_wait_long 9
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_parse_java_io_InputStream_R_com_badlogic_gdx_utils_JsonValue 11
+typedef jobject (*func_com_badlogic_gdx_utils_JsonReader_parse_java_io_InputStream_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_parse_com_badlogic_gdx_files_FileHandle_R_com_badlogic_gdx_utils_JsonValue 12
+typedef jobject (*func_com_badlogic_gdx_utils_JsonReader_parse_com_badlogic_gdx_files_FileHandle_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_parse_java_lang_String_R_com_badlogic_gdx_utils_JsonValue 13
+typedef jobject (*func_com_badlogic_gdx_utils_JsonReader_parse_java_lang_String_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_parse_java_io_Reader_R_com_badlogic_gdx_utils_JsonValue 14
+typedef jobject (*func_com_badlogic_gdx_utils_JsonReader_parse_java_io_Reader_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_parse_Array1_char_int_int_R_com_badlogic_gdx_utils_JsonValue 15
+typedef jobject (*func_com_badlogic_gdx_utils_JsonReader_parse_Array1_char_int_int_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_stop 16
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_stop)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_isStopped_R_boolean 17
+typedef jbool (*func_com_badlogic_gdx_utils_JsonReader_isStopped_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_addChild_java_lang_String_com_badlogic_gdx_utils_JsonValue 18
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_addChild_java_lang_String_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_startObject_java_lang_String 19
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_startObject_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_startArray_java_lang_String 20
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_startArray_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_pop 21
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_pop)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_string_java_lang_String_java_lang_String 22
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_string_java_lang_String_java_lang_String)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_number_java_lang_String_double_java_lang_String 23
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_number_java_lang_String_double_java_lang_String)(jcontext ctx, jobject self, jobject param0, jdouble param1, jobject param2);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_number_java_lang_String_long_java_lang_String 24
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_number_java_lang_String_long_java_lang_String)(jcontext ctx, jobject self, jobject param0, jlong param1, jobject param2);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_bool_java_lang_String_boolean 25
+typedef void (*func_com_badlogic_gdx_utils_JsonReader_bool_java_lang_String_boolean)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonReader_unescape_java_lang_String_R_java_lang_String 26
+typedef jobject (*func_com_badlogic_gdx_utils_JsonReader_unescape_java_lang_String_R_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_utils_JsonReader(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_utils_JsonReader(jcontext ctx);
+void init_com_badlogic_gdx_utils_JsonReader(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonReader_parse_java_lang_String_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonReader_parse_java_io_Reader_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonReader_parse_java_io_InputStream_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonReader_parse_com_badlogic_gdx_files_FileHandle_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonReader_parse_Array1_char_int_int_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+jobject SM_com_badlogic_gdx_utils_JsonReader_init__json_actions_0_R_Array1_byte(jcontext ctx);
+jobject SM_com_badlogic_gdx_utils_JsonReader_init__json_key_offsets_0_R_Array1_short(jcontext ctx);
+jobject SM_com_badlogic_gdx_utils_JsonReader_init__json_trans_keys_0_R_Array1_char(jcontext ctx);
+jobject SM_com_badlogic_gdx_utils_JsonReader_init__json_single_lengths_0_R_Array1_byte(jcontext ctx);
+jobject SM_com_badlogic_gdx_utils_JsonReader_init__json_range_lengths_0_R_Array1_byte(jcontext ctx);
+jobject SM_com_badlogic_gdx_utils_JsonReader_init__json_index_offsets_0_R_Array1_short(jcontext ctx);
+jobject SM_com_badlogic_gdx_utils_JsonReader_init__json_indicies_0_R_Array1_byte(jcontext ctx);
+jobject SM_com_badlogic_gdx_utils_JsonReader_init__json_trans_targs_0_R_Array1_byte(jcontext ctx);
+jobject SM_com_badlogic_gdx_utils_JsonReader_init__json_trans_actions_0_R_Array1_byte(jcontext ctx);
+jobject SM_com_badlogic_gdx_utils_JsonReader_init__json_eof_actions_0_R_Array1_byte(jcontext ctx);
+void M_com_badlogic_gdx_utils_JsonReader_stop(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonReader_isStopped_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonReader_addChild_java_lang_String_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_utils_JsonReader_startObject_java_lang_String(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonReader_startArray_java_lang_String(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonReader_pop(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonReader_string_java_lang_String_java_lang_String(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_utils_JsonReader_number_java_lang_String_double_java_lang_String(jcontext ctx, jobject self, jobject param0, jdouble param1, jobject param2);
+void M_com_badlogic_gdx_utils_JsonReader_number_java_lang_String_long_java_lang_String(jcontext ctx, jobject self, jobject param0, jlong param1, jobject param2);
+void M_com_badlogic_gdx_utils_JsonReader_bool_java_lang_String_boolean(jcontext ctx, jobject self, jobject param0, jbool param1);
+jobject M_com_badlogic_gdx_utils_JsonReader_unescape_java_lang_String_R_java_lang_String(jcontext ctx, jobject self, jobject param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

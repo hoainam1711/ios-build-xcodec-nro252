@@ -1,0 +1,118 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_ui_Tree$2
+#define HEADER_com_badlogic_gdx_scenes_scene2d_ui_Tree$2
+
+#include "Clearwing.h"
+#include "com/badlogic/gdx/scenes/scene2d/utils/ClickListener.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_ui_Tree$2 {
+	com_badlogic_gdx_scenes_scene2d_utils_ClickListener parent;
+	jref F_this$0;
+} com_badlogic_gdx_scenes_scene2d_ui_Tree$2;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_ui_Tree$2;
+
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_handle_com_badlogic_gdx_scenes_scene2d_Event_R_boolean 11
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_handle_com_badlogic_gdx_scenes_scene2d_Event_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_touchDown_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int_R_boolean 12
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_touchDown_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int_R_boolean)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jint param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_touchUp_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int 13
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_touchUp_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jint param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_touchDragged_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int 14
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_touchDragged_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_mouseMoved_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_R_boolean 15
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_mouseMoved_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_R_boolean)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_enter_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_com_badlogic_gdx_scenes_scene2d_Actor 16
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_enter_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jobject param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_exit_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_com_badlogic_gdx_scenes_scene2d_Actor 17
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_exit_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jobject param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_scrolled_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_float_float_R_boolean 18
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_scrolled_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_float_float_R_boolean)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_keyDown_com_badlogic_gdx_scenes_scene2d_InputEvent_int_R_boolean 19
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_keyDown_com_badlogic_gdx_scenes_scene2d_InputEvent_int_R_boolean)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_keyUp_com_badlogic_gdx_scenes_scene2d_InputEvent_int_R_boolean 20
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_keyUp_com_badlogic_gdx_scenes_scene2d_InputEvent_int_R_boolean)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_keyTyped_com_badlogic_gdx_scenes_scene2d_InputEvent_char_R_boolean 21
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_keyTyped_com_badlogic_gdx_scenes_scene2d_InputEvent_char_R_boolean)(jcontext ctx, jobject self, jobject param0, jchar param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_cancel 22
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_cancel)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_clicked_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float 23
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_clicked_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_isOver_com_badlogic_gdx_scenes_scene2d_Actor_float_float_R_boolean 24
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_isOver_com_badlogic_gdx_scenes_scene2d_Actor_float_float_R_boolean)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_inTapSquare_float_float_R_boolean 25
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_inTapSquare_float_float_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_inTapSquare_R_boolean 26
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_inTapSquare_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_invalidateTapSquare 27
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_invalidateTapSquare)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_isPressed_R_boolean 28
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_isPressed_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_isVisualPressed_R_boolean 29
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_isVisualPressed_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_setVisualPressed_boolean 30
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_setVisualPressed_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_isOver_R_boolean 31
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_isOver_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_setTapSquareSize_float 32
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_setTapSquareSize_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getTapSquareSize_R_float 33
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getTapSquareSize_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_setTapCountInterval_float 34
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_setTapCountInterval_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getTapCount_R_int 35
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getTapCount_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_setTapCount_int 36
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_setTapCount_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getTouchDownX_R_float 37
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getTouchDownX_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getTouchDownY_R_float 38
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getTouchDownY_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getPressedButton_R_int 39
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getPressedButton_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getPressedPointer_R_int 40
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getPressedPointer_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getButton_R_int 41
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_getButton_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_setButton_int 42
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_setButton_int)(jcontext ctx, jobject self, jint param0);
+
+void mark_com_badlogic_gdx_scenes_scene2d_ui_Tree$2(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_ui_Tree$2(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_com_badlogic_gdx_scenes_scene2d_ui_Tree(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_clicked_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+jbool M_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_mouseMoved_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_R_boolean(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_enter_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_com_badlogic_gdx_scenes_scene2d_Actor(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jobject param4);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$2_exit_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_com_badlogic_gdx_scenes_scene2d_Actor(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jobject param4);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

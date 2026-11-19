@@ -1,0 +1,182 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_Color
+#define HEADER_com_badlogic_gdx_graphics_Color
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_Color {
+	java_lang_Object parent;
+	jfloat F_r;
+	jfloat F_g;
+	jfloat F_b;
+	jfloat F_a;
+} com_badlogic_gdx_graphics_Color;
+
+extern Class class_com_badlogic_gdx_graphics_Color;
+
+extern jobject SF_com_badlogic_gdx_graphics_Color_WHITE;
+extern jobject SF_com_badlogic_gdx_graphics_Color_LIGHT_GRAY;
+extern jobject SF_com_badlogic_gdx_graphics_Color_GRAY;
+extern jobject SF_com_badlogic_gdx_graphics_Color_DARK_GRAY;
+extern jobject SF_com_badlogic_gdx_graphics_Color_BLACK;
+extern jfloat SF_com_badlogic_gdx_graphics_Color_WHITE_FLOAT_BITS;
+extern jobject SF_com_badlogic_gdx_graphics_Color_CLEAR;
+extern jobject SF_com_badlogic_gdx_graphics_Color_CLEAR_WHITE;
+extern jobject SF_com_badlogic_gdx_graphics_Color_BLUE;
+extern jobject SF_com_badlogic_gdx_graphics_Color_NAVY;
+extern jobject SF_com_badlogic_gdx_graphics_Color_ROYAL;
+extern jobject SF_com_badlogic_gdx_graphics_Color_SLATE;
+extern jobject SF_com_badlogic_gdx_graphics_Color_SKY;
+extern jobject SF_com_badlogic_gdx_graphics_Color_CYAN;
+extern jobject SF_com_badlogic_gdx_graphics_Color_TEAL;
+extern jobject SF_com_badlogic_gdx_graphics_Color_GREEN;
+extern jobject SF_com_badlogic_gdx_graphics_Color_CHARTREUSE;
+extern jobject SF_com_badlogic_gdx_graphics_Color_LIME;
+extern jobject SF_com_badlogic_gdx_graphics_Color_FOREST;
+extern jobject SF_com_badlogic_gdx_graphics_Color_OLIVE;
+extern jobject SF_com_badlogic_gdx_graphics_Color_YELLOW;
+extern jobject SF_com_badlogic_gdx_graphics_Color_GOLD;
+extern jobject SF_com_badlogic_gdx_graphics_Color_GOLDENROD;
+extern jobject SF_com_badlogic_gdx_graphics_Color_ORANGE;
+extern jobject SF_com_badlogic_gdx_graphics_Color_BROWN;
+extern jobject SF_com_badlogic_gdx_graphics_Color_TAN;
+extern jobject SF_com_badlogic_gdx_graphics_Color_FIREBRICK;
+extern jobject SF_com_badlogic_gdx_graphics_Color_RED;
+extern jobject SF_com_badlogic_gdx_graphics_Color_SCARLET;
+extern jobject SF_com_badlogic_gdx_graphics_Color_CORAL;
+extern jobject SF_com_badlogic_gdx_graphics_Color_SALMON;
+extern jobject SF_com_badlogic_gdx_graphics_Color_PINK;
+extern jobject SF_com_badlogic_gdx_graphics_Color_MAGENTA;
+extern jobject SF_com_badlogic_gdx_graphics_Color_PURPLE;
+extern jobject SF_com_badlogic_gdx_graphics_Color_VIOLET;
+extern jobject SF_com_badlogic_gdx_graphics_Color_MAROON;
+
+#define VTABLE_com_badlogic_gdx_graphics_Color_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_Color_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_Color_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Color_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_Color_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_Color_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_Color_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_Color_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_Color_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_Color_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_Color_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_Color_set_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color 11
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_set_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Color_set_com_badlogic_gdx_graphics_Color_float_R_com_badlogic_gdx_graphics_Color 12
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_set_com_badlogic_gdx_graphics_Color_float_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_graphics_Color_mul_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color 13
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_mul_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Color_mul_float_R_com_badlogic_gdx_graphics_Color 14
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_mul_float_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_Color_add_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color 15
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_add_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Color_sub_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color 16
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_sub_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Color_clamp_R_com_badlogic_gdx_graphics_Color 17
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_clamp_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_set_float_float_float_float_R_com_badlogic_gdx_graphics_Color 18
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_set_float_float_float_float_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_Color_set_int_R_com_badlogic_gdx_graphics_Color 19
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_set_int_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_graphics_Color_add_float_float_float_float_R_com_badlogic_gdx_graphics_Color 20
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_add_float_float_float_float_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_Color_sub_float_float_float_float_R_com_badlogic_gdx_graphics_Color 21
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_sub_float_float_float_float_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_Color_mul_float_float_float_float_R_com_badlogic_gdx_graphics_Color 22
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_mul_float_float_float_float_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_Color_lerp_com_badlogic_gdx_graphics_Color_float_R_com_badlogic_gdx_graphics_Color 23
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_lerp_com_badlogic_gdx_graphics_Color_float_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_graphics_Color_lerp_float_float_float_float_float_R_com_badlogic_gdx_graphics_Color 24
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_lerp_float_float_float_float_float_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_badlogic_gdx_graphics_Color_premultiplyAlpha_R_com_badlogic_gdx_graphics_Color 25
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_premultiplyAlpha_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_toFloatBits_R_float 26
+typedef jfloat (*func_com_badlogic_gdx_graphics_Color_toFloatBits_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_toIntBits_R_int 27
+typedef jint (*func_com_badlogic_gdx_graphics_Color_toIntBits_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Color_fromHsv_float_float_float_R_com_badlogic_gdx_graphics_Color 28
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_fromHsv_float_float_float_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_graphics_Color_fromHsv_Array1_float_R_com_badlogic_gdx_graphics_Color 29
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_fromHsv_Array1_float_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Color_toHsv_Array1_float_R_Array1_float 30
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_toHsv_Array1_float_R_Array1_float)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Color_cpy_R_com_badlogic_gdx_graphics_Color 31
+typedef jobject (*func_com_badlogic_gdx_graphics_Color_cpy_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_Color(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_Color(jcontext ctx);
+void init_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_graphics_Color_int(jcontext ctx, jobject self, jint param0);
+void init_com_badlogic_gdx_graphics_Color_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+void init_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_Color_set_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_Color_set_com_badlogic_gdx_graphics_Color_float_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0, jfloat param1);
+jobject M_com_badlogic_gdx_graphics_Color_mul_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_Color_mul_float_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0);
+jobject M_com_badlogic_gdx_graphics_Color_add_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_Color_sub_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_Color_clamp_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_Color_set_float_float_float_float_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+jobject M_com_badlogic_gdx_graphics_Color_set_int_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jint param0);
+jobject M_com_badlogic_gdx_graphics_Color_add_float_float_float_float_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+jobject M_com_badlogic_gdx_graphics_Color_sub_float_float_float_float_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+jobject M_com_badlogic_gdx_graphics_Color_mul_float_float_float_float_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+jobject M_com_badlogic_gdx_graphics_Color_lerp_com_badlogic_gdx_graphics_Color_float_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0, jfloat param1);
+jobject M_com_badlogic_gdx_graphics_Color_lerp_float_float_float_float_float_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+jobject M_com_badlogic_gdx_graphics_Color_premultiplyAlpha_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_Color_equals_java_lang_Object_R_boolean(jcontext ctx, jobject self, jobject param0);
+jint M_com_badlogic_gdx_graphics_Color_hashCode_R_int(jcontext ctx, jobject self);
+jfloat M_com_badlogic_gdx_graphics_Color_toFloatBits_R_float(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_Color_toIntBits_R_int(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_Color_toString_R_java_lang_String(jcontext ctx, jobject self);
+jobject SM_com_badlogic_gdx_graphics_Color_valueOf_java_lang_String_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject param0);
+jobject SM_com_badlogic_gdx_graphics_Color_valueOf_java_lang_String_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject param0, jobject param1);
+jfloat SM_com_badlogic_gdx_graphics_Color_toFloatBits_int_int_int_int_R_float(jcontext ctx, jint param0, jint param1, jint param2, jint param3);
+jfloat SM_com_badlogic_gdx_graphics_Color_toFloatBits_float_float_float_float_R_float(jcontext ctx, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+jint SM_com_badlogic_gdx_graphics_Color_toIntBits_int_int_int_int_R_int(jcontext ctx, jint param0, jint param1, jint param2, jint param3);
+jint SM_com_badlogic_gdx_graphics_Color_alpha_float_R_int(jcontext ctx, jfloat param0);
+jint SM_com_badlogic_gdx_graphics_Color_luminanceAlpha_float_float_R_int(jcontext ctx, jfloat param0, jfloat param1);
+jint SM_com_badlogic_gdx_graphics_Color_rgb565_float_float_float_R_int(jcontext ctx, jfloat param0, jfloat param1, jfloat param2);
+jint SM_com_badlogic_gdx_graphics_Color_rgba4444_float_float_float_float_R_int(jcontext ctx, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+jint SM_com_badlogic_gdx_graphics_Color_rgb888_float_float_float_R_int(jcontext ctx, jfloat param0, jfloat param1, jfloat param2);
+jint SM_com_badlogic_gdx_graphics_Color_rgba8888_float_float_float_float_R_int(jcontext ctx, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+jint SM_com_badlogic_gdx_graphics_Color_argb8888_float_float_float_float_R_int(jcontext ctx, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+jint SM_com_badlogic_gdx_graphics_Color_rgb565_com_badlogic_gdx_graphics_Color_R_int(jcontext ctx, jobject param0);
+jint SM_com_badlogic_gdx_graphics_Color_rgba4444_com_badlogic_gdx_graphics_Color_R_int(jcontext ctx, jobject param0);
+jint SM_com_badlogic_gdx_graphics_Color_rgb888_com_badlogic_gdx_graphics_Color_R_int(jcontext ctx, jobject param0);
+jint SM_com_badlogic_gdx_graphics_Color_rgba8888_com_badlogic_gdx_graphics_Color_R_int(jcontext ctx, jobject param0);
+jint SM_com_badlogic_gdx_graphics_Color_argb8888_com_badlogic_gdx_graphics_Color_R_int(jcontext ctx, jobject param0);
+void SM_com_badlogic_gdx_graphics_Color_rgb565ToColor_com_badlogic_gdx_graphics_Color_int(jcontext ctx, jobject param0, jint param1);
+void SM_com_badlogic_gdx_graphics_Color_rgba4444ToColor_com_badlogic_gdx_graphics_Color_int(jcontext ctx, jobject param0, jint param1);
+void SM_com_badlogic_gdx_graphics_Color_rgb888ToColor_com_badlogic_gdx_graphics_Color_int(jcontext ctx, jobject param0, jint param1);
+void SM_com_badlogic_gdx_graphics_Color_rgba8888ToColor_com_badlogic_gdx_graphics_Color_int(jcontext ctx, jobject param0, jint param1);
+void SM_com_badlogic_gdx_graphics_Color_argb8888ToColor_com_badlogic_gdx_graphics_Color_int(jcontext ctx, jobject param0, jint param1);
+void SM_com_badlogic_gdx_graphics_Color_abgr8888ToColor_com_badlogic_gdx_graphics_Color_int(jcontext ctx, jobject param0, jint param1);
+void SM_com_badlogic_gdx_graphics_Color_abgr8888ToColor_com_badlogic_gdx_graphics_Color_float(jcontext ctx, jobject param0, jfloat param1);
+jobject M_com_badlogic_gdx_graphics_Color_fromHsv_float_float_float_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+jobject M_com_badlogic_gdx_graphics_Color_fromHsv_Array1_float_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_Color_toHsv_Array1_float_R_Array1_float(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_Color_cpy_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

@@ -1,0 +1,86 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_glutils_IndexArray
+#define HEADER_com_badlogic_gdx_graphics_glutils_IndexArray
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/graphics/glutils/IndexData.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_glutils_IndexArray {
+	java_lang_Object parent;
+	jref F_buffer;
+	jref F_byteBuffer;
+	jbool F_empty;
+} com_badlogic_gdx_graphics_glutils_IndexArray;
+
+extern Class class_com_badlogic_gdx_graphics_glutils_IndexArray;
+
+
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_IndexArray_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_glutils_IndexArray_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_IndexArray_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_IndexArray_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_IndexArray_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_dispose 11
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_dispose)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_getNumIndices_R_int 12
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_IndexArray_getNumIndices_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_getNumMaxIndices_R_int 13
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_IndexArray_getNumMaxIndices_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_setIndices_Array1_short_int_int 14
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_setIndices_Array1_short_int_int)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_setIndices_java_nio_ShortBuffer 15
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_setIndices_java_nio_ShortBuffer)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_updateIndices_int_Array1_short_int_int 16
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_updateIndices_int_Array1_short_int_int)(jcontext ctx, jobject self, jint param0, jobject param1, jint param2, jint param3);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_getBuffer_R_java_nio_ShortBuffer 17
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_IndexArray_getBuffer_R_java_nio_ShortBuffer)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_getBuffer_boolean_R_java_nio_ShortBuffer 18
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_IndexArray_getBuffer_boolean_R_java_nio_ShortBuffer)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_bind 19
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_bind)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_unbind 20
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_unbind)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_IndexArray_invalidate 21
+typedef void (*func_com_badlogic_gdx_graphics_glutils_IndexArray_invalidate)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_glutils_IndexArray(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_glutils_IndexArray(jcontext ctx);
+void init_com_badlogic_gdx_graphics_glutils_IndexArray_int(jcontext ctx, jobject self, jint param0);
+jint M_com_badlogic_gdx_graphics_glutils_IndexArray_getNumIndices_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_glutils_IndexArray_getNumMaxIndices_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_IndexArray_setIndices_Array1_short_int_int(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+void M_com_badlogic_gdx_graphics_glutils_IndexArray_setIndices_java_nio_ShortBuffer(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_glutils_IndexArray_updateIndices_int_Array1_short_int_int(jcontext ctx, jobject self, jint param0, jobject param1, jint param2, jint param3);
+jobject M_com_badlogic_gdx_graphics_glutils_IndexArray_getBuffer_R_java_nio_ShortBuffer(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_glutils_IndexArray_getBuffer_boolean_R_java_nio_ShortBuffer(jcontext ctx, jobject self, jbool param0);
+void M_com_badlogic_gdx_graphics_glutils_IndexArray_bind(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_IndexArray_unbind(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_IndexArray_invalidate(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_IndexArray_dispose(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

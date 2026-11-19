@@ -1,0 +1,90 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_glutils_GLVersion
+#define HEADER_com_badlogic_gdx_graphics_glutils_GLVersion
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_glutils_GLVersion {
+	java_lang_Object parent;
+	jint F_majorVersion;
+	jint F_minorVersion;
+	jint F_releaseVersion;
+	jref F_versionString;
+	jref F_vendorString;
+	jref F_rendererString;
+	jref F_type;
+	jref F_TAG;
+} com_badlogic_gdx_graphics_glutils_GLVersion;
+
+extern Class class_com_badlogic_gdx_graphics_glutils_GLVersion;
+
+
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_GLVersion_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_glutils_GLVersion_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_GLVersion_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_GLVersion_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_GLVersion_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_glutils_GLVersion_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_glutils_GLVersion_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_glutils_GLVersion_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_glutils_GLVersion_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_glutils_GLVersion_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_glutils_GLVersion_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_extractVersion_java_lang_String_java_lang_String 11
+typedef void (*func_com_badlogic_gdx_graphics_glutils_GLVersion_extractVersion_java_lang_String_java_lang_String)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_parseInt_java_lang_String_int_R_int 12
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_GLVersion_parseInt_java_lang_String_int_R_int)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_getType_R_com_badlogic_gdx_graphics_glutils_GLVersion$Type 13
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_GLVersion_getType_R_com_badlogic_gdx_graphics_glutils_GLVersion$Type)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_getMajorVersion_R_int 14
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_GLVersion_getMajorVersion_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_getMinorVersion_R_int 15
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_GLVersion_getMinorVersion_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_getReleaseVersion_R_int 16
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_GLVersion_getReleaseVersion_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_getVersionString_R_java_lang_String 17
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_GLVersion_getVersionString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_getVendorString_R_java_lang_String 18
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_GLVersion_getVendorString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_getRendererString_R_java_lang_String 19
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_GLVersion_getRendererString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_isVersionEqualToOrHigher_int_int_R_boolean 20
+typedef jbool (*func_com_badlogic_gdx_graphics_glutils_GLVersion_isVersionEqualToOrHigher_int_int_R_boolean)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_GLVersion_getDebugVersionString_R_java_lang_String 21
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_GLVersion_getDebugVersionString_R_java_lang_String)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_glutils_GLVersion(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_glutils_GLVersion(jcontext ctx);
+void init_com_badlogic_gdx_graphics_glutils_GLVersion_com_badlogic_gdx_Application$ApplicationType_java_lang_String_java_lang_String_java_lang_String(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2, jobject param3);
+void M_com_badlogic_gdx_graphics_glutils_GLVersion_extractVersion_java_lang_String_java_lang_String(jcontext ctx, jobject self, jobject param0, jobject param1);
+jint M_com_badlogic_gdx_graphics_glutils_GLVersion_parseInt_java_lang_String_int_R_int(jcontext ctx, jobject self, jobject param0, jint param1);
+jobject M_com_badlogic_gdx_graphics_glutils_GLVersion_getType_R_com_badlogic_gdx_graphics_glutils_GLVersion$Type(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_glutils_GLVersion_getMajorVersion_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_glutils_GLVersion_getMinorVersion_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_glutils_GLVersion_getReleaseVersion_R_int(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_glutils_GLVersion_getVersionString_R_java_lang_String(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_glutils_GLVersion_getVendorString_R_java_lang_String(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_glutils_GLVersion_getRendererString_R_java_lang_String(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_glutils_GLVersion_isVersionEqualToOrHigher_int_int_R_boolean(jcontext ctx, jobject self, jint param0, jint param1);
+jobject M_com_badlogic_gdx_graphics_glutils_GLVersion_getDebugVersionString_R_java_lang_String(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

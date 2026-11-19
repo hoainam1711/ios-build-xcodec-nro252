@@ -1,0 +1,30 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g3d_environment_ShadowMap
+#define HEADER_com_badlogic_gdx_graphics_g3d_environment_ShadowMap
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g3d_environment_ShadowMap {
+	java_lang_Object parent;
+} com_badlogic_gdx_graphics_g3d_environment_ShadowMap;
+
+extern Class class_com_badlogic_gdx_graphics_g3d_environment_ShadowMap;
+
+
+#define INDEX_com_badlogic_gdx_graphics_g3d_environment_ShadowMap_getProjViewTrans_R_com_badlogic_gdx_math_Matrix4 0
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_environment_ShadowMap_getProjViewTrans_R_com_badlogic_gdx_math_Matrix4)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_g3d_environment_ShadowMap_getDepthMap_R_com_badlogic_gdx_graphics_g3d_utils_TextureDescriptor 1
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_environment_ShadowMap_getDepthMap_R_com_badlogic_gdx_graphics_g3d_utils_TextureDescriptor)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_g3d_environment_ShadowMap(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g3d_environment_ShadowMap(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

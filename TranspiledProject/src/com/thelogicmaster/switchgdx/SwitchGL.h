@@ -1,0 +1,536 @@
+#ifndef HEADER_com_thelogicmaster_switchgdx_SwitchGL
+#define HEADER_com_thelogicmaster_switchgdx_SwitchGL
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/graphics/GL20.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_thelogicmaster_switchgdx_SwitchGL {
+	java_lang_Object parent;
+} com_thelogicmaster_switchgdx_SwitchGL;
+
+extern Class class_com_thelogicmaster_switchgdx_SwitchGL;
+
+
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_hashCode_R_int 0
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchGL_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchGL_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_clone_R_java_lang_Object 2
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchGL_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchGL_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_toString_R_java_lang_String 4
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchGL_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_finalize 5
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_notify 6
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_notifyAll 7
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_wait 8
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_wait_long 9
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_wait_long_int 10
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glActiveTexture_int 11
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glActiveTexture_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBindTexture_int_int 12
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBindTexture_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBlendFunc_int_int 13
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBlendFunc_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glClear_int 14
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glClear_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glClearColor_float_float_float_float 15
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glClearColor_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glClearDepthf_float 16
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glClearDepthf_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glClearStencil_int 17
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glClearStencil_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glColorMask_boolean_boolean_boolean_boolean 18
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glColorMask_boolean_boolean_boolean_boolean)(jcontext ctx, jobject self, jbool param0, jbool param1, jbool param2, jbool param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glCompressedTexImage2D_int_int_int_int_int_int_int_java_nio_Buffer 19
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glCompressedTexImage2D_int_int_int_int_int_int_int_java_nio_Buffer)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jobject param7);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glCompressedTexSubImage2D_int_int_int_int_int_int_int_int_java_nio_Buffer 20
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glCompressedTexSubImage2D_int_int_int_int_int_int_int_int_java_nio_Buffer)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jint param7, jobject param8);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glCopyTexImage2D_int_int_int_int_int_int_int_int 21
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glCopyTexImage2D_int_int_int_int_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jint param7);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glCopyTexSubImage2D_int_int_int_int_int_int_int_int 22
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glCopyTexSubImage2D_int_int_int_int_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jint param7);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glCullFace_int 23
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glCullFace_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDeleteTextures_int_java_nio_IntBuffer 24
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDeleteTextures_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDeleteTexture_int 25
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDeleteTexture_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDepthFunc_int 26
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDepthFunc_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDepthMask_boolean 27
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDepthMask_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDepthRangef_float_float 28
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDepthRangef_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDisable_int 29
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDisable_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDrawArrays_int_int_int 30
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDrawArrays_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDrawElements_int_int_int_java_nio_Buffer 31
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDrawElements_int_int_int_java_nio_Buffer)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glEnable_int 32
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glEnable_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glFinish 33
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glFinish)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glFlush 34
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glFlush)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glFrontFace_int 35
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glFrontFace_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGenTextures_int_java_nio_IntBuffer 36
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGenTextures_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGenTexture_R_int 37
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchGL_glGenTexture_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetError_R_int 38
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetError_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetIntegerv_int_java_nio_IntBuffer 39
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetIntegerv_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetString_int_R_java_lang_String 40
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetString_int_R_java_lang_String)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glHint_int_int 41
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glHint_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glLineWidth_float 42
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glLineWidth_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glPixelStorei_int_int 43
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glPixelStorei_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glPolygonOffset_float_float 44
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glPolygonOffset_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glReadPixels_int_int_int_int_int_int_java_nio_Buffer 45
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glReadPixels_int_int_int_int_int_int_java_nio_Buffer)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jobject param6);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glScissor_int_int_int_int 46
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glScissor_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glStencilFunc_int_int_int 47
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glStencilFunc_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glStencilMask_int 48
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glStencilMask_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glStencilOp_int_int_int 49
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glStencilOp_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glTexImage2D_int_int_int_int_int_int_int_int_java_nio_Buffer 50
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glTexImage2D_int_int_int_int_int_int_int_int_java_nio_Buffer)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jint param7, jobject param8);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glTexParameterf_int_int_float 51
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glTexParameterf_int_int_float)(jcontext ctx, jobject self, jint param0, jint param1, jfloat param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glTexSubImage2D_int_int_int_int_int_int_int_int_java_nio_Buffer 52
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glTexSubImage2D_int_int_int_int_int_int_int_int_java_nio_Buffer)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jint param7, jobject param8);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glViewport_int_int_int_int 53
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glViewport_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glAttachShader_int_int 54
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glAttachShader_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBindAttribLocation_int_int_java_lang_String 55
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBindAttribLocation_int_int_java_lang_String)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBindBuffer_int_int 56
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBindBuffer_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBindFramebuffer_int_int 57
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBindFramebuffer_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBindRenderbuffer_int_int 58
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBindRenderbuffer_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBlendColor_float_float_float_float 59
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBlendColor_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBlendEquation_int 60
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBlendEquation_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBlendEquationSeparate_int_int 61
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBlendEquationSeparate_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBlendFuncSeparate_int_int_int_int 62
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBlendFuncSeparate_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBufferData_int_int_java_nio_Buffer_int 63
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBufferData_int_int_java_nio_Buffer_int)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glBufferSubData_int_int_int_java_nio_Buffer 64
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glBufferSubData_int_int_int_java_nio_Buffer)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glCheckFramebufferStatus_int_R_int 65
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchGL_glCheckFramebufferStatus_int_R_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glCompileShader_int 66
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glCompileShader_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glCreateProgram_R_int 67
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchGL_glCreateProgram_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glCreateShader_int_R_int 68
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchGL_glCreateShader_int_R_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDeleteBuffer_int 69
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDeleteBuffer_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDeleteBuffers_int_java_nio_IntBuffer 70
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDeleteBuffers_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDeleteFramebuffer_int 71
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDeleteFramebuffer_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDeleteFramebuffers_int_java_nio_IntBuffer 72
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDeleteFramebuffers_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDeleteProgram_int 73
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDeleteProgram_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDeleteRenderbuffer_int 74
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDeleteRenderbuffer_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDeleteRenderbuffers_int_java_nio_IntBuffer 75
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDeleteRenderbuffers_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDeleteShader_int 76
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDeleteShader_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDetachShader_int_int 77
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDetachShader_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDisableVertexAttribArray_int 78
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDisableVertexAttribArray_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glDrawElements_int_int_int_int 79
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glDrawElements_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glEnableVertexAttribArray_int 80
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glEnableVertexAttribArray_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glFramebufferRenderbuffer_int_int_int_int 81
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glFramebufferRenderbuffer_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glFramebufferTexture2D_int_int_int_int_int 82
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glFramebufferTexture2D_int_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGenBuffer_R_int 83
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchGL_glGenBuffer_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGenBuffers_int_java_nio_IntBuffer 84
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGenBuffers_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGenerateMipmap_int 85
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGenerateMipmap_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGenFramebuffer_R_int 86
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchGL_glGenFramebuffer_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGenFramebuffers_int_java_nio_IntBuffer 87
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGenFramebuffers_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGenRenderbuffer_R_int 88
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchGL_glGenRenderbuffer_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGenRenderbuffers_int_java_nio_IntBuffer 89
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGenRenderbuffers_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetActiveAttrib_int_int_java_nio_IntBuffer_java_nio_IntBuffer_R_java_lang_String 90
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetActiveAttrib_int_int_java_nio_IntBuffer_java_nio_IntBuffer_R_java_lang_String)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetActiveUniform_int_int_java_nio_IntBuffer_java_nio_IntBuffer_R_java_lang_String 91
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetActiveUniform_int_int_java_nio_IntBuffer_java_nio_IntBuffer_R_java_lang_String)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetAttachedShaders_int_int_java_nio_Buffer_java_nio_IntBuffer 92
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetAttachedShaders_int_int_java_nio_Buffer_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetAttribLocation_int_java_lang_String_R_int 93
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetAttribLocation_int_java_lang_String_R_int)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetBooleanv_int_java_nio_Buffer 94
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetBooleanv_int_java_nio_Buffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetBufferParameteriv_int_int_java_nio_IntBuffer 95
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetBufferParameteriv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetFloatv_int_java_nio_FloatBuffer 96
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetFloatv_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetFramebufferAttachmentParameteriv_int_int_int_java_nio_IntBuffer 97
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetFramebufferAttachmentParameteriv_int_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetProgramiv_int_int_java_nio_IntBuffer 98
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetProgramiv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetProgramInfoLog_int_R_java_lang_String 99
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetProgramInfoLog_int_R_java_lang_String)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetRenderbufferParameteriv_int_int_java_nio_IntBuffer 100
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetRenderbufferParameteriv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetShaderiv_int_int_java_nio_IntBuffer 101
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetShaderiv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetShaderInfoLog_int_R_java_lang_String 102
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetShaderInfoLog_int_R_java_lang_String)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetShaderPrecisionFormat_int_int_java_nio_IntBuffer_java_nio_IntBuffer 103
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetShaderPrecisionFormat_int_int_java_nio_IntBuffer_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetTexParameterfv_int_int_java_nio_FloatBuffer 104
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetTexParameterfv_int_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetTexParameteriv_int_int_java_nio_IntBuffer 105
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetTexParameteriv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetUniformfv_int_int_java_nio_FloatBuffer 106
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetUniformfv_int_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetUniformiv_int_int_java_nio_IntBuffer 107
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetUniformiv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetUniformLocation_int_java_lang_String_R_int 108
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetUniformLocation_int_java_lang_String_R_int)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetVertexAttribfv_int_int_java_nio_FloatBuffer 109
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetVertexAttribfv_int_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetVertexAttribiv_int_int_java_nio_IntBuffer 110
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetVertexAttribiv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glGetVertexAttribPointerv_int_int_java_nio_Buffer 111
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glGetVertexAttribPointerv_int_int_java_nio_Buffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glIsBuffer_int_R_boolean 112
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchGL_glIsBuffer_int_R_boolean)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glIsEnabled_int_R_boolean 113
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchGL_glIsEnabled_int_R_boolean)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glIsFramebuffer_int_R_boolean 114
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchGL_glIsFramebuffer_int_R_boolean)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glIsProgram_int_R_boolean 115
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchGL_glIsProgram_int_R_boolean)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glIsRenderbuffer_int_R_boolean 116
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchGL_glIsRenderbuffer_int_R_boolean)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glIsShader_int_R_boolean 117
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchGL_glIsShader_int_R_boolean)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glIsTexture_int_R_boolean 118
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchGL_glIsTexture_int_R_boolean)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glLinkProgram_int 119
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glLinkProgram_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glReleaseShaderCompiler 120
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glReleaseShaderCompiler)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glRenderbufferStorage_int_int_int_int 121
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glRenderbufferStorage_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glSampleCoverage_float_boolean 122
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glSampleCoverage_float_boolean)(jcontext ctx, jobject self, jfloat param0, jbool param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glShaderBinary_int_java_nio_IntBuffer_int_java_nio_Buffer_int 123
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glShaderBinary_int_java_nio_IntBuffer_int_java_nio_Buffer_int)(jcontext ctx, jobject self, jint param0, jobject param1, jint param2, jobject param3, jint param4);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glShaderSource_int_java_lang_String 124
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glShaderSource_int_java_lang_String)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glStencilFuncSeparate_int_int_int_int 125
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glStencilFuncSeparate_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glStencilMaskSeparate_int_int 126
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glStencilMaskSeparate_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glStencilOpSeparate_int_int_int_int 127
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glStencilOpSeparate_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glTexParameterfv_int_int_java_nio_FloatBuffer 128
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glTexParameterfv_int_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glTexParameteri_int_int_int 129
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glTexParameteri_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glTexParameteriv_int_int_java_nio_IntBuffer 130
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glTexParameteriv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform1f_int_float 131
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform1f_int_float)(jcontext ctx, jobject self, jint param0, jfloat param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform1fv_int_int_java_nio_FloatBuffer 132
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform1fv_int_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform1fv_int_int_Array1_float_int 133
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform1fv_int_int_Array1_float_int)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform1i_int_int 134
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform1i_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform1iv_int_int_java_nio_IntBuffer 135
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform1iv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform1iv_int_int_Array1_int_int 136
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform1iv_int_int_Array1_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform2f_int_float_float 137
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform2f_int_float_float)(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform2fv_int_int_java_nio_FloatBuffer 138
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform2fv_int_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform2fv_int_int_Array1_float_int 139
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform2fv_int_int_Array1_float_int)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform2i_int_int_int 140
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform2i_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform2iv_int_int_java_nio_IntBuffer 141
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform2iv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform2iv_int_int_Array1_int_int 142
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform2iv_int_int_Array1_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform3f_int_float_float_float 143
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform3f_int_float_float_float)(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform3fv_int_int_java_nio_FloatBuffer 144
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform3fv_int_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform3fv_int_int_Array1_float_int 145
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform3fv_int_int_Array1_float_int)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform3i_int_int_int_int 146
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform3i_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform3iv_int_int_java_nio_IntBuffer 147
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform3iv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform3iv_int_int_Array1_int_int 148
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform3iv_int_int_Array1_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform4f_int_float_float_float_float 149
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform4f_int_float_float_float_float)(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform4fv_int_int_java_nio_FloatBuffer 150
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform4fv_int_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform4fv_int_int_Array1_float_int 151
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform4fv_int_int_Array1_float_int)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform4i_int_int_int_int_int 152
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform4i_int_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform4iv_int_int_java_nio_IntBuffer 153
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform4iv_int_int_java_nio_IntBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniform4iv_int_int_Array1_int_int 154
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniform4iv_int_int_Array1_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix2fv_int_int_boolean_java_nio_FloatBuffer 155
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix2fv_int_int_boolean_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix2fv_int_int_boolean_Array1_float_int 156
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix2fv_int_int_boolean_Array1_float_int)(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3, jint param4);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix3fv_int_int_boolean_java_nio_FloatBuffer 157
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix3fv_int_int_boolean_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix3fv_int_int_boolean_Array1_float_int 158
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix3fv_int_int_boolean_Array1_float_int)(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3, jint param4);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix4fv_int_int_boolean_java_nio_FloatBuffer 159
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix4fv_int_int_boolean_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix4fv_int_int_boolean_Array1_float_int 160
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix4fv_int_int_boolean_Array1_float_int)(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3, jint param4);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glUseProgram_int 161
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glUseProgram_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glValidateProgram_int 162
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glValidateProgram_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib1f_int_float 163
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib1f_int_float)(jcontext ctx, jobject self, jint param0, jfloat param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib1fv_int_java_nio_FloatBuffer 164
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib1fv_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib2f_int_float_float 165
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib2f_int_float_float)(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib2fv_int_java_nio_FloatBuffer 166
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib2fv_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib3f_int_float_float_float 167
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib3f_int_float_float_float)(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib3fv_int_java_nio_FloatBuffer 168
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib3fv_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib4f_int_float_float_float_float 169
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib4f_int_float_float_float_float)(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib4fv_int_java_nio_FloatBuffer 170
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib4fv_int_java_nio_FloatBuffer)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttribPointer_int_int_int_boolean_int_java_nio_Buffer 171
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttribPointer_int_int_int_boolean_int_java_nio_Buffer)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jbool param3, jint param4, jobject param5);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttribPointer_int_int_int_boolean_int_int 172
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttribPointer_int_int_int_boolean_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jbool param3, jint param4, jint param5);
+
+void mark_com_thelogicmaster_switchgdx_SwitchGL(jobject object, jint mark, jint depth);
+void clinit_com_thelogicmaster_switchgdx_SwitchGL(jcontext ctx);
+void init_com_thelogicmaster_switchgdx_SwitchGL(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glActiveTexture_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBindTexture_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBlendFunc_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glClear_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glClearColor_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glClearDepthf_float(jcontext ctx, jobject self, jfloat param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glClearStencil_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glColorMask_boolean_boolean_boolean_boolean(jcontext ctx, jobject self, jbool param0, jbool param1, jbool param2, jbool param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glCompressedTexImage2D_int_int_int_int_int_int_int_java_nio_Buffer(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jobject param7);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glCompressedTexSubImage2D_int_int_int_int_int_int_int_int_java_nio_Buffer(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jint param7, jobject param8);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glCopyTexImage2D_int_int_int_int_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jint param7);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glCopyTexSubImage2D_int_int_int_int_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jint param7);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glCullFace_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDeleteTextures_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDeleteTexture_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDepthFunc_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDepthMask_boolean(jcontext ctx, jobject self, jbool param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDepthRangef_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDisable_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDrawArrays_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDrawElements_int_int_int_java_nio_Buffer(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jobject param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glEnable_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glFinish(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glFlush(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glFrontFace_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGenTextures_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+jint M_com_thelogicmaster_switchgdx_SwitchGL_glGenTexture_R_int(jcontext ctx, jobject self);
+jint M_com_thelogicmaster_switchgdx_SwitchGL_glGetError_R_int(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetIntegerv_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+jobject M_com_thelogicmaster_switchgdx_SwitchGL_glGetString_int_R_java_lang_String(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glHint_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glLineWidth_float(jcontext ctx, jobject self, jfloat param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glPixelStorei_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glPolygonOffset_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glReadPixels_int_int_int_int_int_int_java_nio_Buffer(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jobject param6);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glScissor_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glStencilFunc_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glStencilMask_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glStencilOp_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glTexImage2D_int_int_int_int_int_int_int_int_java_nio_Buffer(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jint param7, jobject param8);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glTexParameterf_int_int_float(jcontext ctx, jobject self, jint param0, jint param1, jfloat param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glTexSubImage2D_int_int_int_int_int_int_int_int_java_nio_Buffer(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4, jint param5, jint param6, jint param7, jobject param8);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glViewport_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glAttachShader_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBindAttribLocation_int_int_java_lang_String(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBindBuffer_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBindFramebuffer_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBindRenderbuffer_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBlendColor_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBlendEquation_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBlendEquationSeparate_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBlendFuncSeparate_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBufferData_int_int_java_nio_Buffer_int(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glBufferSubData_int_int_int_java_nio_Buffer(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jobject param3);
+jint M_com_thelogicmaster_switchgdx_SwitchGL_glCheckFramebufferStatus_int_R_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glCompileShader_int(jcontext ctx, jobject self, jint param0);
+jint M_com_thelogicmaster_switchgdx_SwitchGL_glCreateProgram_R_int(jcontext ctx, jobject self);
+jint M_com_thelogicmaster_switchgdx_SwitchGL_glCreateShader_int_R_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDeleteBuffer_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDeleteBuffers_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDeleteFramebuffer_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDeleteFramebuffers_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDeleteProgram_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDeleteRenderbuffer_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDeleteRenderbuffers_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDeleteShader_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDetachShader_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDisableVertexAttribArray_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glDrawElements_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glEnableVertexAttribArray_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glFramebufferRenderbuffer_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glFramebufferTexture2D_int_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4);
+jint M_com_thelogicmaster_switchgdx_SwitchGL_glGenBuffer_R_int(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGenBuffers_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGenerateMipmap_int(jcontext ctx, jobject self, jint param0);
+jint M_com_thelogicmaster_switchgdx_SwitchGL_glGenFramebuffer_R_int(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGenFramebuffers_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+jint M_com_thelogicmaster_switchgdx_SwitchGL_glGenRenderbuffer_R_int(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGenRenderbuffers_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+jobject M_com_thelogicmaster_switchgdx_SwitchGL_glGetActiveAttrib_int_int_java_nio_IntBuffer_java_nio_IntBuffer_R_java_lang_String(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jobject param3);
+jobject M_com_thelogicmaster_switchgdx_SwitchGL_glGetActiveUniform_int_int_java_nio_IntBuffer_java_nio_IntBuffer_R_java_lang_String(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jobject param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetAttachedShaders_int_int_java_nio_Buffer_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jobject param3);
+jint M_com_thelogicmaster_switchgdx_SwitchGL_glGetAttribLocation_int_java_lang_String_R_int(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetBooleanv_int_java_nio_Buffer(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetBufferParameteriv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetFloatv_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetFramebufferAttachmentParameteriv_int_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jobject param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetProgramiv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+jobject M_com_thelogicmaster_switchgdx_SwitchGL_glGetProgramInfoLog_int_R_java_lang_String(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetRenderbufferParameteriv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetShaderiv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+jobject M_com_thelogicmaster_switchgdx_SwitchGL_glGetShaderInfoLog_int_R_java_lang_String(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetShaderPrecisionFormat_int_int_java_nio_IntBuffer_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jobject param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetTexParameterfv_int_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetTexParameteriv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetUniformfv_int_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetUniformiv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+jint M_com_thelogicmaster_switchgdx_SwitchGL_glGetUniformLocation_int_java_lang_String_R_int(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetVertexAttribfv_int_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetVertexAttribiv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glGetVertexAttribPointerv_int_int_java_nio_Buffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+jbool M_com_thelogicmaster_switchgdx_SwitchGL_glIsBuffer_int_R_boolean(jcontext ctx, jobject self, jint param0);
+jbool M_com_thelogicmaster_switchgdx_SwitchGL_glIsEnabled_int_R_boolean(jcontext ctx, jobject self, jint param0);
+jbool M_com_thelogicmaster_switchgdx_SwitchGL_glIsFramebuffer_int_R_boolean(jcontext ctx, jobject self, jint param0);
+jbool M_com_thelogicmaster_switchgdx_SwitchGL_glIsProgram_int_R_boolean(jcontext ctx, jobject self, jint param0);
+jbool M_com_thelogicmaster_switchgdx_SwitchGL_glIsRenderbuffer_int_R_boolean(jcontext ctx, jobject self, jint param0);
+jbool M_com_thelogicmaster_switchgdx_SwitchGL_glIsShader_int_R_boolean(jcontext ctx, jobject self, jint param0);
+jbool M_com_thelogicmaster_switchgdx_SwitchGL_glIsTexture_int_R_boolean(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glLinkProgram_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glReleaseShaderCompiler(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glRenderbufferStorage_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glSampleCoverage_float_boolean(jcontext ctx, jobject self, jfloat param0, jbool param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glShaderBinary_int_java_nio_IntBuffer_int_java_nio_Buffer_int(jcontext ctx, jobject self, jint param0, jobject param1, jint param2, jobject param3, jint param4);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glShaderSource_int_java_lang_String(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glStencilFuncSeparate_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glStencilMaskSeparate_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glStencilOpSeparate_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glTexParameterfv_int_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glTexParameteri_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glTexParameteriv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform1f_int_float(jcontext ctx, jobject self, jint param0, jfloat param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform1fv_int_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform1fv_int_int_Array1_float_int(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform1i_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform1iv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform1iv_int_int_Array1_int_int(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform2f_int_float_float(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform2fv_int_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform2fv_int_int_Array1_float_int(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform2i_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform2iv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform2iv_int_int_Array1_int_int(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform3f_int_float_float_float(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2, jfloat param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform3fv_int_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform3fv_int_int_Array1_float_int(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform3i_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform3iv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform3iv_int_int_Array1_int_int(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform4f_int_float_float_float_float(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform4fv_int_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform4fv_int_int_Array1_float_int(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform4i_int_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3, jint param4);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform4iv_int_int_java_nio_IntBuffer(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniform4iv_int_int_Array1_int_int(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix2fv_int_int_boolean_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix2fv_int_int_boolean_Array1_float_int(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3, jint param4);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix3fv_int_int_boolean_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix3fv_int_int_boolean_Array1_float_int(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3, jint param4);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix4fv_int_int_boolean_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUniformMatrix4fv_int_int_boolean_Array1_float_int(jcontext ctx, jobject self, jint param0, jint param1, jbool param2, jobject param3, jint param4);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glUseProgram_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glValidateProgram_int(jcontext ctx, jobject self, jint param0);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib1f_int_float(jcontext ctx, jobject self, jint param0, jfloat param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib1fv_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib2f_int_float_float(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib2fv_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib3f_int_float_float_float(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2, jfloat param3);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib3fv_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib4f_int_float_float_float_float(jcontext ctx, jobject self, jint param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttrib4fv_int_java_nio_FloatBuffer(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttribPointer_int_int_int_boolean_int_java_nio_Buffer(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jbool param3, jint param4, jobject param5);
+void M_com_thelogicmaster_switchgdx_SwitchGL_glVertexAttribPointer_int_int_int_boolean_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jbool param3, jint param4, jint param5);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

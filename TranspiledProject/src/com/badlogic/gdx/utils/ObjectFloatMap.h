@@ -1,0 +1,163 @@
+#ifndef HEADER_com_badlogic_gdx_utils_ObjectFloatMap
+#define HEADER_com_badlogic_gdx_utils_ObjectFloatMap
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "java/lang/Iterable.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_utils_ObjectFloatMap {
+	java_lang_Object parent;
+	jint F_size;
+	jref F_keyTable;
+	jref F_valueTable;
+	jfloat F_loadFactor;
+	jint F_threshold;
+	jint F_shift;
+	jint F_mask;
+	jref F_entries1;
+	jref F_entries2;
+	jref F_values1;
+	jref F_values2;
+	jref F_keys1;
+	jref F_keys2;
+} com_badlogic_gdx_utils_ObjectFloatMap;
+
+extern Class class_com_badlogic_gdx_utils_ObjectFloatMap;
+
+
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_utils_ObjectFloatMap_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_utils_ObjectFloatMap_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_finalize 5
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_notify 6
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_notifyAll 7
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_wait 8
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_wait_long 9
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_iterator_R_java_util_Iterator 11
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_iterator_R_java_util_Iterator)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_forEach_java_util_function_Consumer 12
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_forEach_java_util_function_Consumer)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_spliterator_R_java_util_Spliterator 13
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_spliterator_R_java_util_Spliterator)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_place_java_lang_Object_R_int 14
+typedef jint (*func_com_badlogic_gdx_utils_ObjectFloatMap_place_java_lang_Object_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_locateKey_java_lang_Object_R_int 15
+typedef jint (*func_com_badlogic_gdx_utils_ObjectFloatMap_locateKey_java_lang_Object_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_put_java_lang_Object_float 16
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_put_java_lang_Object_float)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_put_java_lang_Object_float_float_R_float 17
+typedef jfloat (*func_com_badlogic_gdx_utils_ObjectFloatMap_put_java_lang_Object_float_float_R_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_putMissing_java_lang_Object_float 18
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_putMissing_java_lang_Object_float)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_putMissing_java_lang_Object_float_float_R_float 19
+typedef jfloat (*func_com_badlogic_gdx_utils_ObjectFloatMap_putMissing_java_lang_Object_float_float_R_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_putAll_com_badlogic_gdx_utils_ObjectFloatMap 20
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_putAll_com_badlogic_gdx_utils_ObjectFloatMap)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_putResize_java_lang_Object_float 21
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_putResize_java_lang_Object_float)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_get_java_lang_Object_float_R_float 22
+typedef jfloat (*func_com_badlogic_gdx_utils_ObjectFloatMap_get_java_lang_Object_float_R_float)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_getAndIncrement_java_lang_Object_float_float_R_float 23
+typedef jfloat (*func_com_badlogic_gdx_utils_ObjectFloatMap_getAndIncrement_java_lang_Object_float_float_R_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_remove_java_lang_Object_float_R_float 24
+typedef jfloat (*func_com_badlogic_gdx_utils_ObjectFloatMap_remove_java_lang_Object_float_R_float)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_notEmpty_R_boolean 25
+typedef jbool (*func_com_badlogic_gdx_utils_ObjectFloatMap_notEmpty_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_isEmpty_R_boolean 26
+typedef jbool (*func_com_badlogic_gdx_utils_ObjectFloatMap_isEmpty_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_shrink_int 27
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_shrink_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_clear_int 28
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_clear_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_clear 29
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_clear)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_containsValue_float_R_boolean 30
+typedef jbool (*func_com_badlogic_gdx_utils_ObjectFloatMap_containsValue_float_R_boolean)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_containsValue_float_float_R_boolean 31
+typedef jbool (*func_com_badlogic_gdx_utils_ObjectFloatMap_containsValue_float_float_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_containsKey_java_lang_Object_R_boolean 32
+typedef jbool (*func_com_badlogic_gdx_utils_ObjectFloatMap_containsKey_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_findKey_float_R_java_lang_Object 33
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_findKey_float_R_java_lang_Object)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_findKey_float_float_R_java_lang_Object 34
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_findKey_float_float_R_java_lang_Object)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_ensureCapacity_int 35
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_ensureCapacity_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_resize_int 36
+typedef void (*func_com_badlogic_gdx_utils_ObjectFloatMap_resize_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_toString_java_lang_String_R_java_lang_String 37
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_toString_java_lang_String_R_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_toString_java_lang_String_boolean_R_java_lang_String 38
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_toString_java_lang_String_boolean_R_java_lang_String)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_iterator_R_com_badlogic_gdx_utils_ObjectFloatMap$Entries 39
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_iterator_R_com_badlogic_gdx_utils_ObjectFloatMap$Entries)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_entries_R_com_badlogic_gdx_utils_ObjectFloatMap$Entries 40
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_entries_R_com_badlogic_gdx_utils_ObjectFloatMap$Entries)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_values_R_com_badlogic_gdx_utils_ObjectFloatMap$Values 41
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_values_R_com_badlogic_gdx_utils_ObjectFloatMap$Values)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_ObjectFloatMap_keys_R_com_badlogic_gdx_utils_ObjectFloatMap$Keys 42
+typedef jobject (*func_com_badlogic_gdx_utils_ObjectFloatMap_keys_R_com_badlogic_gdx_utils_ObjectFloatMap$Keys)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_utils_ObjectFloatMap(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_utils_ObjectFloatMap(jcontext ctx);
+void init_com_badlogic_gdx_utils_ObjectFloatMap(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_utils_ObjectFloatMap_int(jcontext ctx, jobject self, jint param0);
+void init_com_badlogic_gdx_utils_ObjectFloatMap_int_float(jcontext ctx, jobject self, jint param0, jfloat param1);
+void init_com_badlogic_gdx_utils_ObjectFloatMap_com_badlogic_gdx_utils_ObjectFloatMap(jcontext ctx, jobject self, jobject param0);
+jint M_com_badlogic_gdx_utils_ObjectFloatMap_place_java_lang_Object_R_int(jcontext ctx, jobject self, jobject param0);
+jint M_com_badlogic_gdx_utils_ObjectFloatMap_locateKey_java_lang_Object_R_int(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_ObjectFloatMap_put_java_lang_Object_float(jcontext ctx, jobject self, jobject param0, jfloat param1);
+jfloat M_com_badlogic_gdx_utils_ObjectFloatMap_put_java_lang_Object_float_float_R_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_utils_ObjectFloatMap_putMissing_java_lang_Object_float(jcontext ctx, jobject self, jobject param0, jfloat param1);
+jfloat M_com_badlogic_gdx_utils_ObjectFloatMap_putMissing_java_lang_Object_float_float_R_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_utils_ObjectFloatMap_putAll_com_badlogic_gdx_utils_ObjectFloatMap(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_ObjectFloatMap_putResize_java_lang_Object_float(jcontext ctx, jobject self, jobject param0, jfloat param1);
+jfloat M_com_badlogic_gdx_utils_ObjectFloatMap_get_java_lang_Object_float_R_float(jcontext ctx, jobject self, jobject param0, jfloat param1);
+jfloat M_com_badlogic_gdx_utils_ObjectFloatMap_getAndIncrement_java_lang_Object_float_float_R_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+jfloat M_com_badlogic_gdx_utils_ObjectFloatMap_remove_java_lang_Object_float_R_float(jcontext ctx, jobject self, jobject param0, jfloat param1);
+jbool M_com_badlogic_gdx_utils_ObjectFloatMap_notEmpty_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_ObjectFloatMap_isEmpty_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_ObjectFloatMap_shrink_int(jcontext ctx, jobject self, jint param0);
+void M_com_badlogic_gdx_utils_ObjectFloatMap_clear_int(jcontext ctx, jobject self, jint param0);
+void M_com_badlogic_gdx_utils_ObjectFloatMap_clear(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_ObjectFloatMap_containsValue_float_R_boolean(jcontext ctx, jobject self, jfloat param0);
+jbool M_com_badlogic_gdx_utils_ObjectFloatMap_containsValue_float_float_R_boolean(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+jbool M_com_badlogic_gdx_utils_ObjectFloatMap_containsKey_java_lang_Object_R_boolean(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_ObjectFloatMap_findKey_float_R_java_lang_Object(jcontext ctx, jobject self, jfloat param0);
+jobject M_com_badlogic_gdx_utils_ObjectFloatMap_findKey_float_float_R_java_lang_Object(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+void M_com_badlogic_gdx_utils_ObjectFloatMap_ensureCapacity_int(jcontext ctx, jobject self, jint param0);
+void M_com_badlogic_gdx_utils_ObjectFloatMap_resize_int(jcontext ctx, jobject self, jint param0);
+jint M_com_badlogic_gdx_utils_ObjectFloatMap_hashCode_R_int(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_ObjectFloatMap_equals_java_lang_Object_R_boolean(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_ObjectFloatMap_toString_java_lang_String_R_java_lang_String(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_ObjectFloatMap_toString_R_java_lang_String(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_ObjectFloatMap_toString_java_lang_String_boolean_R_java_lang_String(jcontext ctx, jobject self, jobject param0, jbool param1);
+jobject M_com_badlogic_gdx_utils_ObjectFloatMap_iterator_R_com_badlogic_gdx_utils_ObjectFloatMap$Entries(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_ObjectFloatMap_entries_R_com_badlogic_gdx_utils_ObjectFloatMap$Entries(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_ObjectFloatMap_values_R_com_badlogic_gdx_utils_ObjectFloatMap$Values(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_ObjectFloatMap_keys_R_com_badlogic_gdx_utils_ObjectFloatMap$Keys(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_ObjectFloatMap_iterator_R_java_util_Iterator(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

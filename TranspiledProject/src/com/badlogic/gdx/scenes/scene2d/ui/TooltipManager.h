@@ -1,0 +1,87 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager
+#define HEADER_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_ui_TooltipManager {
+	java_lang_Object parent;
+	jfloat F_initialTime;
+	jfloat F_subsequentTime;
+	jfloat F_resetTime;
+	jbool F_enabled;
+	jbool F_animations;
+	jfloat F_maxWidth;
+	jfloat F_offsetX;
+	jfloat F_offsetY;
+	jfloat F_edgeDistance;
+	jref F_shown;
+	jfloat F_time;
+	jref F_resetTask;
+	jref F_showTooltip;
+	jref F_showTask;
+} com_badlogic_gdx_scenes_scene2d_ui_TooltipManager;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager;
+
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_instance;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_files;
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_touchDown_com_badlogic_gdx_scenes_scene2d_ui_Tooltip 11
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_touchDown_com_badlogic_gdx_scenes_scene2d_ui_Tooltip)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_enter_com_badlogic_gdx_scenes_scene2d_ui_Tooltip 12
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_enter_com_badlogic_gdx_scenes_scene2d_ui_Tooltip)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_hide_com_badlogic_gdx_scenes_scene2d_ui_Tooltip 13
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_hide_com_badlogic_gdx_scenes_scene2d_ui_Tooltip)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_showAction_com_badlogic_gdx_scenes_scene2d_ui_Tooltip 14
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_showAction_com_badlogic_gdx_scenes_scene2d_ui_Tooltip)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_hideAction_com_badlogic_gdx_scenes_scene2d_ui_Tooltip 15
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_hideAction_com_badlogic_gdx_scenes_scene2d_ui_Tooltip)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_hideAll 16
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_hideAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_instant 17
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_instant)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_touchDown_com_badlogic_gdx_scenes_scene2d_ui_Tooltip(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_enter_com_badlogic_gdx_scenes_scene2d_ui_Tooltip(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_hide_com_badlogic_gdx_scenes_scene2d_ui_Tooltip(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_showAction_com_badlogic_gdx_scenes_scene2d_ui_Tooltip(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_hideAction_com_badlogic_gdx_scenes_scene2d_ui_Tooltip(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_hideAll(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_instant(jcontext ctx, jobject self);
+jobject SM_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager_getInstance_R_com_badlogic_gdx_scenes_scene2d_ui_TooltipManager(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

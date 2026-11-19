@@ -1,0 +1,390 @@
+#ifndef HEADER_com_badlogic_gdx_utils_JsonValue
+#define HEADER_com_badlogic_gdx_utils_JsonValue
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "java/lang/Iterable.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_utils_JsonValue {
+	java_lang_Object parent;
+	jref F_type;
+	jref F_stringValue;
+	jdouble F_doubleValue;
+	jlong F_longValue;
+	jref F_name;
+	jref F_child;
+	jref F_last;
+	jref F_parent;
+	jref F_next;
+	jref F_prev;
+	jint F_size;
+} com_badlogic_gdx_utils_JsonValue;
+
+extern Class class_com_badlogic_gdx_utils_JsonValue;
+
+
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_utils_JsonValue_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_finalize 5
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_notify 6
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_notifyAll 7
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_wait 8
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_wait_long 9
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_iterator_R_java_util_Iterator 11
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_iterator_R_java_util_Iterator)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_forEach_java_util_function_Consumer 12
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_forEach_java_util_function_Consumer)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_spliterator_R_java_util_Spliterator 13
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_spliterator_R_java_util_Spliterator)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_get_int_R_com_badlogic_gdx_utils_JsonValue 14
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_get_int_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_get_java_lang_String_R_com_badlogic_gdx_utils_JsonValue 15
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_get_java_lang_String_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getIgnoreCase_java_lang_String_R_com_badlogic_gdx_utils_JsonValue 16
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_getIgnoreCase_java_lang_String_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_has_java_lang_String_R_boolean 17
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_has_java_lang_String_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_iterator_java_lang_String_R_com_badlogic_gdx_utils_JsonValue$JsonIterator 18
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_iterator_java_lang_String_R_com_badlogic_gdx_utils_JsonValue$JsonIterator)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_require_int_R_com_badlogic_gdx_utils_JsonValue 19
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_require_int_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_require_java_lang_String_R_com_badlogic_gdx_utils_JsonValue 20
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_require_java_lang_String_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_remove_int_R_com_badlogic_gdx_utils_JsonValue 21
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_remove_int_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_remove_java_lang_String_R_com_badlogic_gdx_utils_JsonValue 22
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_remove_java_lang_String_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_remove 23
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_remove)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_notEmpty_R_boolean 24
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_notEmpty_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_isEmpty_R_boolean 25
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_isEmpty_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_size_R_int 26
+typedef jint (*func_com_badlogic_gdx_utils_JsonValue_size_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asString_R_java_lang_String 27
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_asString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asFloat_R_float 28
+typedef jfloat (*func_com_badlogic_gdx_utils_JsonValue_asFloat_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asDouble_R_double 29
+typedef jdouble (*func_com_badlogic_gdx_utils_JsonValue_asDouble_R_double)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asLong_R_long 30
+typedef jlong (*func_com_badlogic_gdx_utils_JsonValue_asLong_R_long)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asInt_R_int 31
+typedef jint (*func_com_badlogic_gdx_utils_JsonValue_asInt_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asBoolean_R_boolean 32
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_asBoolean_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asByte_R_byte 33
+typedef jbyte (*func_com_badlogic_gdx_utils_JsonValue_asByte_R_byte)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asShort_R_short 34
+typedef jshort (*func_com_badlogic_gdx_utils_JsonValue_asShort_R_short)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asChar_R_char 35
+typedef jchar (*func_com_badlogic_gdx_utils_JsonValue_asChar_R_char)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asStringArray_R_Array1_java_lang_String 36
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_asStringArray_R_Array1_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asFloatArray_R_Array1_float 37
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_asFloatArray_R_Array1_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asDoubleArray_R_Array1_double 38
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_asDoubleArray_R_Array1_double)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asLongArray_R_Array1_long 39
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_asLongArray_R_Array1_long)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asIntArray_R_Array1_int 40
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_asIntArray_R_Array1_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asBooleanArray_R_Array1_boolean 41
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_asBooleanArray_R_Array1_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asByteArray_R_Array1_byte 42
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_asByteArray_R_Array1_byte)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asShortArray_R_Array1_short 43
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_asShortArray_R_Array1_short)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_asCharArray_R_Array1_char 44
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_asCharArray_R_Array1_char)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_hasChild_java_lang_String_R_boolean 45
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_hasChild_java_lang_String_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getChild_java_lang_String_R_com_badlogic_gdx_utils_JsonValue 46
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_getChild_java_lang_String_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getString_java_lang_String_java_lang_String_R_java_lang_String 47
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_getString_java_lang_String_java_lang_String_R_java_lang_String)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getFloat_java_lang_String_float_R_float 48
+typedef jfloat (*func_com_badlogic_gdx_utils_JsonValue_getFloat_java_lang_String_float_R_float)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getDouble_java_lang_String_double_R_double 49
+typedef jdouble (*func_com_badlogic_gdx_utils_JsonValue_getDouble_java_lang_String_double_R_double)(jcontext ctx, jobject self, jobject param0, jdouble param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getLong_java_lang_String_long_R_long 50
+typedef jlong (*func_com_badlogic_gdx_utils_JsonValue_getLong_java_lang_String_long_R_long)(jcontext ctx, jobject self, jobject param0, jlong param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getInt_java_lang_String_int_R_int 51
+typedef jint (*func_com_badlogic_gdx_utils_JsonValue_getInt_java_lang_String_int_R_int)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getBoolean_java_lang_String_boolean_R_boolean 52
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_getBoolean_java_lang_String_boolean_R_boolean)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getByte_java_lang_String_byte_R_byte 53
+typedef jbyte (*func_com_badlogic_gdx_utils_JsonValue_getByte_java_lang_String_byte_R_byte)(jcontext ctx, jobject self, jobject param0, jbyte param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getShort_java_lang_String_short_R_short 54
+typedef jshort (*func_com_badlogic_gdx_utils_JsonValue_getShort_java_lang_String_short_R_short)(jcontext ctx, jobject self, jobject param0, jshort param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getChar_java_lang_String_char_R_char 55
+typedef jchar (*func_com_badlogic_gdx_utils_JsonValue_getChar_java_lang_String_char_R_char)(jcontext ctx, jobject self, jobject param0, jchar param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getString_java_lang_String_R_java_lang_String 56
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_getString_java_lang_String_R_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getFloat_java_lang_String_R_float 57
+typedef jfloat (*func_com_badlogic_gdx_utils_JsonValue_getFloat_java_lang_String_R_float)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getDouble_java_lang_String_R_double 58
+typedef jdouble (*func_com_badlogic_gdx_utils_JsonValue_getDouble_java_lang_String_R_double)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getLong_java_lang_String_R_long 59
+typedef jlong (*func_com_badlogic_gdx_utils_JsonValue_getLong_java_lang_String_R_long)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getInt_java_lang_String_R_int 60
+typedef jint (*func_com_badlogic_gdx_utils_JsonValue_getInt_java_lang_String_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getBoolean_java_lang_String_R_boolean 61
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_getBoolean_java_lang_String_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getByte_java_lang_String_R_byte 62
+typedef jbyte (*func_com_badlogic_gdx_utils_JsonValue_getByte_java_lang_String_R_byte)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getShort_java_lang_String_R_short 63
+typedef jshort (*func_com_badlogic_gdx_utils_JsonValue_getShort_java_lang_String_R_short)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getChar_java_lang_String_R_char 64
+typedef jchar (*func_com_badlogic_gdx_utils_JsonValue_getChar_java_lang_String_R_char)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getString_int_R_java_lang_String 65
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_getString_int_R_java_lang_String)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getFloat_int_R_float 66
+typedef jfloat (*func_com_badlogic_gdx_utils_JsonValue_getFloat_int_R_float)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getDouble_int_R_double 67
+typedef jdouble (*func_com_badlogic_gdx_utils_JsonValue_getDouble_int_R_double)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getLong_int_R_long 68
+typedef jlong (*func_com_badlogic_gdx_utils_JsonValue_getLong_int_R_long)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getInt_int_R_int 69
+typedef jint (*func_com_badlogic_gdx_utils_JsonValue_getInt_int_R_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getBoolean_int_R_boolean 70
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_getBoolean_int_R_boolean)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getByte_int_R_byte 71
+typedef jbyte (*func_com_badlogic_gdx_utils_JsonValue_getByte_int_R_byte)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getShort_int_R_short 72
+typedef jshort (*func_com_badlogic_gdx_utils_JsonValue_getShort_int_R_short)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_getChar_int_R_char 73
+typedef jchar (*func_com_badlogic_gdx_utils_JsonValue_getChar_int_R_char)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_type_R_com_badlogic_gdx_utils_JsonValue$ValueType 74
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_type_R_com_badlogic_gdx_utils_JsonValue$ValueType)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_setType_com_badlogic_gdx_utils_JsonValue$ValueType 75
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_setType_com_badlogic_gdx_utils_JsonValue$ValueType)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_isArray_R_boolean 76
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_isArray_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_isObject_R_boolean 77
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_isObject_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_isString_R_boolean 78
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_isString_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_isNumber_R_boolean 79
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_isNumber_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_isDouble_R_boolean 80
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_isDouble_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_isLong_R_boolean 81
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_isLong_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_isBoolean_R_boolean 82
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_isBoolean_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_isNull_R_boolean 83
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_isNull_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_isValue_R_boolean 84
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_isValue_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_name_R_java_lang_String 85
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_name_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_setName_java_lang_String 86
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_setName_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_parent_R_com_badlogic_gdx_utils_JsonValue 87
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_parent_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_child_R_com_badlogic_gdx_utils_JsonValue 88
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_child_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_last_R_com_badlogic_gdx_utils_JsonValue 89
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_last_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_setChild_java_lang_String_com_badlogic_gdx_utils_JsonValue 90
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_setChild_java_lang_String_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_setChild_com_badlogic_gdx_utils_JsonValue 91
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_setChild_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_replace_com_badlogic_gdx_utils_JsonValue 92
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_replace_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_addChild_java_lang_String_com_badlogic_gdx_utils_JsonValue 93
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_addChild_java_lang_String_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_addChild_com_badlogic_gdx_utils_JsonValue 94
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_addChild_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_addChildFirst_com_badlogic_gdx_utils_JsonValue 95
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_addChildFirst_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_next_R_com_badlogic_gdx_utils_JsonValue 96
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_next_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_setNext_com_badlogic_gdx_utils_JsonValue 97
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_setNext_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_prev_R_com_badlogic_gdx_utils_JsonValue 98
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_prev_R_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_setPrev_com_badlogic_gdx_utils_JsonValue 99
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_setPrev_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_set_com_badlogic_gdx_utils_JsonValue 100
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_set_com_badlogic_gdx_utils_JsonValue)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_set_java_lang_String 101
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_set_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_setNull 102
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_setNull)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_set_double_java_lang_String 103
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_set_double_java_lang_String)(jcontext ctx, jobject self, jdouble param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_set_long_java_lang_String 104
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_set_long_java_lang_String)(jcontext ctx, jobject self, jlong param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_set_boolean 105
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_set_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_equalsString_java_lang_String_R_boolean 106
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_equalsString_java_lang_String_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_nameEquals_java_lang_String_R_boolean 107
+typedef jbool (*func_com_badlogic_gdx_utils_JsonValue_nameEquals_java_lang_String_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_toJson_com_badlogic_gdx_utils_JsonWriter$OutputType_R_java_lang_String 108
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_toJson_com_badlogic_gdx_utils_JsonWriter$OutputType_R_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_toJson_com_badlogic_gdx_utils_JsonWriter$OutputType_java_io_Writer 109
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_toJson_com_badlogic_gdx_utils_JsonWriter$OutputType_java_io_Writer)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_iterator_R_com_badlogic_gdx_utils_JsonValue$JsonIterator 110
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_iterator_R_com_badlogic_gdx_utils_JsonValue$JsonIterator)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_trace_R_java_lang_String 111
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_trace_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonWriter$OutputType_int_R_java_lang_String 112
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonWriter$OutputType_int_R_java_lang_String)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonValue$PrettyPrintSettings_R_java_lang_String 113
+typedef jobject (*func_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonValue$PrettyPrintSettings_R_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonValue_java_lang_StringBuilder_int_com_badlogic_gdx_utils_JsonValue$PrettyPrintSettings 114
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonValue_java_lang_StringBuilder_int_com_badlogic_gdx_utils_JsonValue$PrettyPrintSettings)(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jobject param3);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonWriter$OutputType_java_io_Writer 115
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonWriter$OutputType_java_io_Writer)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonValue_java_io_Writer_int_com_badlogic_gdx_utils_JsonValue$PrettyPrintSettings 116
+typedef void (*func_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonValue_java_io_Writer_int_com_badlogic_gdx_utils_JsonValue$PrettyPrintSettings)(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jobject param3);
+
+void mark_com_badlogic_gdx_utils_JsonValue(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_utils_JsonValue(jcontext ctx);
+void init_com_badlogic_gdx_utils_JsonValue_com_badlogic_gdx_utils_JsonValue$ValueType(jcontext ctx, jobject self, jobject param0);
+void init_com_badlogic_gdx_utils_JsonValue_java_lang_String(jcontext ctx, jobject self, jobject param0);
+void init_com_badlogic_gdx_utils_JsonValue_double(jcontext ctx, jobject self, jdouble param0);
+void init_com_badlogic_gdx_utils_JsonValue_long(jcontext ctx, jobject self, jlong param0);
+void init_com_badlogic_gdx_utils_JsonValue_double_java_lang_String(jcontext ctx, jobject self, jdouble param0, jobject param1);
+void init_com_badlogic_gdx_utils_JsonValue_long_java_lang_String(jcontext ctx, jobject self, jlong param0, jobject param1);
+void init_com_badlogic_gdx_utils_JsonValue_boolean(jcontext ctx, jobject self, jbool param0);
+void init_com_badlogic_gdx_utils_JsonValue_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+void init_com_badlogic_gdx_utils_JsonValue_com_badlogic_gdx_utils_JsonValue_com_badlogic_gdx_utils_JsonValue_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2);
+jobject M_com_badlogic_gdx_utils_JsonValue_get_int_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jint param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_get_java_lang_String_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_getIgnoreCase_java_lang_String_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+jbool M_com_badlogic_gdx_utils_JsonValue_has_java_lang_String_R_boolean(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_iterator_java_lang_String_R_com_badlogic_gdx_utils_JsonValue$JsonIterator(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_require_int_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jint param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_require_java_lang_String_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_remove_int_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jint param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_remove_java_lang_String_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonValue_remove(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_notEmpty_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_isEmpty_R_boolean(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_utils_JsonValue_size_R_int(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_asString_R_java_lang_String(jcontext ctx, jobject self);
+jfloat M_com_badlogic_gdx_utils_JsonValue_asFloat_R_float(jcontext ctx, jobject self);
+jdouble M_com_badlogic_gdx_utils_JsonValue_asDouble_R_double(jcontext ctx, jobject self);
+jlong M_com_badlogic_gdx_utils_JsonValue_asLong_R_long(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_utils_JsonValue_asInt_R_int(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_asBoolean_R_boolean(jcontext ctx, jobject self);
+jbyte M_com_badlogic_gdx_utils_JsonValue_asByte_R_byte(jcontext ctx, jobject self);
+jshort M_com_badlogic_gdx_utils_JsonValue_asShort_R_short(jcontext ctx, jobject self);
+jchar M_com_badlogic_gdx_utils_JsonValue_asChar_R_char(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_asStringArray_R_Array1_java_lang_String(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_asFloatArray_R_Array1_float(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_asDoubleArray_R_Array1_double(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_asLongArray_R_Array1_long(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_asIntArray_R_Array1_int(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_asBooleanArray_R_Array1_boolean(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_asByteArray_R_Array1_byte(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_asShortArray_R_Array1_short(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_asCharArray_R_Array1_char(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_hasChild_java_lang_String_R_boolean(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_getChild_java_lang_String_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_getString_java_lang_String_java_lang_String_R_java_lang_String(jcontext ctx, jobject self, jobject param0, jobject param1);
+jfloat M_com_badlogic_gdx_utils_JsonValue_getFloat_java_lang_String_float_R_float(jcontext ctx, jobject self, jobject param0, jfloat param1);
+jdouble M_com_badlogic_gdx_utils_JsonValue_getDouble_java_lang_String_double_R_double(jcontext ctx, jobject self, jobject param0, jdouble param1);
+jlong M_com_badlogic_gdx_utils_JsonValue_getLong_java_lang_String_long_R_long(jcontext ctx, jobject self, jobject param0, jlong param1);
+jint M_com_badlogic_gdx_utils_JsonValue_getInt_java_lang_String_int_R_int(jcontext ctx, jobject self, jobject param0, jint param1);
+jbool M_com_badlogic_gdx_utils_JsonValue_getBoolean_java_lang_String_boolean_R_boolean(jcontext ctx, jobject self, jobject param0, jbool param1);
+jbyte M_com_badlogic_gdx_utils_JsonValue_getByte_java_lang_String_byte_R_byte(jcontext ctx, jobject self, jobject param0, jbyte param1);
+jshort M_com_badlogic_gdx_utils_JsonValue_getShort_java_lang_String_short_R_short(jcontext ctx, jobject self, jobject param0, jshort param1);
+jchar M_com_badlogic_gdx_utils_JsonValue_getChar_java_lang_String_char_R_char(jcontext ctx, jobject self, jobject param0, jchar param1);
+jobject M_com_badlogic_gdx_utils_JsonValue_getString_java_lang_String_R_java_lang_String(jcontext ctx, jobject self, jobject param0);
+jfloat M_com_badlogic_gdx_utils_JsonValue_getFloat_java_lang_String_R_float(jcontext ctx, jobject self, jobject param0);
+jdouble M_com_badlogic_gdx_utils_JsonValue_getDouble_java_lang_String_R_double(jcontext ctx, jobject self, jobject param0);
+jlong M_com_badlogic_gdx_utils_JsonValue_getLong_java_lang_String_R_long(jcontext ctx, jobject self, jobject param0);
+jint M_com_badlogic_gdx_utils_JsonValue_getInt_java_lang_String_R_int(jcontext ctx, jobject self, jobject param0);
+jbool M_com_badlogic_gdx_utils_JsonValue_getBoolean_java_lang_String_R_boolean(jcontext ctx, jobject self, jobject param0);
+jbyte M_com_badlogic_gdx_utils_JsonValue_getByte_java_lang_String_R_byte(jcontext ctx, jobject self, jobject param0);
+jshort M_com_badlogic_gdx_utils_JsonValue_getShort_java_lang_String_R_short(jcontext ctx, jobject self, jobject param0);
+jchar M_com_badlogic_gdx_utils_JsonValue_getChar_java_lang_String_R_char(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_getString_int_R_java_lang_String(jcontext ctx, jobject self, jint param0);
+jfloat M_com_badlogic_gdx_utils_JsonValue_getFloat_int_R_float(jcontext ctx, jobject self, jint param0);
+jdouble M_com_badlogic_gdx_utils_JsonValue_getDouble_int_R_double(jcontext ctx, jobject self, jint param0);
+jlong M_com_badlogic_gdx_utils_JsonValue_getLong_int_R_long(jcontext ctx, jobject self, jint param0);
+jint M_com_badlogic_gdx_utils_JsonValue_getInt_int_R_int(jcontext ctx, jobject self, jint param0);
+jbool M_com_badlogic_gdx_utils_JsonValue_getBoolean_int_R_boolean(jcontext ctx, jobject self, jint param0);
+jbyte M_com_badlogic_gdx_utils_JsonValue_getByte_int_R_byte(jcontext ctx, jobject self, jint param0);
+jshort M_com_badlogic_gdx_utils_JsonValue_getShort_int_R_short(jcontext ctx, jobject self, jint param0);
+jchar M_com_badlogic_gdx_utils_JsonValue_getChar_int_R_char(jcontext ctx, jobject self, jint param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_type_R_com_badlogic_gdx_utils_JsonValue$ValueType(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonValue_setType_com_badlogic_gdx_utils_JsonValue$ValueType(jcontext ctx, jobject self, jobject param0);
+jbool M_com_badlogic_gdx_utils_JsonValue_isArray_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_isObject_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_isString_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_isNumber_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_isDouble_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_isLong_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_isBoolean_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_isNull_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_JsonValue_isValue_R_boolean(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_name_R_java_lang_String(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonValue_setName_java_lang_String(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_parent_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_child_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_last_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonValue_setChild_java_lang_String_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_utils_JsonValue_setChild_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonValue_replace_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonValue_addChild_java_lang_String_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_utils_JsonValue_addChild_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonValue_addChildFirst_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_next_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonValue_setNext_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_prev_R_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonValue_setPrev_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonValue_set_com_badlogic_gdx_utils_JsonValue(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonValue_set_java_lang_String(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonValue_setNull(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonValue_set_double_java_lang_String(jcontext ctx, jobject self, jdouble param0, jobject param1);
+void M_com_badlogic_gdx_utils_JsonValue_set_long_java_lang_String(jcontext ctx, jobject self, jlong param0, jobject param1);
+void M_com_badlogic_gdx_utils_JsonValue_set_boolean(jcontext ctx, jobject self, jbool param0);
+jbool M_com_badlogic_gdx_utils_JsonValue_equalsString_java_lang_String_R_boolean(jcontext ctx, jobject self, jobject param0);
+jbool M_com_badlogic_gdx_utils_JsonValue_nameEquals_java_lang_String_R_boolean(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonValue_toJson_com_badlogic_gdx_utils_JsonWriter$OutputType_R_java_lang_String(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonValue_toJson_com_badlogic_gdx_utils_JsonWriter$OutputType_java_io_Writer(jcontext ctx, jobject self, jobject param0, jobject param1);
+jobject M_com_badlogic_gdx_utils_JsonValue_iterator_R_com_badlogic_gdx_utils_JsonValue$JsonIterator(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_toString_R_java_lang_String(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_trace_R_java_lang_String(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonWriter$OutputType_int_R_java_lang_String(jcontext ctx, jobject self, jobject param0, jint param1);
+jobject M_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonValue$PrettyPrintSettings_R_java_lang_String(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonValue_java_lang_StringBuilder_int_com_badlogic_gdx_utils_JsonValue$PrettyPrintSettings(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jobject param3);
+void M_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonWriter$OutputType_java_io_Writer(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_utils_JsonValue_prettyPrint_com_badlogic_gdx_utils_JsonValue_java_io_Writer_int_com_badlogic_gdx_utils_JsonValue$PrettyPrintSettings(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jobject param3);
+jbool SM_com_badlogic_gdx_utils_JsonValue_isFlat_com_badlogic_gdx_utils_JsonValue_R_boolean(jcontext ctx, jobject param0);
+jbool SM_com_badlogic_gdx_utils_JsonValue_isNumeric_com_badlogic_gdx_utils_JsonValue_R_boolean(jcontext ctx, jobject param0);
+void SM_com_badlogic_gdx_utils_JsonValue_indent_int_java_lang_StringBuilder(jcontext ctx, jint param0, jobject param1);
+void SM_com_badlogic_gdx_utils_JsonValue_indent_int_java_io_Writer(jcontext ctx, jint param0, jobject param1);
+jobject M_com_badlogic_gdx_utils_JsonValue_iterator_R_java_util_Iterator(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

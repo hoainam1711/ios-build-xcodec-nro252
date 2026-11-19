@@ -1,0 +1,113 @@
+#ifndef HEADER_com_badlogic_gdx_utils_IdentityMap
+#define HEADER_com_badlogic_gdx_utils_IdentityMap
+
+#include "Clearwing.h"
+#include "com/badlogic/gdx/utils/ObjectMap.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_utils_IdentityMap {
+	com_badlogic_gdx_utils_ObjectMap parent;
+} com_badlogic_gdx_utils_IdentityMap;
+
+extern Class class_com_badlogic_gdx_utils_IdentityMap;
+
+
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_utils_IdentityMap_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_utils_IdentityMap_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_finalize 5
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_notify 6
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_notifyAll 7
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_wait 8
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_wait_long 9
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_iterator_R_java_util_Iterator 11
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_iterator_R_java_util_Iterator)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_forEach_java_util_function_Consumer 12
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_forEach_java_util_function_Consumer)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_spliterator_R_java_util_Spliterator 13
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_spliterator_R_java_util_Spliterator)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_place_java_lang_Object_R_int 14
+typedef jint (*func_com_badlogic_gdx_utils_IdentityMap_place_java_lang_Object_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_locateKey_java_lang_Object_R_int 15
+typedef jint (*func_com_badlogic_gdx_utils_IdentityMap_locateKey_java_lang_Object_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_put_java_lang_Object_java_lang_Object_R_java_lang_Object 16
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_put_java_lang_Object_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_putMissing_java_lang_Object_java_lang_Object_R_java_lang_Object 17
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_putMissing_java_lang_Object_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_putAll_com_badlogic_gdx_utils_ObjectMap 18
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_putAll_com_badlogic_gdx_utils_ObjectMap)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_putResize_java_lang_Object_java_lang_Object 19
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_putResize_java_lang_Object_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_get_java_lang_Object_R_java_lang_Object 20
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_get_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_get_java_lang_Object_java_lang_Object_R_java_lang_Object 21
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_get_java_lang_Object_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_remove_java_lang_Object_R_java_lang_Object 22
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_remove_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_notEmpty_R_boolean 23
+typedef jbool (*func_com_badlogic_gdx_utils_IdentityMap_notEmpty_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_isEmpty_R_boolean 24
+typedef jbool (*func_com_badlogic_gdx_utils_IdentityMap_isEmpty_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_shrink_int 25
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_shrink_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_clear_int 26
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_clear_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_clear 27
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_clear)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_containsValue_java_lang_Object_boolean_R_boolean 28
+typedef jbool (*func_com_badlogic_gdx_utils_IdentityMap_containsValue_java_lang_Object_boolean_R_boolean)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_containsKey_java_lang_Object_R_boolean 29
+typedef jbool (*func_com_badlogic_gdx_utils_IdentityMap_containsKey_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_findKey_java_lang_Object_boolean_R_java_lang_Object 30
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_findKey_java_lang_Object_boolean_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_ensureCapacity_int 31
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_ensureCapacity_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_resize_int 32
+typedef void (*func_com_badlogic_gdx_utils_IdentityMap_resize_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_equalsIdentity_java_lang_Object_R_boolean 33
+typedef jbool (*func_com_badlogic_gdx_utils_IdentityMap_equalsIdentity_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_toString_java_lang_String_R_java_lang_String 34
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_toString_java_lang_String_R_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_toString_java_lang_String_boolean_R_java_lang_String 35
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_toString_java_lang_String_boolean_R_java_lang_String)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_iterator_R_com_badlogic_gdx_utils_ObjectMap$Entries 36
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_iterator_R_com_badlogic_gdx_utils_ObjectMap$Entries)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_entries_R_com_badlogic_gdx_utils_ObjectMap$Entries 37
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_entries_R_com_badlogic_gdx_utils_ObjectMap$Entries)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_values_R_com_badlogic_gdx_utils_ObjectMap$Values 38
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_values_R_com_badlogic_gdx_utils_ObjectMap$Values)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_IdentityMap_keys_R_com_badlogic_gdx_utils_ObjectMap$Keys 39
+typedef jobject (*func_com_badlogic_gdx_utils_IdentityMap_keys_R_com_badlogic_gdx_utils_ObjectMap$Keys)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_utils_IdentityMap(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_utils_IdentityMap(jcontext ctx);
+void init_com_badlogic_gdx_utils_IdentityMap(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_utils_IdentityMap_int(jcontext ctx, jobject self, jint param0);
+void init_com_badlogic_gdx_utils_IdentityMap_int_float(jcontext ctx, jobject self, jint param0, jfloat param1);
+void init_com_badlogic_gdx_utils_IdentityMap_com_badlogic_gdx_utils_IdentityMap(jcontext ctx, jobject self, jobject param0);
+jint M_com_badlogic_gdx_utils_IdentityMap_place_java_lang_Object_R_int(jcontext ctx, jobject self, jobject param0);
+jint M_com_badlogic_gdx_utils_IdentityMap_locateKey_java_lang_Object_R_int(jcontext ctx, jobject self, jobject param0);
+jint M_com_badlogic_gdx_utils_IdentityMap_hashCode_R_int(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

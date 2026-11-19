@@ -1,0 +1,55 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener
+#define HEADER_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/scenes/scene2d/EventListener.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_utils_ChangeListener {
+	java_lang_Object parent;
+} com_badlogic_gdx_scenes_scene2d_utils_ChangeListener;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener;
+
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_handle_com_badlogic_gdx_scenes_scene2d_Event_R_boolean 11
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_handle_com_badlogic_gdx_scenes_scene2d_Event_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_changed_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener$ChangeEvent_com_badlogic_gdx_scenes_scene2d_Actor 12
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_changed_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener$ChangeEvent_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self, jobject param0, jobject param1);
+
+void mark_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_scenes_scene2d_utils_ChangeListener_handle_com_badlogic_gdx_scenes_scene2d_Event_R_boolean(jcontext ctx, jobject self, jobject param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

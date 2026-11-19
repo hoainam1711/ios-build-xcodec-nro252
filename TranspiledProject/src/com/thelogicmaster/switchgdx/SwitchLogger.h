@@ -1,0 +1,68 @@
+#ifndef HEADER_com_thelogicmaster_switchgdx_SwitchLogger
+#define HEADER_com_thelogicmaster_switchgdx_SwitchLogger
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/ApplicationLogger.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_thelogicmaster_switchgdx_SwitchLogger {
+	java_lang_Object parent;
+} com_thelogicmaster_switchgdx_SwitchLogger;
+
+extern Class class_com_thelogicmaster_switchgdx_SwitchLogger;
+
+
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_hashCode_R_int 0
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchLogger_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchLogger_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_clone_R_java_lang_Object 2
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchLogger_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchLogger_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_toString_R_java_lang_String 4
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchLogger_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_finalize 5
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_notify 6
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_notifyAll 7
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_wait 8
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_wait_long 9
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_wait_long_int 10
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_log_java_lang_String_java_lang_String 11
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_log_java_lang_String_java_lang_String)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_log_java_lang_String_java_lang_String_java_lang_Throwable 12
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_log_java_lang_String_java_lang_String_java_lang_Throwable)(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_error_java_lang_String_java_lang_String 13
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_error_java_lang_String_java_lang_String)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_error_java_lang_String_java_lang_String_java_lang_Throwable 14
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_error_java_lang_String_java_lang_String_java_lang_Throwable)(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_debug_java_lang_String_java_lang_String 15
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_debug_java_lang_String_java_lang_String)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchLogger_debug_java_lang_String_java_lang_String_java_lang_Throwable 16
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchLogger_debug_java_lang_String_java_lang_String_java_lang_Throwable)(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2);
+
+void mark_com_thelogicmaster_switchgdx_SwitchLogger(jobject object, jint mark, jint depth);
+void clinit_com_thelogicmaster_switchgdx_SwitchLogger(jcontext ctx);
+void init_com_thelogicmaster_switchgdx_SwitchLogger(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchLogger_log_java_lang_String_java_lang_String(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchLogger_log_java_lang_String_java_lang_String_java_lang_Throwable(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchLogger_error_java_lang_String_java_lang_String(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchLogger_error_java_lang_String_java_lang_String_java_lang_Throwable(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2);
+void M_com_thelogicmaster_switchgdx_SwitchLogger_debug_java_lang_String_java_lang_String(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_thelogicmaster_switchgdx_SwitchLogger_debug_java_lang_String_java_lang_String_java_lang_Throwable(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

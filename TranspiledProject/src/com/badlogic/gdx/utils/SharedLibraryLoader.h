@@ -1,0 +1,79 @@
+#ifndef HEADER_com_badlogic_gdx_utils_SharedLibraryLoader
+#define HEADER_com_badlogic_gdx_utils_SharedLibraryLoader
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_utils_SharedLibraryLoader {
+	java_lang_Object parent;
+} com_badlogic_gdx_utils_SharedLibraryLoader;
+
+extern Class class_com_badlogic_gdx_utils_SharedLibraryLoader;
+
+extern jobject SF_com_badlogic_gdx_utils_SharedLibraryLoader_os;
+extern jobject SF_com_badlogic_gdx_utils_SharedLibraryLoader_bitness;
+extern jobject SF_com_badlogic_gdx_utils_SharedLibraryLoader_architecture;
+extern jbool SF_com_badlogic_gdx_utils_SharedLibraryLoader_isWindows;
+extern jbool SF_com_badlogic_gdx_utils_SharedLibraryLoader_isLinux;
+extern jbool SF_com_badlogic_gdx_utils_SharedLibraryLoader_isMac;
+extern jbool SF_com_badlogic_gdx_utils_SharedLibraryLoader_isIos;
+extern jbool SF_com_badlogic_gdx_utils_SharedLibraryLoader_isAndroid;
+extern jbool SF_com_badlogic_gdx_utils_SharedLibraryLoader_isARM;
+extern jbool SF_com_badlogic_gdx_utils_SharedLibraryLoader_is64Bit;
+
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_utils_SharedLibraryLoader_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_utils_SharedLibraryLoader_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_utils_SharedLibraryLoader_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_utils_SharedLibraryLoader_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_utils_SharedLibraryLoader_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_finalize 5
+typedef void (*func_com_badlogic_gdx_utils_SharedLibraryLoader_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_notify 6
+typedef void (*func_com_badlogic_gdx_utils_SharedLibraryLoader_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_notifyAll 7
+typedef void (*func_com_badlogic_gdx_utils_SharedLibraryLoader_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_wait 8
+typedef void (*func_com_badlogic_gdx_utils_SharedLibraryLoader_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_wait_long 9
+typedef void (*func_com_badlogic_gdx_utils_SharedLibraryLoader_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_utils_SharedLibraryLoader_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_crc_java_io_InputStream_R_java_lang_String 11
+typedef jobject (*func_com_badlogic_gdx_utils_SharedLibraryLoader_crc_java_io_InputStream_R_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_mapLibraryName_java_lang_String_R_java_lang_String 12
+typedef jobject (*func_com_badlogic_gdx_utils_SharedLibraryLoader_mapLibraryName_java_lang_String_R_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_load_java_lang_String 13
+typedef void (*func_com_badlogic_gdx_utils_SharedLibraryLoader_load_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_extractFile_java_lang_String_java_lang_String_R_java_io_File 14
+typedef jobject (*func_com_badlogic_gdx_utils_SharedLibraryLoader_extractFile_java_lang_String_java_lang_String_R_java_io_File)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_SharedLibraryLoader_extractFileTo_java_lang_String_java_io_File 15
+typedef void (*func_com_badlogic_gdx_utils_SharedLibraryLoader_extractFileTo_java_lang_String_java_io_File)(jcontext ctx, jobject self, jobject param0, jobject param1);
+
+void mark_com_badlogic_gdx_utils_SharedLibraryLoader(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_utils_SharedLibraryLoader(jcontext ctx);
+void init_com_badlogic_gdx_utils_SharedLibraryLoader(jcontext ctx, jobject self);
+jobject SM_com_badlogic_gdx_utils_SharedLibraryLoader_randomUUID_R_java_lang_String(jcontext ctx);
+void init_com_badlogic_gdx_utils_SharedLibraryLoader_java_lang_String(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_SharedLibraryLoader_crc_java_io_InputStream_R_java_lang_String(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_SharedLibraryLoader_mapLibraryName_java_lang_String_R_java_lang_String(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_SharedLibraryLoader_load_java_lang_String(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_SharedLibraryLoader_extractFile_java_lang_String_java_lang_String_R_java_io_File(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_utils_SharedLibraryLoader_extractFileTo_java_lang_String_java_io_File(jcontext ctx, jobject self, jobject param0, jobject param1);
+void SM_com_badlogic_gdx_utils_SharedLibraryLoader_setLoaded_java_lang_String(jcontext ctx, jobject param0);
+jbool SM_com_badlogic_gdx_utils_SharedLibraryLoader_isLoaded_java_lang_String_R_boolean(jcontext ctx, jobject param0);
+void SM_com_badlogic_gdx_utils_SharedLibraryLoader_closeQuietly_java_io_Closeable(jcontext ctx, jobject param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

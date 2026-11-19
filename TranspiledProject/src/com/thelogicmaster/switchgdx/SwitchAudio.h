@@ -1,0 +1,83 @@
+#ifndef HEADER_com_thelogicmaster_switchgdx_SwitchAudio
+#define HEADER_com_thelogicmaster_switchgdx_SwitchAudio
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/Audio.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_thelogicmaster_switchgdx_SwitchAudio {
+	java_lang_Object parent;
+} com_thelogicmaster_switchgdx_SwitchAudio;
+
+extern Class class_com_thelogicmaster_switchgdx_SwitchAudio;
+
+extern jobject SF_com_thelogicmaster_switchgdx_SwitchAudio_musics;
+extern jobject SF_com_thelogicmaster_switchgdx_SwitchAudio_sounds;
+
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_hashCode_R_int 0
+typedef jint (*func_com_thelogicmaster_switchgdx_SwitchAudio_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchAudio_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_clone_R_java_lang_Object 2
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchAudio_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchAudio_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_toString_R_java_lang_String 4
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchAudio_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_finalize 5
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchAudio_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_notify 6
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchAudio_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_notifyAll 7
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchAudio_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_wait 8
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchAudio_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_wait_long 9
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchAudio_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_wait_long_int 10
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchAudio_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_dispose 11
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchAudio_dispose)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_newAudioDevice_int_boolean_R_com_badlogic_gdx_audio_AudioDevice 12
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchAudio_newAudioDevice_int_boolean_R_com_badlogic_gdx_audio_AudioDevice)(jcontext ctx, jobject self, jint param0, jbool param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_newAudioRecorder_int_boolean_R_com_badlogic_gdx_audio_AudioRecorder 13
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchAudio_newAudioRecorder_int_boolean_R_com_badlogic_gdx_audio_AudioRecorder)(jcontext ctx, jobject self, jint param0, jbool param1);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_newSound_com_badlogic_gdx_files_FileHandle_R_com_badlogic_gdx_audio_Sound 14
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchAudio_newSound_com_badlogic_gdx_files_FileHandle_R_com_badlogic_gdx_audio_Sound)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_newMusic_com_badlogic_gdx_files_FileHandle_R_com_badlogic_gdx_audio_Music 15
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchAudio_newMusic_com_badlogic_gdx_files_FileHandle_R_com_badlogic_gdx_audio_Music)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_switchOutputDevice_java_lang_String_R_boolean 16
+typedef jbool (*func_com_thelogicmaster_switchgdx_SwitchAudio_switchOutputDevice_java_lang_String_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_getAvailableOutputDevices_R_Array1_java_lang_String 17
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchAudio_getAvailableOutputDevices_R_Array1_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_update_float 18
+typedef void (*func_com_thelogicmaster_switchgdx_SwitchAudio_update_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_thelogicmaster_switchgdx_SwitchAudio_newSound_Array1_byte_R_com_thelogicmaster_switchgdx_SwitchSound 19
+typedef jobject (*func_com_thelogicmaster_switchgdx_SwitchAudio_newSound_Array1_byte_R_com_thelogicmaster_switchgdx_SwitchSound)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_thelogicmaster_switchgdx_SwitchAudio(jobject object, jint mark, jint depth);
+void clinit_com_thelogicmaster_switchgdx_SwitchAudio(jcontext ctx);
+void init_com_thelogicmaster_switchgdx_SwitchAudio(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchAudio_update_float(jcontext ctx, jobject self, jfloat param0);
+jobject M_com_thelogicmaster_switchgdx_SwitchAudio_newAudioDevice_int_boolean_R_com_badlogic_gdx_audio_AudioDevice(jcontext ctx, jobject self, jint param0, jbool param1);
+jobject M_com_thelogicmaster_switchgdx_SwitchAudio_newAudioRecorder_int_boolean_R_com_badlogic_gdx_audio_AudioRecorder(jcontext ctx, jobject self, jint param0, jbool param1);
+jobject M_com_thelogicmaster_switchgdx_SwitchAudio_newSound_com_badlogic_gdx_files_FileHandle_R_com_badlogic_gdx_audio_Sound(jcontext ctx, jobject self, jobject param0);
+jobject M_com_thelogicmaster_switchgdx_SwitchAudio_newSound_Array1_byte_R_com_thelogicmaster_switchgdx_SwitchSound(jcontext ctx, jobject self, jobject param0);
+jobject M_com_thelogicmaster_switchgdx_SwitchAudio_newMusic_com_badlogic_gdx_files_FileHandle_R_com_badlogic_gdx_audio_Music(jcontext ctx, jobject self, jobject param0);
+jbool M_com_thelogicmaster_switchgdx_SwitchAudio_switchOutputDevice_java_lang_String_R_boolean(jcontext ctx, jobject self, jobject param0);
+jobject M_com_thelogicmaster_switchgdx_SwitchAudio_getAvailableOutputDevices_R_Array1_java_lang_String(jcontext ctx, jobject self);
+void M_com_thelogicmaster_switchgdx_SwitchAudio_dispose(jcontext ctx, jobject self);
+void SM_com_thelogicmaster_switchgdx_SwitchAudio_onMusicFinished(jcontext ctx);
+void SM_com_thelogicmaster_switchgdx_SwitchAudio_onSoundFinished_int(jcontext ctx, jint param0);
+void SM_com_thelogicmaster_switchgdx_SwitchAudio_lambda$onSoundFinished$1_int(jcontext ctx, jint param0);
+void SM_com_thelogicmaster_switchgdx_SwitchAudio_lambda$onMusicFinished$0(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

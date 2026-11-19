@@ -1,0 +1,233 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_glutils_ShapeRenderer
+#define HEADER_com_badlogic_gdx_graphics_glutils_ShapeRenderer
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/utils/Disposable.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_glutils_ShapeRenderer {
+	java_lang_Object parent;
+	jref F_renderer;
+	jbool F_matrixDirty;
+	jref F_projectionMatrix;
+	jref F_transformMatrix;
+	jref F_combinedMatrix;
+	jref F_tmp;
+	jref F_color;
+	jref F_shapeType;
+	jbool F_autoShapeType;
+	jfloat F_defaultRectLineWidth;
+} com_badlogic_gdx_graphics_glutils_ShapeRenderer;
+
+extern Class class_com_badlogic_gdx_graphics_glutils_ShapeRenderer;
+
+
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_dispose 11
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_dispose)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setColor_com_badlogic_gdx_graphics_Color 12
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setColor_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setColor_float_float_float_float 13
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setColor_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getColor_R_com_badlogic_gdx_graphics_Color 14
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getColor_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_updateMatrices 15
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_updateMatrices)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setProjectionMatrix_com_badlogic_gdx_math_Matrix4 16
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setProjectionMatrix_com_badlogic_gdx_math_Matrix4)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getProjectionMatrix_R_com_badlogic_gdx_math_Matrix4 17
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getProjectionMatrix_R_com_badlogic_gdx_math_Matrix4)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setTransformMatrix_com_badlogic_gdx_math_Matrix4 18
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setTransformMatrix_com_badlogic_gdx_math_Matrix4)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getTransformMatrix_R_com_badlogic_gdx_math_Matrix4 19
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getTransformMatrix_R_com_badlogic_gdx_math_Matrix4)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_identity 20
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_identity)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_translate_float_float_float 21
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_translate_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rotate_float_float_float_float 22
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rotate_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_scale_float_float_float 23
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_scale_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setAutoShapeType_boolean 24
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setAutoShapeType_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_begin 25
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_begin)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_begin_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType 26
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_begin_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_set_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType 27
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_set_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_point_float_float_float 28
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_point_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float_float_float 29
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_com_badlogic_gdx_math_Vector3_com_badlogic_gdx_math_Vector3 30
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_com_badlogic_gdx_math_Vector3_com_badlogic_gdx_math_Vector3)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float 31
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2 32
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color 33
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jobject param4, jobject param5);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color 34
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jobject param6, jobject param7);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_curve_float_float_float_float_float_float_float_float_int 35
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_curve_float_float_float_float_float_float_float_float_int)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jint param8);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_triangle_float_float_float_float_float_float 36
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_triangle_float_float_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_triangle_float_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color 37
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_triangle_float_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jobject param6, jobject param7, jobject param8);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float 38
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color 39
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jobject param4, jobject param5, jobject param6, jobject param7);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float_float_float_float_float_float 40
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float_float_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color 41
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8, jobject param9, jobject param10, jobject param11, jobject param12);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rectLine_float_float_float_float_float 42
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rectLine_float_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rectLine_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color 43
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rectLine_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jobject param5, jobject param6);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rectLine_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_float 44
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rectLine_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_float)(jcontext ctx, jobject self, jobject param0, jobject param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_box_float_float_float_float_float_float 45
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_box_float_float_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_x_float_float_float 46
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_x_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_x_com_badlogic_gdx_math_Vector2_float 47
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_x_com_badlogic_gdx_math_Vector2_float)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_arc_float_float_float_float_float 48
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_arc_float_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_arc_float_float_float_float_float_int 49
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_arc_float_float_float_float_float_int)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jint param5);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_circle_float_float_float 50
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_circle_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_circle_float_float_float_int 51
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_circle_float_float_float_int)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jint param3);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float 52
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float_int 53
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float_int)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jint param4);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float_float 54
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float_float_int 55
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float_float_int)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jint param5);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_cone_float_float_float_float_float 56
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_cone_float_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_cone_float_float_float_float_float_int 57
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_cone_float_float_float_float_float_int)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jint param5);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polygon_Array1_float_int_int 58
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polygon_Array1_float_int_int)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polygon_Array1_float 59
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polygon_Array1_float)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polyline_Array1_float_int_int 60
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polyline_Array1_float_int_int)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polyline_Array1_float 61
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polyline_Array1_float)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_check_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType_int 62
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_check_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType_int)(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_end 63
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_end)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_flush 64
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_flush)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getCurrentType_R_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType 65
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getCurrentType_R_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getRenderer_R_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer 66
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getRenderer_R_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ShapeRenderer_isDrawing_R_boolean 67
+typedef jbool (*func_com_badlogic_gdx_graphics_glutils_ShapeRenderer_isDrawing_R_boolean)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_glutils_ShapeRenderer(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_glutils_ShapeRenderer(jcontext ctx);
+void init_com_badlogic_gdx_graphics_glutils_ShapeRenderer(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_graphics_glutils_ShapeRenderer_int(jcontext ctx, jobject self, jint param0);
+void init_com_badlogic_gdx_graphics_glutils_ShapeRenderer_int_com_badlogic_gdx_graphics_glutils_ShaderProgram(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setColor_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setColor_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+jobject M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getColor_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_updateMatrices(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setProjectionMatrix_com_badlogic_gdx_math_Matrix4(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getProjectionMatrix_R_com_badlogic_gdx_math_Matrix4(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setTransformMatrix_com_badlogic_gdx_math_Matrix4(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getTransformMatrix_R_com_badlogic_gdx_math_Matrix4(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_identity(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_translate_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rotate_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_scale_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_setAutoShapeType_boolean(jcontext ctx, jobject self, jbool param0);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_begin(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_begin_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_set_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_point_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_com_badlogic_gdx_math_Vector3_com_badlogic_gdx_math_Vector3(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jobject param4, jobject param5);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_line_float_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jobject param6, jobject param7);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_curve_float_float_float_float_float_float_float_float_int(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jint param8);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_triangle_float_float_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_triangle_float_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jobject param6, jobject param7, jobject param8);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jobject param4, jobject param5, jobject param6, jobject param7);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float_float_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rect_float_float_float_float_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8, jobject param9, jobject param10, jobject param11, jobject param12);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rectLine_float_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rectLine_float_float_float_float_float_com_badlogic_gdx_graphics_Color_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jobject param5, jobject param6);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_rectLine_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_float(jcontext ctx, jobject self, jobject param0, jobject param1, jfloat param2);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_box_float_float_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_x_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_x_com_badlogic_gdx_math_Vector2_float(jcontext ctx, jobject self, jobject param0, jfloat param1);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_arc_float_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_arc_float_float_float_float_float_int(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jint param5);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_circle_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_circle_float_float_float_int(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jint param3);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float_int(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jint param4);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_ellipse_float_float_float_float_float_int(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jint param5);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_cone_float_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_cone_float_float_float_float_float_int(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jint param5);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polygon_Array1_float_int_int(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polygon_Array1_float(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polyline_Array1_float_int_int(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_polyline_Array1_float(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_check_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType_int(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_end(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_flush(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getCurrentType_R_com_badlogic_gdx_graphics_glutils_ShapeRenderer$ShapeType(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_getRenderer_R_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_isDrawing_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_ShapeRenderer_dispose(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

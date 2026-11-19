@@ -1,0 +1,74 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_Cursor$SystemCursor
+#define HEADER_com_badlogic_gdx_graphics_Cursor$SystemCursor
+
+#include "Clearwing.h"
+#include "java/lang/Enum.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_Cursor$SystemCursor {
+	java_lang_Enum parent;
+} com_badlogic_gdx_graphics_Cursor$SystemCursor;
+
+extern Class class_com_badlogic_gdx_graphics_Cursor$SystemCursor;
+
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_Arrow;
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_Ibeam;
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_Crosshair;
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_Hand;
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_HorizontalResize;
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_VerticalResize;
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_NWSEResize;
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_NESWResize;
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_AllResize;
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_NotAllowed;
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_None;
+extern jobject SF_com_badlogic_gdx_graphics_Cursor$SystemCursor_$VALUES;
+
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_compareTo_java_lang_Object_R_int 11
+typedef jint (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_compareTo_java_lang_Object_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_compareTo_java_lang_Enum_R_int 12
+typedef jint (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_compareTo_java_lang_Enum_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_name_R_java_lang_String 13
+typedef jobject (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_name_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_ordinal_R_int 14
+typedef jint (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_ordinal_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_Cursor$SystemCursor_getDeclaringClass_R_java_lang_Class 15
+typedef jobject (*func_com_badlogic_gdx_graphics_Cursor$SystemCursor_getDeclaringClass_R_java_lang_Class)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_Cursor$SystemCursor(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_Cursor$SystemCursor(jcontext ctx);
+jobject SM_com_badlogic_gdx_graphics_Cursor$SystemCursor_values_R_Array1_com_badlogic_gdx_graphics_Cursor$SystemCursor(jcontext ctx);
+jobject SM_com_badlogic_gdx_graphics_Cursor$SystemCursor_valueOf_java_lang_String_R_com_badlogic_gdx_graphics_Cursor$SystemCursor(jcontext ctx, jobject param0);
+void init_com_badlogic_gdx_graphics_Cursor$SystemCursor_java_lang_String_int(jcontext ctx, jobject self, jobject param0, jint param1);
+jobject SM_com_badlogic_gdx_graphics_Cursor$SystemCursor_$values_R_Array1_com_badlogic_gdx_graphics_Cursor$SystemCursor(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

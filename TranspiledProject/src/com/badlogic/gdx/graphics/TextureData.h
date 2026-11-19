@@ -1,0 +1,48 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_TextureData
+#define HEADER_com_badlogic_gdx_graphics_TextureData
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_TextureData {
+	java_lang_Object parent;
+} com_badlogic_gdx_graphics_TextureData;
+
+extern Class class_com_badlogic_gdx_graphics_TextureData;
+
+
+#define INDEX_com_badlogic_gdx_graphics_TextureData_getType_R_com_badlogic_gdx_graphics_TextureData$TextureDataType 0
+typedef jobject (*func_com_badlogic_gdx_graphics_TextureData_getType_R_com_badlogic_gdx_graphics_TextureData$TextureDataType)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_TextureData_isPrepared_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_TextureData_isPrepared_R_boolean)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_TextureData_prepare 2
+typedef void (*func_com_badlogic_gdx_graphics_TextureData_prepare)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_TextureData_consumePixmap_R_com_badlogic_gdx_graphics_Pixmap 3
+typedef jobject (*func_com_badlogic_gdx_graphics_TextureData_consumePixmap_R_com_badlogic_gdx_graphics_Pixmap)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_TextureData_disposePixmap_R_boolean 4
+typedef jbool (*func_com_badlogic_gdx_graphics_TextureData_disposePixmap_R_boolean)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_TextureData_consumeCustomData_int 5
+typedef void (*func_com_badlogic_gdx_graphics_TextureData_consumeCustomData_int)(jcontext ctx, jobject self, jint param0);
+#define INDEX_com_badlogic_gdx_graphics_TextureData_getWidth_R_int 6
+typedef jint (*func_com_badlogic_gdx_graphics_TextureData_getWidth_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_TextureData_getHeight_R_int 7
+typedef jint (*func_com_badlogic_gdx_graphics_TextureData_getHeight_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_TextureData_getFormat_R_com_badlogic_gdx_graphics_Pixmap$Format 8
+typedef jobject (*func_com_badlogic_gdx_graphics_TextureData_getFormat_R_com_badlogic_gdx_graphics_Pixmap$Format)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_TextureData_useMipMaps_R_boolean 9
+typedef jbool (*func_com_badlogic_gdx_graphics_TextureData_useMipMaps_R_boolean)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_TextureData_isManaged_R_boolean 10
+typedef jbool (*func_com_badlogic_gdx_graphics_TextureData_isManaged_R_boolean)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_TextureData(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_TextureData(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

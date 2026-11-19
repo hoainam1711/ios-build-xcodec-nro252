@@ -1,0 +1,77 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2
+#define HEADER_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2
+
+#include "Clearwing.h"
+#include "com/badlogic/gdx/scenes/scene2d/utils/ActorGestureListener.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2 {
+	com_badlogic_gdx_scenes_scene2d_utils_ActorGestureListener parent;
+	jref F_this$0;
+} com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2;
+
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_handle_com_badlogic_gdx_scenes_scene2d_Event_R_boolean 11
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_handle_com_badlogic_gdx_scenes_scene2d_Event_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_touchDown_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int 12
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_touchDown_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jint param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_touchUp_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int 13
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_touchUp_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jint param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_tap_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int 14
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_tap_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jint param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_longPress_com_badlogic_gdx_scenes_scene2d_Actor_float_float_R_boolean 15
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_longPress_com_badlogic_gdx_scenes_scene2d_Actor_float_float_R_boolean)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_fling_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int 16
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_fling_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_pan_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_float_float 17
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_pan_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_float_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_panStop_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int 18
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_panStop_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int_int)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jint param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_zoom_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float 19
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_zoom_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_pinch_com_badlogic_gdx_scenes_scene2d_InputEvent_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2 20
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_pinch_com_badlogic_gdx_scenes_scene2d_InputEvent_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2)(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2, jobject param3, jobject param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_getGestureDetector_R_com_badlogic_gdx_input_GestureDetector 21
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_getGestureDetector_R_com_badlogic_gdx_input_GestureDetector)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_getTouchDownTarget_R_com_badlogic_gdx_scenes_scene2d_Actor 22
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_getTouchDownTarget_R_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_pan_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_float_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+void M_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_fling_com_badlogic_gdx_scenes_scene2d_InputEvent_float_float_int(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3);
+jbool M_com_badlogic_gdx_scenes_scene2d_ui_ScrollPane$2_handle_com_badlogic_gdx_scenes_scene2d_Event_R_boolean(jcontext ctx, jobject self, jobject param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

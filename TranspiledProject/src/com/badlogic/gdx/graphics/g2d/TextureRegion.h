@@ -1,0 +1,147 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g2d_TextureRegion
+#define HEADER_com_badlogic_gdx_graphics_g2d_TextureRegion
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g2d_TextureRegion {
+	java_lang_Object parent;
+	jref F_texture;
+	jfloat F_u;
+	jfloat F_v;
+	jfloat F_u2;
+	jfloat F_v2;
+	jint F_regionWidth;
+	jint F_regionHeight;
+} com_badlogic_gdx_graphics_g2d_TextureRegion;
+
+extern Class class_com_badlogic_gdx_graphics_g2d_TextureRegion;
+
+
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_com_badlogic_gdx_graphics_Texture 11
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_com_badlogic_gdx_graphics_Texture)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_int_int_int_int 12
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_float_float_float_float 13
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_com_badlogic_gdx_graphics_g2d_TextureRegion 14
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_com_badlogic_gdx_graphics_g2d_TextureRegion)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_com_badlogic_gdx_graphics_g2d_TextureRegion_int_int_int_int 15
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_com_badlogic_gdx_graphics_g2d_TextureRegion_int_int_int_int)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2, jint param3, jint param4);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_getTexture_R_com_badlogic_gdx_graphics_Texture 16
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_getTexture_R_com_badlogic_gdx_graphics_Texture)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setTexture_com_badlogic_gdx_graphics_Texture 17
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setTexture_com_badlogic_gdx_graphics_Texture)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_getU_R_float 18
+typedef jfloat (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_getU_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setU_float 19
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setU_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_getV_R_float 20
+typedef jfloat (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_getV_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setV_float 21
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setV_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_getU2_R_float 22
+typedef jfloat (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_getU2_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setU2_float 23
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setU2_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_getV2_R_float 24
+typedef jfloat (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_getV2_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setV2_float 25
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setV2_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionX_R_int 26
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionX_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionX_int 27
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionX_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionY_R_int 28
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionY_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionY_int 29
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionY_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionWidth_R_int 30
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionWidth_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionWidth_int 31
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionWidth_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionHeight_R_int 32
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionHeight_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionHeight_int 33
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionHeight_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_flip_boolean_boolean 34
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_flip_boolean_boolean)(jcontext ctx, jobject self, jbool param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_isFlipX_R_boolean 35
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_isFlipX_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_isFlipY_R_boolean 36
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_isFlipY_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_scroll_float_float 37
+typedef void (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_scroll_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_TextureRegion_split_int_int_R_Array2_com_badlogic_gdx_graphics_g2d_TextureRegion 38
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_TextureRegion_split_int_int_R_Array2_com_badlogic_gdx_graphics_g2d_TextureRegion)(jcontext ctx, jobject self, jint param0, jint param1);
+
+void mark_com_badlogic_gdx_graphics_g2d_TextureRegion(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g2d_TextureRegion(jcontext ctx);
+void init_com_badlogic_gdx_graphics_g2d_TextureRegion(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_graphics_g2d_TextureRegion_com_badlogic_gdx_graphics_Texture(jcontext ctx, jobject self, jobject param0);
+void init_com_badlogic_gdx_graphics_g2d_TextureRegion_com_badlogic_gdx_graphics_Texture_int_int(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+void init_com_badlogic_gdx_graphics_g2d_TextureRegion_com_badlogic_gdx_graphics_Texture_int_int_int_int(jcontext ctx, jobject self, jobject param0, jint param1, jint param2, jint param3, jint param4);
+void init_com_badlogic_gdx_graphics_g2d_TextureRegion_com_badlogic_gdx_graphics_Texture_float_float_float_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+void init_com_badlogic_gdx_graphics_g2d_TextureRegion_com_badlogic_gdx_graphics_g2d_TextureRegion(jcontext ctx, jobject self, jobject param0);
+void init_com_badlogic_gdx_graphics_g2d_TextureRegion_com_badlogic_gdx_graphics_g2d_TextureRegion_int_int_int_int(jcontext ctx, jobject self, jobject param0, jint param1, jint param2, jint param3, jint param4);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_com_badlogic_gdx_graphics_Texture(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_com_badlogic_gdx_graphics_g2d_TextureRegion(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegion_com_badlogic_gdx_graphics_g2d_TextureRegion_int_int_int_int(jcontext ctx, jobject self, jobject param0, jint param1, jint param2, jint param3, jint param4);
+jobject M_com_badlogic_gdx_graphics_g2d_TextureRegion_getTexture_R_com_badlogic_gdx_graphics_Texture(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setTexture_com_badlogic_gdx_graphics_Texture(jcontext ctx, jobject self, jobject param0);
+jfloat M_com_badlogic_gdx_graphics_g2d_TextureRegion_getU_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setU_float(jcontext ctx, jobject self, jfloat param0);
+jfloat M_com_badlogic_gdx_graphics_g2d_TextureRegion_getV_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setV_float(jcontext ctx, jobject self, jfloat param0);
+jfloat M_com_badlogic_gdx_graphics_g2d_TextureRegion_getU2_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setU2_float(jcontext ctx, jobject self, jfloat param0);
+jfloat M_com_badlogic_gdx_graphics_g2d_TextureRegion_getV2_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setV2_float(jcontext ctx, jobject self, jfloat param0);
+jint M_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionX_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionX_int(jcontext ctx, jobject self, jint param0);
+jint M_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionY_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionY_int(jcontext ctx, jobject self, jint param0);
+jint M_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionWidth_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionWidth_int(jcontext ctx, jobject self, jint param0);
+jint M_com_badlogic_gdx_graphics_g2d_TextureRegion_getRegionHeight_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_setRegionHeight_int(jcontext ctx, jobject self, jint param0);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_flip_boolean_boolean(jcontext ctx, jobject self, jbool param0, jbool param1);
+jbool M_com_badlogic_gdx_graphics_g2d_TextureRegion_isFlipX_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_g2d_TextureRegion_isFlipY_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_TextureRegion_scroll_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+jobject M_com_badlogic_gdx_graphics_g2d_TextureRegion_split_int_int_R_Array2_com_badlogic_gdx_graphics_g2d_TextureRegion(jcontext ctx, jobject self, jint param0, jint param1);
+jobject SM_com_badlogic_gdx_graphics_g2d_TextureRegion_split_com_badlogic_gdx_graphics_Texture_int_int_R_Array2_com_badlogic_gdx_graphics_g2d_TextureRegion(jcontext ctx, jobject param0, jint param1, jint param2);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

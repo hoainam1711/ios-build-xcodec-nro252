@@ -1,0 +1,10 @@
+This project contains the Java game transpiled to Clearwing C++, not Unity IL2CPP or MOE.
+Requirements: macOS, Xcode with iOS SDK and command-line tools. No Java, Gradle or network downloads are needed on the Mac.
+
+Unsigned device build: bash ios-build/build-ipa.sh
+Simulator: open Unity-iPhone.xcodeproj, choose the Unity-iPhone scheme and an iOS simulator, then Run.
+Signed device build: open the project, select your Team under Signing & Capabilities, then Archive/Distribute App.
+
+The native source/transpiler and input validation were checked on Windows. export-result.json records the checks performed.
+Xcode build and physical iPhone rendering, touch, audio, TLS and gameplay MUST be verified on the Mac/device.
+Keep build/xcodebuild.log when reporting a failure. The two older iOS output modes are separate and unchanged.

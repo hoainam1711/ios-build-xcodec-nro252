@@ -1,0 +1,119 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_actions_IntAction
+#define HEADER_com_badlogic_gdx_scenes_scene2d_actions_IntAction
+
+#include "Clearwing.h"
+#include "com/badlogic/gdx/scenes/scene2d/actions/TemporalAction.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_actions_IntAction {
+	com_badlogic_gdx_scenes_scene2d_actions_TemporalAction parent;
+	jint F_start;
+	jint F_end;
+	jint F_value;
+} com_badlogic_gdx_scenes_scene2d_actions_IntAction;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_actions_IntAction;
+
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_reset 11
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_reset)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_act_float_R_boolean 12
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_act_float_R_boolean)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_restart 13
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_restart)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setActor_com_badlogic_gdx_scenes_scene2d_Actor 14
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setActor_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getActor_R_com_badlogic_gdx_scenes_scene2d_Actor 15
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getActor_R_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setTarget_com_badlogic_gdx_scenes_scene2d_Actor 16
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setTarget_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getTarget_R_com_badlogic_gdx_scenes_scene2d_Actor 17
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getTarget_R_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getPool_R_com_badlogic_gdx_utils_Pool 18
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getPool_R_com_badlogic_gdx_utils_Pool)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setPool_com_badlogic_gdx_utils_Pool 19
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setPool_com_badlogic_gdx_utils_Pool)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_finish 20
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_finish)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_begin 21
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_begin)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_end 22
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_end)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_update_float 23
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_update_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getTime_R_float 24
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getTime_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setTime_float 25
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setTime_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getDuration_R_float 26
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getDuration_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setDuration_float 27
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setDuration_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getInterpolation_R_com_badlogic_gdx_math_Interpolation 28
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getInterpolation_R_com_badlogic_gdx_math_Interpolation)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setInterpolation_com_badlogic_gdx_math_Interpolation 29
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setInterpolation_com_badlogic_gdx_math_Interpolation)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_isReverse_R_boolean 30
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_isReverse_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setReverse_boolean 31
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setReverse_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_isComplete_R_boolean 32
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_isComplete_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getValue_R_int 33
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getValue_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setValue_int 34
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setValue_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getStart_R_int 35
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getStart_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setStart_int 36
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setStart_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getEnd_R_int 37
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getEnd_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setEnd_int 38
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setEnd_int)(jcontext ctx, jobject self, jint param0);
+
+void mark_com_badlogic_gdx_scenes_scene2d_actions_IntAction(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_actions_IntAction(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_actions_IntAction(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_scenes_scene2d_actions_IntAction_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void init_com_badlogic_gdx_scenes_scene2d_actions_IntAction_int_int_float(jcontext ctx, jobject self, jint param0, jint param1, jfloat param2);
+void init_com_badlogic_gdx_scenes_scene2d_actions_IntAction_int_int_float_com_badlogic_gdx_math_Interpolation(jcontext ctx, jobject self, jint param0, jint param1, jfloat param2, jobject param3);
+void M_com_badlogic_gdx_scenes_scene2d_actions_IntAction_begin(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_actions_IntAction_update_float(jcontext ctx, jobject self, jfloat param0);
+jint M_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getValue_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setValue_int(jcontext ctx, jobject self, jint param0);
+jint M_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getStart_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setStart_int(jcontext ctx, jobject self, jint param0);
+jint M_com_badlogic_gdx_scenes_scene2d_actions_IntAction_getEnd_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_actions_IntAction_setEnd_int(jcontext ctx, jobject self, jint param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

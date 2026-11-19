@@ -1,0 +1,52 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_utils_Layout
+#define HEADER_com_badlogic_gdx_scenes_scene2d_utils_Layout
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_utils_Layout {
+	java_lang_Object parent;
+} com_badlogic_gdx_scenes_scene2d_utils_Layout;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_utils_Layout;
+
+
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_layout 0
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_layout)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_invalidate 1
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_invalidate)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_invalidateHierarchy 2
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_invalidateHierarchy)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_validate 3
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_validate)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_pack 4
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_pack)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_setFillParent_boolean 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_setFillParent_boolean)(jcontext ctx, jobject self, jbool param0);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_setLayoutEnabled_boolean 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_setLayoutEnabled_boolean)(jcontext ctx, jobject self, jbool param0);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_getMinWidth_R_float 7
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_getMinWidth_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_getMinHeight_R_float 8
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_getMinHeight_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_getPrefWidth_R_float 9
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_getPrefWidth_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_getPrefHeight_R_float 10
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_getPrefHeight_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_getMaxWidth_R_float 11
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_getMaxWidth_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_scenes_scene2d_utils_Layout_getMaxHeight_R_float 12
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_Layout_getMaxHeight_R_float)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_scenes_scene2d_utils_Layout(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_utils_Layout(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

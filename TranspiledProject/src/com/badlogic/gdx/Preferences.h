@@ -1,0 +1,68 @@
+#ifndef HEADER_com_badlogic_gdx_Preferences
+#define HEADER_com_badlogic_gdx_Preferences
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_Preferences {
+	java_lang_Object parent;
+} com_badlogic_gdx_Preferences;
+
+extern Class class_com_badlogic_gdx_Preferences;
+
+
+#define INDEX_com_badlogic_gdx_Preferences_putBoolean_java_lang_String_boolean_R_com_badlogic_gdx_Preferences 0
+typedef jobject (*func_com_badlogic_gdx_Preferences_putBoolean_java_lang_String_boolean_R_com_badlogic_gdx_Preferences)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define INDEX_com_badlogic_gdx_Preferences_putInteger_java_lang_String_int_R_com_badlogic_gdx_Preferences 1
+typedef jobject (*func_com_badlogic_gdx_Preferences_putInteger_java_lang_String_int_R_com_badlogic_gdx_Preferences)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define INDEX_com_badlogic_gdx_Preferences_putLong_java_lang_String_long_R_com_badlogic_gdx_Preferences 2
+typedef jobject (*func_com_badlogic_gdx_Preferences_putLong_java_lang_String_long_R_com_badlogic_gdx_Preferences)(jcontext ctx, jobject self, jobject param0, jlong param1);
+#define INDEX_com_badlogic_gdx_Preferences_putFloat_java_lang_String_float_R_com_badlogic_gdx_Preferences 3
+typedef jobject (*func_com_badlogic_gdx_Preferences_putFloat_java_lang_String_float_R_com_badlogic_gdx_Preferences)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define INDEX_com_badlogic_gdx_Preferences_putString_java_lang_String_java_lang_String_R_com_badlogic_gdx_Preferences 4
+typedef jobject (*func_com_badlogic_gdx_Preferences_putString_java_lang_String_java_lang_String_R_com_badlogic_gdx_Preferences)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define INDEX_com_badlogic_gdx_Preferences_put_java_util_Map_R_com_badlogic_gdx_Preferences 5
+typedef jobject (*func_com_badlogic_gdx_Preferences_put_java_util_Map_R_com_badlogic_gdx_Preferences)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Preferences_getBoolean_java_lang_String_R_boolean 6
+typedef jbool (*func_com_badlogic_gdx_Preferences_getBoolean_java_lang_String_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Preferences_getInteger_java_lang_String_R_int 7
+typedef jint (*func_com_badlogic_gdx_Preferences_getInteger_java_lang_String_R_int)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Preferences_getLong_java_lang_String_R_long 8
+typedef jlong (*func_com_badlogic_gdx_Preferences_getLong_java_lang_String_R_long)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Preferences_getFloat_java_lang_String_R_float 9
+typedef jfloat (*func_com_badlogic_gdx_Preferences_getFloat_java_lang_String_R_float)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Preferences_getString_java_lang_String_R_java_lang_String 10
+typedef jobject (*func_com_badlogic_gdx_Preferences_getString_java_lang_String_R_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Preferences_getBoolean_java_lang_String_boolean_R_boolean 11
+typedef jbool (*func_com_badlogic_gdx_Preferences_getBoolean_java_lang_String_boolean_R_boolean)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define INDEX_com_badlogic_gdx_Preferences_getInteger_java_lang_String_int_R_int 12
+typedef jint (*func_com_badlogic_gdx_Preferences_getInteger_java_lang_String_int_R_int)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define INDEX_com_badlogic_gdx_Preferences_getLong_java_lang_String_long_R_long 13
+typedef jlong (*func_com_badlogic_gdx_Preferences_getLong_java_lang_String_long_R_long)(jcontext ctx, jobject self, jobject param0, jlong param1);
+#define INDEX_com_badlogic_gdx_Preferences_getFloat_java_lang_String_float_R_float 14
+typedef jfloat (*func_com_badlogic_gdx_Preferences_getFloat_java_lang_String_float_R_float)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define INDEX_com_badlogic_gdx_Preferences_getString_java_lang_String_java_lang_String_R_java_lang_String 15
+typedef jobject (*func_com_badlogic_gdx_Preferences_getString_java_lang_String_java_lang_String_R_java_lang_String)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define INDEX_com_badlogic_gdx_Preferences_get_R_java_util_Map 16
+typedef jobject (*func_com_badlogic_gdx_Preferences_get_R_java_util_Map)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Preferences_contains_java_lang_String_R_boolean 17
+typedef jbool (*func_com_badlogic_gdx_Preferences_contains_java_lang_String_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Preferences_clear 18
+typedef void (*func_com_badlogic_gdx_Preferences_clear)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Preferences_remove_java_lang_String 19
+typedef void (*func_com_badlogic_gdx_Preferences_remove_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Preferences_flush 20
+typedef void (*func_com_badlogic_gdx_Preferences_flush)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_Preferences(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_Preferences(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

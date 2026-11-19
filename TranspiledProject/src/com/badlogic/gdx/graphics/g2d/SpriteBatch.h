@@ -1,0 +1,196 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g2d_SpriteBatch
+#define HEADER_com_badlogic_gdx_graphics_g2d_SpriteBatch
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/graphics/g2d/Batch.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g2d_SpriteBatch {
+	java_lang_Object parent;
+	jref F_currentDataType;
+	jref F_mesh;
+	jref F_vertices;
+	jint F_idx;
+	jref F_lastTexture;
+	jfloat F_invTexWidth;
+	jfloat F_invTexHeight;
+	jbool F_drawing;
+	jref F_transformMatrix;
+	jref F_projectionMatrix;
+	jref F_combinedMatrix;
+	jbool F_blendingDisabled;
+	jint F_blendSrcFunc;
+	jint F_blendDstFunc;
+	jint F_blendSrcFuncAlpha;
+	jint F_blendDstFuncAlpha;
+	jref F_shader;
+	jref F_customShader;
+	jbool F_ownsShader;
+	jref F_color;
+	jfloat F_colorPacked;
+	jint F_renderCalls;
+	jint F_totalRenderCalls;
+	jint F_maxSpritesInBatch;
+} com_badlogic_gdx_graphics_g2d_SpriteBatch;
+
+extern Class class_com_badlogic_gdx_graphics_g2d_SpriteBatch;
+
+extern jobject SF_com_badlogic_gdx_graphics_g2d_SpriteBatch_defaultVertexDataType;
+extern jobject SF_com_badlogic_gdx_graphics_g2d_SpriteBatch_overrideVertexType;
+
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_dispose 11
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_dispose)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_begin 12
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_begin)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_end 13
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_end)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_setColor_com_badlogic_gdx_graphics_Color 14
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_setColor_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_setColor_float_float_float_float 15
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_setColor_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_getColor_R_com_badlogic_gdx_graphics_Color 16
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_getColor_R_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_setPackedColor_float 17
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_setPackedColor_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_getPackedColor_R_float 18
+typedef jfloat (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_getPackedColor_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float_float_float_float_float_float_int_int_int_int_boolean_boolean 19
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float_float_float_float_float_float_int_int_int_int_boolean_boolean)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8, jfloat param9, jint param10, jint param11, jint param12, jint param13, jbool param14, jbool param15);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float_int_int_int_int_boolean_boolean 20
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float_int_int_int_int_boolean_boolean)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jint param5, jint param6, jint param7, jint param8, jbool param9, jbool param10);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_int_int_int_int 21
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_int_int_int_int)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jint param4, jint param5, jint param6);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float_float_float_float_float 22
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float_float_float_float_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float 23
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float 24
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_Array1_float_int_int 25
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_Array1_float_int_int)(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jint param3);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float 26
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_float_float 27
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_float_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_float_float_float_float_float_float_float 28
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_float_float_float_float_float_float_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8, jfloat param9);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_float_float_float_float_float_float_float_boolean 29
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_float_float_float_float_float_float_float_boolean)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8, jfloat param9, jbool param10);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_com_badlogic_gdx_math_Affine2 30
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_com_badlogic_gdx_math_Affine2)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jobject param3);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_flush 31
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_flush)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_disableBlending 32
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_disableBlending)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_enableBlending 33
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_enableBlending)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_setBlendFunction_int_int 34
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_setBlendFunction_int_int)(jcontext ctx, jobject self, jint param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_setBlendFunctionSeparate_int_int_int_int 35
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_setBlendFunctionSeparate_int_int_int_int)(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendSrcFunc_R_int 36
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendSrcFunc_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendDstFunc_R_int 37
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendDstFunc_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendSrcFuncAlpha_R_int 38
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendSrcFuncAlpha_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendDstFuncAlpha_R_int 39
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendDstFuncAlpha_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_getProjectionMatrix_R_com_badlogic_gdx_math_Matrix4 40
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_getProjectionMatrix_R_com_badlogic_gdx_math_Matrix4)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_getTransformMatrix_R_com_badlogic_gdx_math_Matrix4 41
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_getTransformMatrix_R_com_badlogic_gdx_math_Matrix4)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_setProjectionMatrix_com_badlogic_gdx_math_Matrix4 42
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_setProjectionMatrix_com_badlogic_gdx_math_Matrix4)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_setTransformMatrix_com_badlogic_gdx_math_Matrix4 43
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_setTransformMatrix_com_badlogic_gdx_math_Matrix4)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_setShader_com_badlogic_gdx_graphics_glutils_ShaderProgram 44
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_setShader_com_badlogic_gdx_graphics_glutils_ShaderProgram)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_getShader_R_com_badlogic_gdx_graphics_glutils_ShaderProgram 45
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_getShader_R_com_badlogic_gdx_graphics_glutils_ShaderProgram)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_isBlendingEnabled_R_boolean 46
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_isBlendingEnabled_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_isDrawing_R_boolean 47
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_isDrawing_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_setupMatrices 48
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_setupMatrices)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_SpriteBatch_switchTexture_com_badlogic_gdx_graphics_Texture 49
+typedef void (*func_com_badlogic_gdx_graphics_g2d_SpriteBatch_switchTexture_com_badlogic_gdx_graphics_Texture)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_graphics_g2d_SpriteBatch(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g2d_SpriteBatch(jcontext ctx);
+void init_com_badlogic_gdx_graphics_g2d_SpriteBatch(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_graphics_g2d_SpriteBatch_int(jcontext ctx, jobject self, jint param0);
+void init_com_badlogic_gdx_graphics_g2d_SpriteBatch_int_com_badlogic_gdx_graphics_glutils_ShaderProgram(jcontext ctx, jobject self, jint param0, jobject param1);
+jobject SM_com_badlogic_gdx_graphics_g2d_SpriteBatch_createDefaultShader_R_com_badlogic_gdx_graphics_glutils_ShaderProgram(jcontext ctx);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_begin(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_end(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_setColor_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_setColor_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+jobject M_com_badlogic_gdx_graphics_g2d_SpriteBatch_getColor_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_setPackedColor_float(jcontext ctx, jobject self, jfloat param0);
+jfloat M_com_badlogic_gdx_graphics_g2d_SpriteBatch_getPackedColor_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float_float_float_float_float_float_int_int_int_int_boolean_boolean(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8, jfloat param9, jint param10, jint param11, jint param12, jint param13, jbool param14, jbool param15);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float_int_int_int_int_boolean_boolean(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jint param5, jint param6, jint param7, jint param8, jbool param9, jbool param10);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_int_int_int_int(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jint param3, jint param4, jint param5, jint param6);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float_float_float_float_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_float_float_float_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_Texture_Array1_float_int_int(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jint param3);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_float_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_float_float_float_float_float_float_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8, jfloat param9);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_float_float_float_float_float_float_float_boolean(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4, jfloat param5, jfloat param6, jfloat param7, jfloat param8, jfloat param9, jbool param10);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_draw_com_badlogic_gdx_graphics_g2d_TextureRegion_float_float_com_badlogic_gdx_math_Affine2(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jobject param3);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_flush(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_disableBlending(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_enableBlending(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_setBlendFunction_int_int(jcontext ctx, jobject self, jint param0, jint param1);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_setBlendFunctionSeparate_int_int_int_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jint param3);
+jint M_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendSrcFunc_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendDstFunc_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendSrcFuncAlpha_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_g2d_SpriteBatch_getBlendDstFuncAlpha_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_dispose(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_g2d_SpriteBatch_getProjectionMatrix_R_com_badlogic_gdx_math_Matrix4(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_g2d_SpriteBatch_getTransformMatrix_R_com_badlogic_gdx_math_Matrix4(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_setProjectionMatrix_com_badlogic_gdx_math_Matrix4(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_setTransformMatrix_com_badlogic_gdx_math_Matrix4(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_setupMatrices(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_switchTexture_com_badlogic_gdx_graphics_Texture(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_g2d_SpriteBatch_setShader_com_badlogic_gdx_graphics_glutils_ShaderProgram(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_g2d_SpriteBatch_getShader_R_com_badlogic_gdx_graphics_glutils_ShaderProgram(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_g2d_SpriteBatch_isBlendingEnabled_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_g2d_SpriteBatch_isDrawing_R_boolean(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

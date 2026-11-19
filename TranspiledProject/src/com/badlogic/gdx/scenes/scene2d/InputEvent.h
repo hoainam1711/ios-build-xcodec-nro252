@@ -1,0 +1,168 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_InputEvent
+#define HEADER_com_badlogic_gdx_scenes_scene2d_InputEvent
+
+#include "Clearwing.h"
+#include "com/badlogic/gdx/scenes/scene2d/Event.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_InputEvent {
+	com_badlogic_gdx_scenes_scene2d_Event parent;
+	jref F_type;
+	jfloat F_stageX;
+	jfloat F_stageY;
+	jfloat F_scrollAmountX;
+	jfloat F_scrollAmountY;
+	jint F_pointer;
+	jint F_button;
+	jint F_keyCode;
+	jchar F_character;
+	jref F_relatedActor;
+	jbool F_touchFocus;
+} com_badlogic_gdx_scenes_scene2d_InputEvent;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_InputEvent;
+
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_reset 11
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_reset)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_handle 12
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_handle)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_cancel 13
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_cancel)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_stop 14
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_stop)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getTarget_R_com_badlogic_gdx_scenes_scene2d_Actor 15
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getTarget_R_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setTarget_com_badlogic_gdx_scenes_scene2d_Actor 16
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setTarget_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getListenerActor_R_com_badlogic_gdx_scenes_scene2d_Actor 17
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getListenerActor_R_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setListenerActor_com_badlogic_gdx_scenes_scene2d_Actor 18
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setListenerActor_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getBubbles_R_boolean 19
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getBubbles_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setBubbles_boolean 20
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setBubbles_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_isHandled_R_boolean 21
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_isHandled_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_isStopped_R_boolean 22
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_isStopped_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_isCancelled_R_boolean 23
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_isCancelled_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setCapture_boolean 24
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setCapture_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_isCapture_R_boolean 25
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_isCapture_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setStage_com_badlogic_gdx_scenes_scene2d_Stage 26
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setStage_com_badlogic_gdx_scenes_scene2d_Stage)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getStage_R_com_badlogic_gdx_scenes_scene2d_Stage 27
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getStage_R_com_badlogic_gdx_scenes_scene2d_Stage)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getStageX_R_float 28
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getStageX_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setStageX_float 29
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setStageX_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getStageY_R_float 30
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getStageY_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setStageY_float 31
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setStageY_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getType_R_com_badlogic_gdx_scenes_scene2d_InputEvent$Type 32
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getType_R_com_badlogic_gdx_scenes_scene2d_InputEvent$Type)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setType_com_badlogic_gdx_scenes_scene2d_InputEvent$Type 33
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setType_com_badlogic_gdx_scenes_scene2d_InputEvent$Type)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getPointer_R_int 34
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getPointer_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setPointer_int 35
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setPointer_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getButton_R_int 36
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getButton_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setButton_int 37
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setButton_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getKeyCode_R_int 38
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getKeyCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setKeyCode_int 39
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setKeyCode_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getCharacter_R_char 40
+typedef jchar (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getCharacter_R_char)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setCharacter_char 41
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setCharacter_char)(jcontext ctx, jobject self, jchar param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getScrollAmountX_R_float 42
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getScrollAmountX_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getScrollAmountY_R_float 43
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getScrollAmountY_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setScrollAmountX_float 44
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setScrollAmountX_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setScrollAmountY_float 45
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setScrollAmountY_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getRelatedActor_R_com_badlogic_gdx_scenes_scene2d_Actor 46
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getRelatedActor_R_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setRelatedActor_com_badlogic_gdx_scenes_scene2d_Actor 47
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setRelatedActor_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_toCoordinates_com_badlogic_gdx_scenes_scene2d_Actor_com_badlogic_gdx_math_Vector2_R_com_badlogic_gdx_math_Vector2 48
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_toCoordinates_com_badlogic_gdx_scenes_scene2d_Actor_com_badlogic_gdx_math_Vector2_R_com_badlogic_gdx_math_Vector2)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_isTouchFocusCancel_R_boolean 49
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_isTouchFocusCancel_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_getTouchFocus_R_boolean 50
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_getTouchFocus_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_InputEvent_setTouchFocus_boolean 51
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_InputEvent_setTouchFocus_boolean)(jcontext ctx, jobject self, jbool param0);
+
+void mark_com_badlogic_gdx_scenes_scene2d_InputEvent(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_InputEvent(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_InputEvent(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_reset(jcontext ctx, jobject self);
+jfloat M_com_badlogic_gdx_scenes_scene2d_InputEvent_getStageX_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_setStageX_float(jcontext ctx, jobject self, jfloat param0);
+jfloat M_com_badlogic_gdx_scenes_scene2d_InputEvent_getStageY_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_setStageY_float(jcontext ctx, jobject self, jfloat param0);
+jobject M_com_badlogic_gdx_scenes_scene2d_InputEvent_getType_R_com_badlogic_gdx_scenes_scene2d_InputEvent$Type(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_setType_com_badlogic_gdx_scenes_scene2d_InputEvent$Type(jcontext ctx, jobject self, jobject param0);
+jint M_com_badlogic_gdx_scenes_scene2d_InputEvent_getPointer_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_setPointer_int(jcontext ctx, jobject self, jint param0);
+jint M_com_badlogic_gdx_scenes_scene2d_InputEvent_getButton_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_setButton_int(jcontext ctx, jobject self, jint param0);
+jint M_com_badlogic_gdx_scenes_scene2d_InputEvent_getKeyCode_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_setKeyCode_int(jcontext ctx, jobject self, jint param0);
+jchar M_com_badlogic_gdx_scenes_scene2d_InputEvent_getCharacter_R_char(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_setCharacter_char(jcontext ctx, jobject self, jchar param0);
+jfloat M_com_badlogic_gdx_scenes_scene2d_InputEvent_getScrollAmountX_R_float(jcontext ctx, jobject self);
+jfloat M_com_badlogic_gdx_scenes_scene2d_InputEvent_getScrollAmountY_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_setScrollAmountX_float(jcontext ctx, jobject self, jfloat param0);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_setScrollAmountY_float(jcontext ctx, jobject self, jfloat param0);
+jobject M_com_badlogic_gdx_scenes_scene2d_InputEvent_getRelatedActor_R_com_badlogic_gdx_scenes_scene2d_Actor(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_setRelatedActor_com_badlogic_gdx_scenes_scene2d_Actor(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_scenes_scene2d_InputEvent_toCoordinates_com_badlogic_gdx_scenes_scene2d_Actor_com_badlogic_gdx_math_Vector2_R_com_badlogic_gdx_math_Vector2(jcontext ctx, jobject self, jobject param0, jobject param1);
+jbool M_com_badlogic_gdx_scenes_scene2d_InputEvent_isTouchFocusCancel_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_scenes_scene2d_InputEvent_getTouchFocus_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_InputEvent_setTouchFocus_boolean(jcontext ctx, jobject self, jbool param0);
+jobject M_com_badlogic_gdx_scenes_scene2d_InputEvent_toString_R_java_lang_String(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

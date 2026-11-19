@@ -1,0 +1,79 @@
+#ifndef HEADER_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues
+#define HEADER_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues
+
+#include "Clearwing.h"
+#include "com/badlogic/gdx/utils/ObjectMap_Values.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_utils_OrderedMap$OrderedMapValues {
+	com_badlogic_gdx_utils_ObjectMap$Values parent;
+	jref F_keys;
+} com_badlogic_gdx_utils_OrderedMap$OrderedMapValues;
+
+extern Class class_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues;
+
+
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_finalize 5
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_notify 6
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_notifyAll 7
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_wait 8
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_wait_long 9
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_iterator_R_java_util_Iterator 11
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_iterator_R_java_util_Iterator)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_forEach_java_util_function_Consumer 12
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_forEach_java_util_function_Consumer)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_spliterator_R_java_util_Spliterator 13
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_spliterator_R_java_util_Spliterator)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_hasNext_R_boolean 14
+typedef jbool (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_hasNext_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_next_R_java_lang_Object 15
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_next_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_remove 16
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_remove)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_forEachRemaining_java_util_function_Consumer 17
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_forEachRemaining_java_util_function_Consumer)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_reset 18
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_reset)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_findNextIndex 19
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_findNextIndex)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_iterator_R_com_badlogic_gdx_utils_ObjectMap$Values 20
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_iterator_R_com_badlogic_gdx_utils_ObjectMap$Values)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_toArray_R_com_badlogic_gdx_utils_Array 21
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_toArray_R_com_badlogic_gdx_utils_Array)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_toArray_com_badlogic_gdx_utils_Array_R_com_badlogic_gdx_utils_Array 22
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_toArray_com_badlogic_gdx_utils_Array_R_com_badlogic_gdx_utils_Array)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues(jcontext ctx);
+void init_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_com_badlogic_gdx_utils_OrderedMap(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_reset(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_next_R_java_lang_Object(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_remove(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_toArray_com_badlogic_gdx_utils_Array_R_com_badlogic_gdx_utils_Array(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_OrderedMap$OrderedMapValues_toArray_R_com_badlogic_gdx_utils_Array(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

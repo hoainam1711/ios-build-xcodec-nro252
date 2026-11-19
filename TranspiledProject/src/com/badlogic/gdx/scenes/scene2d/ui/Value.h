@@ -1,0 +1,65 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_ui_Value
+#define HEADER_com_badlogic_gdx_scenes_scene2d_ui_Value
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_ui_Value {
+	java_lang_Object parent;
+} com_badlogic_gdx_scenes_scene2d_ui_Value;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_ui_Value;
+
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Value_zero;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Value_minWidth;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Value_minHeight;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Value_prefWidth;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Value_prefHeight;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Value_maxWidth;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Value_maxHeight;
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_get_R_float 11
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_get_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Value_get_com_badlogic_gdx_scenes_scene2d_Actor_R_float 12
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_ui_Value_get_com_badlogic_gdx_scenes_scene2d_Actor_R_float)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_scenes_scene2d_ui_Value(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_ui_Value(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_ui_Value(jcontext ctx, jobject self);
+jfloat M_com_badlogic_gdx_scenes_scene2d_ui_Value_get_R_float(jcontext ctx, jobject self);
+jobject SM_com_badlogic_gdx_scenes_scene2d_ui_Value_percentWidth_float_R_com_badlogic_gdx_scenes_scene2d_ui_Value(jcontext ctx, jfloat param0);
+jobject SM_com_badlogic_gdx_scenes_scene2d_ui_Value_percentHeight_float_R_com_badlogic_gdx_scenes_scene2d_ui_Value(jcontext ctx, jfloat param0);
+jobject SM_com_badlogic_gdx_scenes_scene2d_ui_Value_percentWidth_float_com_badlogic_gdx_scenes_scene2d_Actor_R_com_badlogic_gdx_scenes_scene2d_ui_Value(jcontext ctx, jfloat param0, jobject param1);
+jobject SM_com_badlogic_gdx_scenes_scene2d_ui_Value_percentHeight_float_com_badlogic_gdx_scenes_scene2d_Actor_R_com_badlogic_gdx_scenes_scene2d_ui_Value(jcontext ctx, jfloat param0, jobject param1);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

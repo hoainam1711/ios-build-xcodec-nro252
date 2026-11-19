@@ -1,0 +1,127 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData
+#define HEADER_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData {
+	java_lang_Object parent;
+	jref F_name;
+	jref F_imagePaths;
+	jref F_fontFile;
+	jbool F_flipped;
+	jfloat F_padTop;
+	jfloat F_padRight;
+	jfloat F_padBottom;
+	jfloat F_padLeft;
+	jfloat F_lineHeight;
+	jfloat F_capHeight;
+	jfloat F_ascent;
+	jfloat F_descent;
+	jfloat F_down;
+	jfloat F_blankLineScale;
+	jfloat F_scaleX;
+	jfloat F_scaleY;
+	jbool F_markupEnabled;
+	jfloat F_cursorX;
+	jref F_glyphs;
+	jref F_missingGlyph;
+	jfloat F_spaceXadvance;
+	jfloat F_xHeight;
+	jref F_breakChars;
+	jref F_xChars;
+	jref F_capChars;
+} com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData;
+
+extern Class class_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData;
+
+
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_load_com_badlogic_gdx_files_FileHandle_boolean 11
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_load_com_badlogic_gdx_files_FileHandle_boolean)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setGlyphRegion_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph_com_badlogic_gdx_graphics_g2d_TextureRegion 12
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setGlyphRegion_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph_com_badlogic_gdx_graphics_g2d_TextureRegion)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setLineHeight_float 13
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setLineHeight_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setGlyph_int_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph 14
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setGlyph_int_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getFirstGlyph_R_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph 15
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getFirstGlyph_R_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_hasGlyph_char_R_boolean 16
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_hasGlyph_char_R_boolean)(jcontext ctx, jobject self, jchar param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getGlyph_char_R_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph 17
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getGlyph_char_R_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph)(jcontext ctx, jobject self, jchar param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getGlyphs_com_badlogic_gdx_graphics_g2d_GlyphLayout$GlyphRun_java_lang_CharSequence_int_int_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph 18
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getGlyphs_com_badlogic_gdx_graphics_g2d_GlyphLayout$GlyphRun_java_lang_CharSequence_int_int_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph)(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jint param3, jobject param4);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getWrapIndex_com_badlogic_gdx_utils_Array_int_R_int 19
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getWrapIndex_com_badlogic_gdx_utils_Array_int_R_int)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_isBreakChar_char_R_boolean 20
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_isBreakChar_char_R_boolean)(jcontext ctx, jobject self, jchar param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_isWhitespace_char_R_boolean 21
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_isWhitespace_char_R_boolean)(jcontext ctx, jobject self, jchar param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getImagePath_int_R_java_lang_String 22
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getImagePath_int_R_java_lang_String)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getImagePaths_R_Array1_java_lang_String 23
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getImagePaths_R_Array1_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getFontFile_R_com_badlogic_gdx_files_FileHandle 24
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getFontFile_R_com_badlogic_gdx_files_FileHandle)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setScale_float_float 25
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setScale_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setScale_float 26
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setScale_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_scale_float 27
+typedef void (*func_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_scale_float)(jcontext ctx, jobject self, jfloat param0);
+
+void mark_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData(jcontext ctx);
+void init_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_com_badlogic_gdx_files_FileHandle_boolean(jcontext ctx, jobject self, jobject param0, jbool param1);
+void M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_load_com_badlogic_gdx_files_FileHandle_boolean(jcontext ctx, jobject self, jobject param0, jbool param1);
+void M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setGlyphRegion_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph_com_badlogic_gdx_graphics_g2d_TextureRegion(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setLineHeight_float(jcontext ctx, jobject self, jfloat param0);
+void M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setGlyph_int_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph(jcontext ctx, jobject self, jint param0, jobject param1);
+jobject M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getFirstGlyph_R_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_hasGlyph_char_R_boolean(jcontext ctx, jobject self, jchar param0);
+jobject M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getGlyph_char_R_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph(jcontext ctx, jobject self, jchar param0);
+void M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getGlyphs_com_badlogic_gdx_graphics_g2d_GlyphLayout$GlyphRun_java_lang_CharSequence_int_int_com_badlogic_gdx_graphics_g2d_BitmapFont$Glyph(jcontext ctx, jobject self, jobject param0, jobject param1, jint param2, jint param3, jobject param4);
+jint M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getWrapIndex_com_badlogic_gdx_utils_Array_int_R_int(jcontext ctx, jobject self, jobject param0, jint param1);
+jbool M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_isBreakChar_char_R_boolean(jcontext ctx, jobject self, jchar param0);
+jbool M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_isWhitespace_char_R_boolean(jcontext ctx, jobject self, jchar param0);
+jobject M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getImagePath_int_R_java_lang_String(jcontext ctx, jobject self, jint param0);
+jobject M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getImagePaths_R_Array1_java_lang_String(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_getFontFile_R_com_badlogic_gdx_files_FileHandle(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setScale_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+void M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_setScale_float(jcontext ctx, jobject self, jfloat param0);
+void M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_scale_float(jcontext ctx, jobject self, jfloat param0);
+jobject M_com_badlogic_gdx_graphics_g2d_BitmapFont$BitmapFontData_toString_R_java_lang_String(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

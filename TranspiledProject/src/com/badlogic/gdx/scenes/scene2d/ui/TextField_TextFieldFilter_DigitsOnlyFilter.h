@@ -1,0 +1,53 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter
+#define HEADER_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/scenes/scene2d/ui/TextField_TextFieldFilter.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter {
+	java_lang_Object parent;
+} com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter;
+
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_acceptChar_com_badlogic_gdx_scenes_scene2d_ui_TextField_char_R_boolean 11
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_acceptChar_com_badlogic_gdx_scenes_scene2d_ui_TextField_char_R_boolean)(jcontext ctx, jobject self, jobject param0, jchar param1);
+
+void mark_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_scenes_scene2d_ui_TextField$TextFieldFilter$DigitsOnlyFilter_acceptChar_com_badlogic_gdx_scenes_scene2d_ui_TextField_char_R_boolean(jcontext ctx, jobject self, jobject param0, jchar param1);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

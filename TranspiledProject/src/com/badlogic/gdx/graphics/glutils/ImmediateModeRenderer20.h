@@ -1,0 +1,116 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20
+#define HEADER_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/graphics/glutils/ImmediateModeRenderer.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20 {
+	java_lang_Object parent;
+	jint F_primitiveType;
+	jint F_vertexIdx;
+	jint F_numSetTexCoords;
+	jint F_maxVertices;
+	jint F_numVertices;
+	jref F_mesh;
+	jref F_shader;
+	jbool F_ownsShader;
+	jint F_numTexCoords;
+	jint F_vertexSize;
+	jint F_normalOffset;
+	jint F_colorOffset;
+	jint F_texCoordOffset;
+	jref F_projModelView;
+	jref F_vertices;
+	jref F_shaderUniformNames;
+} com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20;
+
+extern Class class_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20;
+
+
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_begin_com_badlogic_gdx_math_Matrix4_int 11
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_begin_com_badlogic_gdx_math_Matrix4_int)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_flush 12
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_flush)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_color_com_badlogic_gdx_graphics_Color 13
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_color_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_color_float_float_float_float 14
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_color_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_color_float 15
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_color_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_texCoord_float_float 16
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_texCoord_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_normal_float_float_float 17
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_normal_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_vertex_float_float_float 18
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_vertex_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_end 19
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_end)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_getNumVertices_R_int 20
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_getNumVertices_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_getMaxVertices_R_int 21
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_getMaxVertices_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_dispose 22
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_dispose)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_buildVertexAttributes_boolean_boolean_int_R_Array1_com_badlogic_gdx_graphics_VertexAttribute 23
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_buildVertexAttributes_boolean_boolean_int_R_Array1_com_badlogic_gdx_graphics_VertexAttribute)(jcontext ctx, jobject self, jbool param0, jbool param1, jint param2);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_setShader_com_badlogic_gdx_graphics_glutils_ShaderProgram 24
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_setShader_com_badlogic_gdx_graphics_glutils_ShaderProgram)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_getShader_R_com_badlogic_gdx_graphics_glutils_ShaderProgram 25
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_getShader_R_com_badlogic_gdx_graphics_glutils_ShaderProgram)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20(jcontext ctx);
+void init_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_boolean_boolean_int(jcontext ctx, jobject self, jbool param0, jbool param1, jint param2);
+void init_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_int_boolean_boolean_int(jcontext ctx, jobject self, jint param0, jbool param1, jbool param2, jint param3);
+void init_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_int_boolean_boolean_int_com_badlogic_gdx_graphics_glutils_ShaderProgram(jcontext ctx, jobject self, jint param0, jbool param1, jbool param2, jint param3, jobject param4);
+jobject M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_buildVertexAttributes_boolean_boolean_int_R_Array1_com_badlogic_gdx_graphics_VertexAttribute(jcontext ctx, jobject self, jbool param0, jbool param1, jint param2);
+void M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_setShader_com_badlogic_gdx_graphics_glutils_ShaderProgram(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_getShader_R_com_badlogic_gdx_graphics_glutils_ShaderProgram(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_begin_com_badlogic_gdx_math_Matrix4_int(jcontext ctx, jobject self, jobject param0, jint param1);
+void M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_color_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_color_float_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+void M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_color_float(jcontext ctx, jobject self, jfloat param0);
+void M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_texCoord_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+void M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_normal_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_vertex_float_float_float(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+void M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_flush(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_end(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_getNumVertices_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_getMaxVertices_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_dispose(jcontext ctx, jobject self);
+jobject SM_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_createVertexShader_boolean_boolean_int_R_java_lang_String(jcontext ctx, jbool param0, jbool param1, jint param2);
+jobject SM_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_createFragmentShader_boolean_boolean_int_R_java_lang_String(jcontext ctx, jbool param0, jbool param1, jint param2);
+jobject SM_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer20_createDefaultShader_boolean_boolean_int_R_com_badlogic_gdx_graphics_glutils_ShaderProgram(jcontext ctx, jbool param0, jbool param1, jint param2);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

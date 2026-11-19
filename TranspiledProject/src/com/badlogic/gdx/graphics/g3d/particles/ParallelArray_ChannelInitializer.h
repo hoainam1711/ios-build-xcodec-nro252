@@ -1,0 +1,28 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g3d_particles_ParallelArray$ChannelInitializer
+#define HEADER_com_badlogic_gdx_graphics_g3d_particles_ParallelArray$ChannelInitializer
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g3d_particles_ParallelArray$ChannelInitializer {
+	java_lang_Object parent;
+} com_badlogic_gdx_graphics_g3d_particles_ParallelArray$ChannelInitializer;
+
+extern Class class_com_badlogic_gdx_graphics_g3d_particles_ParallelArray$ChannelInitializer;
+
+
+#define INDEX_com_badlogic_gdx_graphics_g3d_particles_ParallelArray$ChannelInitializer_init_com_badlogic_gdx_graphics_g3d_particles_ParallelArray$Channel 0
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_ParallelArray$ChannelInitializer_init_com_badlogic_gdx_graphics_g3d_particles_ParallelArray$Channel)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_graphics_g3d_particles_ParallelArray$ChannelInitializer(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g3d_particles_ParallelArray$ChannelInitializer(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

@@ -1,0 +1,136 @@
+#ifndef HEADER_com_badlogic_gdx_Graphics
+#define HEADER_com_badlogic_gdx_Graphics
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_Graphics {
+	java_lang_Object parent;
+} com_badlogic_gdx_Graphics;
+
+extern Class class_com_badlogic_gdx_Graphics;
+
+
+#define INDEX_com_badlogic_gdx_Graphics_isGL30Available_R_boolean 0
+typedef jbool (*func_com_badlogic_gdx_Graphics_isGL30Available_R_boolean)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_isGL31Available_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_Graphics_isGL31Available_R_boolean)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_isGL32Available_R_boolean 2
+typedef jbool (*func_com_badlogic_gdx_Graphics_isGL32Available_R_boolean)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getGL20_R_com_badlogic_gdx_graphics_GL20 3
+typedef jobject (*func_com_badlogic_gdx_Graphics_getGL20_R_com_badlogic_gdx_graphics_GL20)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getGL30_R_com_badlogic_gdx_graphics_GL30 4
+typedef jobject (*func_com_badlogic_gdx_Graphics_getGL30_R_com_badlogic_gdx_graphics_GL30)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getGL31_R_com_badlogic_gdx_graphics_GL31 5
+typedef jobject (*func_com_badlogic_gdx_Graphics_getGL31_R_com_badlogic_gdx_graphics_GL31)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getGL32_R_com_badlogic_gdx_graphics_GL32 6
+typedef jobject (*func_com_badlogic_gdx_Graphics_getGL32_R_com_badlogic_gdx_graphics_GL32)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_setGL20_com_badlogic_gdx_graphics_GL20 7
+typedef void (*func_com_badlogic_gdx_Graphics_setGL20_com_badlogic_gdx_graphics_GL20)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Graphics_setGL30_com_badlogic_gdx_graphics_GL30 8
+typedef void (*func_com_badlogic_gdx_Graphics_setGL30_com_badlogic_gdx_graphics_GL30)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Graphics_setGL31_com_badlogic_gdx_graphics_GL31 9
+typedef void (*func_com_badlogic_gdx_Graphics_setGL31_com_badlogic_gdx_graphics_GL31)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Graphics_setGL32_com_badlogic_gdx_graphics_GL32 10
+typedef void (*func_com_badlogic_gdx_Graphics_setGL32_com_badlogic_gdx_graphics_GL32)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Graphics_getWidth_R_int 11
+typedef jint (*func_com_badlogic_gdx_Graphics_getWidth_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getHeight_R_int 12
+typedef jint (*func_com_badlogic_gdx_Graphics_getHeight_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getBackBufferWidth_R_int 13
+typedef jint (*func_com_badlogic_gdx_Graphics_getBackBufferWidth_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getBackBufferHeight_R_int 14
+typedef jint (*func_com_badlogic_gdx_Graphics_getBackBufferHeight_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getBackBufferScale_R_float 15
+typedef jfloat (*func_com_badlogic_gdx_Graphics_getBackBufferScale_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getSafeInsetLeft_R_int 16
+typedef jint (*func_com_badlogic_gdx_Graphics_getSafeInsetLeft_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getSafeInsetTop_R_int 17
+typedef jint (*func_com_badlogic_gdx_Graphics_getSafeInsetTop_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getSafeInsetBottom_R_int 18
+typedef jint (*func_com_badlogic_gdx_Graphics_getSafeInsetBottom_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getSafeInsetRight_R_int 19
+typedef jint (*func_com_badlogic_gdx_Graphics_getSafeInsetRight_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getFrameId_R_long 20
+typedef jlong (*func_com_badlogic_gdx_Graphics_getFrameId_R_long)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getDeltaTime_R_float 21
+typedef jfloat (*func_com_badlogic_gdx_Graphics_getDeltaTime_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getRawDeltaTime_R_float 22
+typedef jfloat (*func_com_badlogic_gdx_Graphics_getRawDeltaTime_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getFramesPerSecond_R_int 23
+typedef jint (*func_com_badlogic_gdx_Graphics_getFramesPerSecond_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getType_R_com_badlogic_gdx_Graphics$GraphicsType 24
+typedef jobject (*func_com_badlogic_gdx_Graphics_getType_R_com_badlogic_gdx_Graphics$GraphicsType)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getGLVersion_R_com_badlogic_gdx_graphics_glutils_GLVersion 25
+typedef jobject (*func_com_badlogic_gdx_Graphics_getGLVersion_R_com_badlogic_gdx_graphics_glutils_GLVersion)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getPpiX_R_float 26
+typedef jfloat (*func_com_badlogic_gdx_Graphics_getPpiX_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getPpiY_R_float 27
+typedef jfloat (*func_com_badlogic_gdx_Graphics_getPpiY_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getPpcX_R_float 28
+typedef jfloat (*func_com_badlogic_gdx_Graphics_getPpcX_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getPpcY_R_float 29
+typedef jfloat (*func_com_badlogic_gdx_Graphics_getPpcY_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getDensity_R_float 30
+typedef jfloat (*func_com_badlogic_gdx_Graphics_getDensity_R_float)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_supportsDisplayModeChange_R_boolean 31
+typedef jbool (*func_com_badlogic_gdx_Graphics_supportsDisplayModeChange_R_boolean)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getPrimaryMonitor_R_com_badlogic_gdx_Graphics$Monitor 32
+typedef jobject (*func_com_badlogic_gdx_Graphics_getPrimaryMonitor_R_com_badlogic_gdx_Graphics$Monitor)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getMonitor_R_com_badlogic_gdx_Graphics$Monitor 33
+typedef jobject (*func_com_badlogic_gdx_Graphics_getMonitor_R_com_badlogic_gdx_Graphics$Monitor)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getMonitors_R_Array1_com_badlogic_gdx_Graphics$Monitor 34
+typedef jobject (*func_com_badlogic_gdx_Graphics_getMonitors_R_Array1_com_badlogic_gdx_Graphics$Monitor)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getDisplayModes_R_Array1_com_badlogic_gdx_Graphics$DisplayMode 35
+typedef jobject (*func_com_badlogic_gdx_Graphics_getDisplayModes_R_Array1_com_badlogic_gdx_Graphics$DisplayMode)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getDisplayModes_com_badlogic_gdx_Graphics$Monitor_R_Array1_com_badlogic_gdx_Graphics$DisplayMode 36
+typedef jobject (*func_com_badlogic_gdx_Graphics_getDisplayModes_com_badlogic_gdx_Graphics$Monitor_R_Array1_com_badlogic_gdx_Graphics$DisplayMode)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Graphics_getDisplayMode_R_com_badlogic_gdx_Graphics$DisplayMode 37
+typedef jobject (*func_com_badlogic_gdx_Graphics_getDisplayMode_R_com_badlogic_gdx_Graphics$DisplayMode)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_getDisplayMode_com_badlogic_gdx_Graphics$Monitor_R_com_badlogic_gdx_Graphics$DisplayMode 38
+typedef jobject (*func_com_badlogic_gdx_Graphics_getDisplayMode_com_badlogic_gdx_Graphics$Monitor_R_com_badlogic_gdx_Graphics$DisplayMode)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Graphics_setFullscreenMode_com_badlogic_gdx_Graphics$DisplayMode_R_boolean 39
+typedef jbool (*func_com_badlogic_gdx_Graphics_setFullscreenMode_com_badlogic_gdx_Graphics$DisplayMode_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Graphics_setWindowedMode_int_int_R_boolean 40
+typedef jbool (*func_com_badlogic_gdx_Graphics_setWindowedMode_int_int_R_boolean)(jcontext ctx, jobject self, jint param0, jint param1);
+#define INDEX_com_badlogic_gdx_Graphics_setTitle_java_lang_String 41
+typedef void (*func_com_badlogic_gdx_Graphics_setTitle_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Graphics_setUndecorated_boolean 42
+typedef void (*func_com_badlogic_gdx_Graphics_setUndecorated_boolean)(jcontext ctx, jobject self, jbool param0);
+#define INDEX_com_badlogic_gdx_Graphics_setResizable_boolean 43
+typedef void (*func_com_badlogic_gdx_Graphics_setResizable_boolean)(jcontext ctx, jobject self, jbool param0);
+#define INDEX_com_badlogic_gdx_Graphics_setVSync_boolean 44
+typedef void (*func_com_badlogic_gdx_Graphics_setVSync_boolean)(jcontext ctx, jobject self, jbool param0);
+#define INDEX_com_badlogic_gdx_Graphics_setForegroundFPS_int 45
+typedef void (*func_com_badlogic_gdx_Graphics_setForegroundFPS_int)(jcontext ctx, jobject self, jint param0);
+#define INDEX_com_badlogic_gdx_Graphics_getBufferFormat_R_com_badlogic_gdx_Graphics$BufferFormat 46
+typedef jobject (*func_com_badlogic_gdx_Graphics_getBufferFormat_R_com_badlogic_gdx_Graphics$BufferFormat)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_supportsExtension_java_lang_String_R_boolean 47
+typedef jbool (*func_com_badlogic_gdx_Graphics_supportsExtension_java_lang_String_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Graphics_setContinuousRendering_boolean 48
+typedef void (*func_com_badlogic_gdx_Graphics_setContinuousRendering_boolean)(jcontext ctx, jobject self, jbool param0);
+#define INDEX_com_badlogic_gdx_Graphics_isContinuousRendering_R_boolean 49
+typedef jbool (*func_com_badlogic_gdx_Graphics_isContinuousRendering_R_boolean)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_requestRendering 50
+typedef void (*func_com_badlogic_gdx_Graphics_requestRendering)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_isFullscreen_R_boolean 51
+typedef jbool (*func_com_badlogic_gdx_Graphics_isFullscreen_R_boolean)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Graphics_newCursor_com_badlogic_gdx_graphics_Pixmap_int_int_R_com_badlogic_gdx_graphics_Cursor 52
+typedef jobject (*func_com_badlogic_gdx_Graphics_newCursor_com_badlogic_gdx_graphics_Pixmap_int_int_R_com_badlogic_gdx_graphics_Cursor)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define INDEX_com_badlogic_gdx_Graphics_setCursor_com_badlogic_gdx_graphics_Cursor 53
+typedef void (*func_com_badlogic_gdx_Graphics_setCursor_com_badlogic_gdx_graphics_Cursor)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Graphics_setSystemCursor_com_badlogic_gdx_graphics_Cursor$SystemCursor 54
+typedef void (*func_com_badlogic_gdx_Graphics_setSystemCursor_com_badlogic_gdx_graphics_Cursor$SystemCursor)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_Graphics(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_Graphics(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

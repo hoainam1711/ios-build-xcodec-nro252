@@ -1,0 +1,137 @@
+#ifndef HEADER_com_badlogic_gdx_utils_OrderedMap
+#define HEADER_com_badlogic_gdx_utils_OrderedMap
+
+#include "Clearwing.h"
+#include "com/badlogic/gdx/utils/ObjectMap.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_utils_OrderedMap {
+	com_badlogic_gdx_utils_ObjectMap parent;
+	jref F_keys;
+} com_badlogic_gdx_utils_OrderedMap;
+
+extern Class class_com_badlogic_gdx_utils_OrderedMap;
+
+
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_utils_OrderedMap_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_utils_OrderedMap_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_finalize 5
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_notify 6
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_notifyAll 7
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_wait 8
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_wait_long 9
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_iterator_R_java_util_Iterator 11
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_iterator_R_java_util_Iterator)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_forEach_java_util_function_Consumer 12
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_forEach_java_util_function_Consumer)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_spliterator_R_java_util_Spliterator 13
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_spliterator_R_java_util_Spliterator)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_place_java_lang_Object_R_int 14
+typedef jint (*func_com_badlogic_gdx_utils_OrderedMap_place_java_lang_Object_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_locateKey_java_lang_Object_R_int 15
+typedef jint (*func_com_badlogic_gdx_utils_OrderedMap_locateKey_java_lang_Object_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_put_java_lang_Object_java_lang_Object_R_java_lang_Object 16
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_put_java_lang_Object_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_putMissing_java_lang_Object_java_lang_Object_R_java_lang_Object 17
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_putMissing_java_lang_Object_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_putAll_com_badlogic_gdx_utils_ObjectMap 18
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_putAll_com_badlogic_gdx_utils_ObjectMap)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_putResize_java_lang_Object_java_lang_Object 19
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_putResize_java_lang_Object_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_get_java_lang_Object_R_java_lang_Object 20
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_get_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_get_java_lang_Object_java_lang_Object_R_java_lang_Object 21
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_get_java_lang_Object_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_remove_java_lang_Object_R_java_lang_Object 22
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_remove_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_notEmpty_R_boolean 23
+typedef jbool (*func_com_badlogic_gdx_utils_OrderedMap_notEmpty_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_isEmpty_R_boolean 24
+typedef jbool (*func_com_badlogic_gdx_utils_OrderedMap_isEmpty_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_shrink_int 25
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_shrink_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_clear_int 26
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_clear_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_clear 27
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_clear)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_containsValue_java_lang_Object_boolean_R_boolean 28
+typedef jbool (*func_com_badlogic_gdx_utils_OrderedMap_containsValue_java_lang_Object_boolean_R_boolean)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_containsKey_java_lang_Object_R_boolean 29
+typedef jbool (*func_com_badlogic_gdx_utils_OrderedMap_containsKey_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_findKey_java_lang_Object_boolean_R_java_lang_Object 30
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_findKey_java_lang_Object_boolean_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_ensureCapacity_int 31
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_ensureCapacity_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_resize_int 32
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_resize_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_equalsIdentity_java_lang_Object_R_boolean 33
+typedef jbool (*func_com_badlogic_gdx_utils_OrderedMap_equalsIdentity_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_toString_java_lang_String_R_java_lang_String 34
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_toString_java_lang_String_R_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_toString_java_lang_String_boolean_R_java_lang_String 35
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_toString_java_lang_String_boolean_R_java_lang_String)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_iterator_R_com_badlogic_gdx_utils_ObjectMap$Entries 36
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_iterator_R_com_badlogic_gdx_utils_ObjectMap$Entries)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_entries_R_com_badlogic_gdx_utils_ObjectMap$Entries 37
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_entries_R_com_badlogic_gdx_utils_ObjectMap$Entries)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_values_R_com_badlogic_gdx_utils_ObjectMap$Values 38
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_values_R_com_badlogic_gdx_utils_ObjectMap$Values)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_keys_R_com_badlogic_gdx_utils_ObjectMap$Keys 39
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_keys_R_com_badlogic_gdx_utils_ObjectMap$Keys)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_putAll_com_badlogic_gdx_utils_OrderedMap 40
+typedef void (*func_com_badlogic_gdx_utils_OrderedMap_putAll_com_badlogic_gdx_utils_OrderedMap)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_removeIndex_int_R_java_lang_Object 41
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_removeIndex_int_R_java_lang_Object)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_alter_java_lang_Object_java_lang_Object_R_boolean 42
+typedef jbool (*func_com_badlogic_gdx_utils_OrderedMap_alter_java_lang_Object_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_alterIndex_int_java_lang_Object_R_boolean 43
+typedef jbool (*func_com_badlogic_gdx_utils_OrderedMap_alterIndex_int_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_OrderedMap_orderedKeys_R_com_badlogic_gdx_utils_Array 44
+typedef jobject (*func_com_badlogic_gdx_utils_OrderedMap_orderedKeys_R_com_badlogic_gdx_utils_Array)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_utils_OrderedMap(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_utils_OrderedMap(jcontext ctx);
+void init_com_badlogic_gdx_utils_OrderedMap(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_utils_OrderedMap_int(jcontext ctx, jobject self, jint param0);
+void init_com_badlogic_gdx_utils_OrderedMap_int_float(jcontext ctx, jobject self, jint param0, jfloat param1);
+void init_com_badlogic_gdx_utils_OrderedMap_com_badlogic_gdx_utils_OrderedMap(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_OrderedMap_put_java_lang_Object_java_lang_Object_R_java_lang_Object(jcontext ctx, jobject self, jobject param0, jobject param1);
+jobject M_com_badlogic_gdx_utils_OrderedMap_putMissing_java_lang_Object_java_lang_Object_R_java_lang_Object(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_utils_OrderedMap_putAll_com_badlogic_gdx_utils_OrderedMap(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_OrderedMap_remove_java_lang_Object_R_java_lang_Object(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_OrderedMap_removeIndex_int_R_java_lang_Object(jcontext ctx, jobject self, jint param0);
+jbool M_com_badlogic_gdx_utils_OrderedMap_alter_java_lang_Object_java_lang_Object_R_boolean(jcontext ctx, jobject self, jobject param0, jobject param1);
+jbool M_com_badlogic_gdx_utils_OrderedMap_alterIndex_int_java_lang_Object_R_boolean(jcontext ctx, jobject self, jint param0, jobject param1);
+void M_com_badlogic_gdx_utils_OrderedMap_clear_int(jcontext ctx, jobject self, jint param0);
+void M_com_badlogic_gdx_utils_OrderedMap_clear(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_OrderedMap_orderedKeys_R_com_badlogic_gdx_utils_Array(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_OrderedMap_iterator_R_com_badlogic_gdx_utils_ObjectMap$Entries(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_OrderedMap_entries_R_com_badlogic_gdx_utils_ObjectMap$Entries(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_OrderedMap_values_R_com_badlogic_gdx_utils_ObjectMap$Values(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_OrderedMap_keys_R_com_badlogic_gdx_utils_ObjectMap$Keys(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_OrderedMap_toString_java_lang_String_boolean_R_java_lang_String(jcontext ctx, jobject self, jobject param0, jbool param1);
+jobject M_com_badlogic_gdx_utils_OrderedMap_iterator_R_java_util_Iterator(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

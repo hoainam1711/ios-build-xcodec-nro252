@@ -1,0 +1,68 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug
+#define HEADER_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug
+
+#include "Clearwing.h"
+#include "java/lang/Enum.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_ui_Table$Debug {
+	java_lang_Enum parent;
+} com_badlogic_gdx_scenes_scene2d_ui_Table$Debug;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug;
+
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_none;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_all;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_table;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_cell;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_actor;
+extern jobject SF_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_$VALUES;
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_compareTo_java_lang_Object_R_int 11
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_compareTo_java_lang_Object_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_compareTo_java_lang_Enum_R_int 12
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_compareTo_java_lang_Enum_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_name_R_java_lang_String 13
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_name_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_ordinal_R_int 14
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_ordinal_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_getDeclaringClass_R_java_lang_Class 15
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_getDeclaringClass_R_java_lang_Class)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug(jcontext ctx);
+jobject SM_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_values_R_Array1_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug(jcontext ctx);
+jobject SM_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_valueOf_java_lang_String_R_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug(jcontext ctx, jobject param0);
+void init_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_java_lang_String_int(jcontext ctx, jobject self, jobject param0, jint param1);
+jobject SM_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug_$values_R_Array1_com_badlogic_gdx_scenes_scene2d_ui_Table$Debug(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

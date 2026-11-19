@@ -1,0 +1,110 @@
+#ifndef HEADER_com_badlogic_gdx_utils_reflect_Field
+#define HEADER_com_badlogic_gdx_utils_reflect_Field
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_utils_reflect_Field {
+	java_lang_Object parent;
+	jref F_field;
+} com_badlogic_gdx_utils_reflect_Field;
+
+extern Class class_com_badlogic_gdx_utils_reflect_Field;
+
+
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_utils_reflect_Field_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Field_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Field_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Field_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_finalize 5
+typedef void (*func_com_badlogic_gdx_utils_reflect_Field_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_notify 6
+typedef void (*func_com_badlogic_gdx_utils_reflect_Field_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_notifyAll 7
+typedef void (*func_com_badlogic_gdx_utils_reflect_Field_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_wait 8
+typedef void (*func_com_badlogic_gdx_utils_reflect_Field_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_wait_long 9
+typedef void (*func_com_badlogic_gdx_utils_reflect_Field_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_utils_reflect_Field_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_getName_R_java_lang_String 11
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Field_getName_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_getType_R_java_lang_Class 12
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Field_getType_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_getDeclaringClass_R_java_lang_Class 13
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Field_getDeclaringClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_isAccessible_R_boolean 14
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_isAccessible_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_setAccessible_boolean 15
+typedef void (*func_com_badlogic_gdx_utils_reflect_Field_setAccessible_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_isDefaultAccess_R_boolean 16
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_isDefaultAccess_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_isFinal_R_boolean 17
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_isFinal_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_isPrivate_R_boolean 18
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_isPrivate_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_isProtected_R_boolean 19
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_isProtected_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_isPublic_R_boolean 20
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_isPublic_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_isStatic_R_boolean 21
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_isStatic_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_isTransient_R_boolean 22
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_isTransient_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_isVolatile_R_boolean 23
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_isVolatile_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_isSynthetic_R_boolean 24
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_isSynthetic_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_getElementType_int_R_java_lang_Class 25
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Field_getElementType_int_R_java_lang_Class)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_isAnnotationPresent_java_lang_Class_R_boolean 26
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Field_isAnnotationPresent_java_lang_Class_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_getDeclaredAnnotations_R_Array1_com_badlogic_gdx_utils_reflect_Annotation 27
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Field_getDeclaredAnnotations_R_Array1_com_badlogic_gdx_utils_reflect_Annotation)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_getDeclaredAnnotation_java_lang_Class_R_com_badlogic_gdx_utils_reflect_Annotation 28
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Field_getDeclaredAnnotation_java_lang_Class_R_com_badlogic_gdx_utils_reflect_Annotation)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_get_java_lang_Object_R_java_lang_Object 29
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Field_get_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Field_set_java_lang_Object_java_lang_Object 30
+typedef void (*func_com_badlogic_gdx_utils_reflect_Field_set_java_lang_Object_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jobject param1);
+
+void mark_com_badlogic_gdx_utils_reflect_Field(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_utils_reflect_Field(jcontext ctx);
+void init_com_badlogic_gdx_utils_reflect_Field_java_lang_reflect_Field(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_reflect_Field_getName_R_java_lang_String(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_reflect_Field_getType_R_java_lang_Class(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_reflect_Field_getDeclaringClass_R_java_lang_Class(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Field_isAccessible_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_reflect_Field_setAccessible_boolean(jcontext ctx, jobject self, jbool param0);
+jbool M_com_badlogic_gdx_utils_reflect_Field_isDefaultAccess_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Field_isFinal_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Field_isPrivate_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Field_isProtected_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Field_isPublic_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Field_isStatic_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Field_isTransient_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Field_isVolatile_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Field_isSynthetic_R_boolean(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_reflect_Field_getElementType_int_R_java_lang_Class(jcontext ctx, jobject self, jint param0);
+jbool M_com_badlogic_gdx_utils_reflect_Field_isAnnotationPresent_java_lang_Class_R_boolean(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_reflect_Field_getDeclaredAnnotations_R_Array1_com_badlogic_gdx_utils_reflect_Annotation(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_reflect_Field_getDeclaredAnnotation_java_lang_Class_R_com_badlogic_gdx_utils_reflect_Annotation(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_reflect_Field_get_java_lang_Object_R_java_lang_Object(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_reflect_Field_set_java_lang_Object_java_lang_Object(jcontext ctx, jobject self, jobject param0, jobject param1);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

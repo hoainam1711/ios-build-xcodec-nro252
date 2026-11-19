@@ -1,0 +1,174 @@
+#ifndef HEADER_com_badlogic_gdx_utils_JsonWriter
+#define HEADER_com_badlogic_gdx_utils_JsonWriter
+
+#include "Clearwing.h"
+#include "java/io/Writer.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_utils_JsonWriter {
+	java_io_Writer parent;
+	jref F_writer;
+	jref F_stack;
+	jint F_current;
+	jbool F_named;
+	jref F_outputType;
+	jbool F_quoteLongValues;
+} com_badlogic_gdx_utils_JsonWriter;
+
+extern Class class_com_badlogic_gdx_utils_JsonWriter;
+
+extern jint SF_com_badlogic_gdx_utils_JsonWriter_none;
+extern jint SF_com_badlogic_gdx_utils_JsonWriter_needsComma;
+extern jint SF_com_badlogic_gdx_utils_JsonWriter_object;
+extern jint SF_com_badlogic_gdx_utils_JsonWriter_array;
+extern jint SF_com_badlogic_gdx_utils_JsonWriter_isObject;
+
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_utils_JsonWriter_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_utils_JsonWriter_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_finalize 5
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_notify 6
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_notifyAll 7
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_wait 8
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_wait_long 9
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_append_char_R_java_lang_Appendable 11
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_append_char_R_java_lang_Appendable)(jcontext ctx, jobject self, jchar param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_append_java_lang_CharSequence_R_java_lang_Appendable 12
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_append_java_lang_CharSequence_R_java_lang_Appendable)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_append_java_lang_CharSequence_int_int_R_java_lang_Appendable 13
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_append_java_lang_CharSequence_int_int_R_java_lang_Appendable)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_close 14
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_close)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_flush 15
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_flush)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_write_Array1_char 16
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_write_Array1_char)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_write_Array1_char_int_int 17
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_write_Array1_char_int_int)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_write_int 18
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_write_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_write_java_lang_String 19
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_write_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_write_java_lang_String_int_int 20
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_write_java_lang_String_int_int)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_append_java_lang_CharSequence_R_java_io_Writer 21
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_append_java_lang_CharSequence_R_java_io_Writer)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_append_char_R_java_io_Writer 22
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_append_char_R_java_io_Writer)(jcontext ctx, jobject self, jchar param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_append_java_lang_CharSequence_int_int_R_java_io_Writer 23
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_append_java_lang_CharSequence_int_int_R_java_io_Writer)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_setWriter_java_io_Writer 24
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_setWriter_java_io_Writer)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_getWriter_R_java_io_Writer 25
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_getWriter_R_java_io_Writer)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_setOutputType_com_badlogic_gdx_utils_JsonWriter$OutputType 26
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_setOutputType_com_badlogic_gdx_utils_JsonWriter$OutputType)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_setQuoteLongValues_boolean 27
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_setQuoteLongValues_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_object_R_com_badlogic_gdx_utils_JsonWriter 28
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_object_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_array_R_com_badlogic_gdx_utils_JsonWriter 29
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_array_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_value_java_lang_Object_R_com_badlogic_gdx_utils_JsonWriter 30
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_value_java_lang_Object_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_value_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter 31
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_value_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_value_boolean_R_com_badlogic_gdx_utils_JsonWriter 32
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_value_boolean_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_value_int_R_com_badlogic_gdx_utils_JsonWriter 33
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_value_int_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_value_long_R_com_badlogic_gdx_utils_JsonWriter 34
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_value_long_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_value_float_R_com_badlogic_gdx_utils_JsonWriter 35
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_value_float_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_value_double_R_com_badlogic_gdx_utils_JsonWriter 36
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_value_double_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jdouble param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_json_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter 37
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_json_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_requireCommaOrName 38
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_requireCommaOrName)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_name_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter 39
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_name_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_nameValue_java_lang_String 40
+typedef void (*func_com_badlogic_gdx_utils_JsonWriter_nameValue_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_object_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter 41
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_object_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_array_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter 42
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_array_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_java_lang_Object_R_com_badlogic_gdx_utils_JsonWriter 43
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_java_lang_Object_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter 44
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_boolean_R_com_badlogic_gdx_utils_JsonWriter 45
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_boolean_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0, jbool param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_int_R_com_badlogic_gdx_utils_JsonWriter 46
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_int_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_long_R_com_badlogic_gdx_utils_JsonWriter 47
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_long_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0, jlong param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_float_R_com_badlogic_gdx_utils_JsonWriter 48
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_float_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_double_R_com_badlogic_gdx_utils_JsonWriter 49
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_double_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0, jdouble param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_json_java_lang_String_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter 50
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_json_java_lang_String_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_JsonWriter_pop_R_com_badlogic_gdx_utils_JsonWriter 51
+typedef jobject (*func_com_badlogic_gdx_utils_JsonWriter_pop_R_com_badlogic_gdx_utils_JsonWriter)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_utils_JsonWriter(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_utils_JsonWriter(jcontext ctx);
+void init_com_badlogic_gdx_utils_JsonWriter_java_io_Writer(jcontext ctx, jobject self, jobject param0);
+void init_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonWriter_setWriter_java_io_Writer(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_getWriter_R_java_io_Writer(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonWriter_setOutputType_com_badlogic_gdx_utils_JsonWriter$OutputType(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonWriter_setQuoteLongValues_boolean(jcontext ctx, jobject self, jbool param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_object_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonWriter_array_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonWriter_value_java_lang_Object_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_value_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_value_boolean_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jbool param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_value_int_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jint param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_value_long_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jlong param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_value_float_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jfloat param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_value_double_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jdouble param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_json_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonWriter_requireCommaOrName(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_JsonWriter_name_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_utils_JsonWriter_nameValue_java_lang_String(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_object_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_array_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_java_lang_Object_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0, jobject param1);
+jobject M_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0, jobject param1);
+jobject M_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_boolean_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0, jbool param1);
+jobject M_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_int_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0, jint param1);
+jobject M_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_long_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0, jlong param1);
+jobject M_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_float_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0, jfloat param1);
+jobject M_com_badlogic_gdx_utils_JsonWriter_set_java_lang_String_double_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0, jdouble param1);
+jobject M_com_badlogic_gdx_utils_JsonWriter_json_java_lang_String_java_lang_String_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self, jobject param0, jobject param1);
+jobject M_com_badlogic_gdx_utils_JsonWriter_pop_R_com_badlogic_gdx_utils_JsonWriter(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonWriter_write_Array1_char_int_int(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+void M_com_badlogic_gdx_utils_JsonWriter_flush(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_JsonWriter_close(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

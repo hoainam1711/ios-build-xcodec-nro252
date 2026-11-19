@@ -1,0 +1,71 @@
+#ifndef HEADER_com_badlogic_gdx_math_Intersector$SplitTriangle
+#define HEADER_com_badlogic_gdx_math_Intersector$SplitTriangle
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_math_Intersector$SplitTriangle {
+	java_lang_Object parent;
+	jref F_front;
+	jref F_back;
+	jref F_edgeSplit;
+	jint F_numFront;
+	jint F_numBack;
+	jint F_total;
+	jbool F_frontCurrent;
+	jint F_frontOffset;
+	jint F_backOffset;
+} com_badlogic_gdx_math_Intersector$SplitTriangle;
+
+extern Class class_com_badlogic_gdx_math_Intersector$SplitTriangle;
+
+
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_finalize 5
+typedef void (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_notify 6
+typedef void (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_notifyAll 7
+typedef void (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_wait 8
+typedef void (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_wait_long 9
+typedef void (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_setSide_boolean 11
+typedef void (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_setSide_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_getSide_R_boolean 12
+typedef jbool (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_getSide_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_add_Array1_float_int_int 13
+typedef void (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_add_Array1_float_int_int)(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+#define VTABLE_com_badlogic_gdx_math_Intersector$SplitTriangle_reset 14
+typedef void (*func_com_badlogic_gdx_math_Intersector$SplitTriangle_reset)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_math_Intersector$SplitTriangle(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_math_Intersector$SplitTriangle(jcontext ctx);
+void init_com_badlogic_gdx_math_Intersector$SplitTriangle_int(jcontext ctx, jobject self, jint param0);
+jobject M_com_badlogic_gdx_math_Intersector$SplitTriangle_toString_R_java_lang_String(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_math_Intersector$SplitTriangle_setSide_boolean(jcontext ctx, jobject self, jbool param0);
+jbool M_com_badlogic_gdx_math_Intersector$SplitTriangle_getSide_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_math_Intersector$SplitTriangle_add_Array1_float_int_int(jcontext ctx, jobject self, jobject param0, jint param1, jint param2);
+void M_com_badlogic_gdx_math_Intersector$SplitTriangle_reset(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

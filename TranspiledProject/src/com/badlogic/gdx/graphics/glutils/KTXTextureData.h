@@ -1,0 +1,121 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_glutils_KTXTextureData
+#define HEADER_com_badlogic_gdx_graphics_glutils_KTXTextureData
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/graphics/TextureData.h"
+#include "com/badlogic/gdx/graphics/CubemapData.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_glutils_KTXTextureData {
+	java_lang_Object parent;
+	jref F_file;
+	jint F_glType;
+	jint F_glTypeSize;
+	jint F_glFormat;
+	jint F_glInternalFormat;
+	jint F_glBaseInternalFormat;
+	jint F_pixelWidth;
+	jint F_pixelHeight;
+	jint F_pixelDepth;
+	jint F_numberOfArrayElements;
+	jint F_numberOfFaces;
+	jint F_numberOfMipmapLevels;
+	jint F_imagePos;
+	jref F_compressedData;
+	jbool F_useMipMaps;
+} com_badlogic_gdx_graphics_glutils_KTXTextureData;
+
+extern Class class_com_badlogic_gdx_graphics_glutils_KTXTextureData;
+
+extern jint SF_com_badlogic_gdx_graphics_glutils_KTXTextureData_GL_TEXTURE_1D;
+extern jint SF_com_badlogic_gdx_graphics_glutils_KTXTextureData_GL_TEXTURE_3D;
+extern jint SF_com_badlogic_gdx_graphics_glutils_KTXTextureData_GL_TEXTURE_1D_ARRAY_EXT;
+extern jint SF_com_badlogic_gdx_graphics_glutils_KTXTextureData_GL_TEXTURE_2D_ARRAY_EXT;
+
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_getType_R_com_badlogic_gdx_graphics_TextureData$TextureDataType 11
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_getType_R_com_badlogic_gdx_graphics_TextureData$TextureDataType)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_isPrepared_R_boolean 12
+typedef jbool (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_isPrepared_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_prepare 13
+typedef void (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_prepare)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_consumePixmap_R_com_badlogic_gdx_graphics_Pixmap 14
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_consumePixmap_R_com_badlogic_gdx_graphics_Pixmap)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_disposePixmap_R_boolean 15
+typedef jbool (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_disposePixmap_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_consumeCustomData_int 16
+typedef void (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_consumeCustomData_int)(jcontext ctx, jobject self, jint param0);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_getWidth_R_int 17
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_getWidth_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_getHeight_R_int 18
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_getHeight_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_getFormat_R_com_badlogic_gdx_graphics_Pixmap$Format 19
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_getFormat_R_com_badlogic_gdx_graphics_Pixmap$Format)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_useMipMaps_R_boolean 20
+typedef jbool (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_useMipMaps_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_isManaged_R_boolean 21
+typedef jbool (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_isManaged_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_consumeCubemapData 22
+typedef void (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_consumeCubemapData)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_disposePreparedData 23
+typedef void (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_disposePreparedData)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_getNumberOfMipMapLevels_R_int 24
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_getNumberOfMipMapLevels_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_getNumberOfFaces_R_int 25
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_getNumberOfFaces_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_getGlInternalFormat_R_int 26
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_getGlInternalFormat_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_glutils_KTXTextureData_getData_int_int_R_java_nio_ByteBuffer 27
+typedef jobject (*func_com_badlogic_gdx_graphics_glutils_KTXTextureData_getData_int_int_R_java_nio_ByteBuffer)(jcontext ctx, jobject self, jint param0, jint param1);
+
+void mark_com_badlogic_gdx_graphics_glutils_KTXTextureData(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_glutils_KTXTextureData(jcontext ctx);
+void init_com_badlogic_gdx_graphics_glutils_KTXTextureData_com_badlogic_gdx_files_FileHandle_boolean(jcontext ctx, jobject self, jobject param0, jbool param1);
+jobject M_com_badlogic_gdx_graphics_glutils_KTXTextureData_getType_R_com_badlogic_gdx_graphics_TextureData$TextureDataType(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_glutils_KTXTextureData_isPrepared_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_KTXTextureData_prepare(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_KTXTextureData_consumeCubemapData(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_graphics_glutils_KTXTextureData_consumeCustomData_int(jcontext ctx, jobject self, jint param0);
+void M_com_badlogic_gdx_graphics_glutils_KTXTextureData_disposePreparedData(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_glutils_KTXTextureData_consumePixmap_R_com_badlogic_gdx_graphics_Pixmap(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_glutils_KTXTextureData_disposePixmap_R_boolean(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_glutils_KTXTextureData_getWidth_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_glutils_KTXTextureData_getHeight_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_glutils_KTXTextureData_getNumberOfMipMapLevels_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_glutils_KTXTextureData_getNumberOfFaces_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_glutils_KTXTextureData_getGlInternalFormat_R_int(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_graphics_glutils_KTXTextureData_getData_int_int_R_java_nio_ByteBuffer(jcontext ctx, jobject self, jint param0, jint param1);
+jobject M_com_badlogic_gdx_graphics_glutils_KTXTextureData_getFormat_R_com_badlogic_gdx_graphics_Pixmap$Format(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_glutils_KTXTextureData_useMipMaps_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_graphics_glutils_KTXTextureData_isManaged_R_boolean(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

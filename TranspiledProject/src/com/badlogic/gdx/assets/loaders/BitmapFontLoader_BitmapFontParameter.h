@@ -1,0 +1,55 @@
+#ifndef HEADER_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter
+#define HEADER_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter
+
+#include "Clearwing.h"
+#include "com/badlogic/gdx/assets/AssetLoaderParameters.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter {
+	com_badlogic_gdx_assets_AssetLoaderParameters parent;
+	jbool F_flip;
+	jbool F_genMipMaps;
+	jref F_minFilter;
+	jref F_magFilter;
+	jref F_bitmapFontData;
+	jref F_atlasName;
+} com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter;
+
+extern Class class_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter;
+
+
+#define VTABLE_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_finalize 5
+typedef void (*func_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_notify 6
+typedef void (*func_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_notifyAll 7
+typedef void (*func_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_wait 8
+typedef void (*func_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_wait_long 9
+typedef void (*func_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+
+void mark_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter(jcontext ctx);
+void init_com_badlogic_gdx_assets_loaders_BitmapFontLoader$BitmapFontParameter(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

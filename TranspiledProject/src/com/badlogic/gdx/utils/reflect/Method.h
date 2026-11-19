@@ -1,0 +1,107 @@
+#ifndef HEADER_com_badlogic_gdx_utils_reflect_Method
+#define HEADER_com_badlogic_gdx_utils_reflect_Method
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_utils_reflect_Method {
+	java_lang_Object parent;
+	jref F_method;
+} com_badlogic_gdx_utils_reflect_Method;
+
+extern Class class_com_badlogic_gdx_utils_reflect_Method;
+
+
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_utils_reflect_Method_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Method_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Method_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Method_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_finalize 5
+typedef void (*func_com_badlogic_gdx_utils_reflect_Method_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_notify 6
+typedef void (*func_com_badlogic_gdx_utils_reflect_Method_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_notifyAll 7
+typedef void (*func_com_badlogic_gdx_utils_reflect_Method_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_wait 8
+typedef void (*func_com_badlogic_gdx_utils_reflect_Method_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_wait_long 9
+typedef void (*func_com_badlogic_gdx_utils_reflect_Method_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_utils_reflect_Method_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_getName_R_java_lang_String 11
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Method_getName_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_getReturnType_R_java_lang_Class 12
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Method_getReturnType_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_getParameterTypes_R_Array1_java_lang_Class 13
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Method_getParameterTypes_R_Array1_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_getDeclaringClass_R_java_lang_Class 14
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Method_getDeclaringClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_isAccessible_R_boolean 15
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_isAccessible_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_setAccessible_boolean 16
+typedef void (*func_com_badlogic_gdx_utils_reflect_Method_setAccessible_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_isAbstract_R_boolean 17
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_isAbstract_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_isDefaultAccess_R_boolean 18
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_isDefaultAccess_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_isFinal_R_boolean 19
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_isFinal_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_isPrivate_R_boolean 20
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_isPrivate_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_isProtected_R_boolean 21
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_isProtected_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_isPublic_R_boolean 22
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_isPublic_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_isNative_R_boolean 23
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_isNative_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_isStatic_R_boolean 24
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_isStatic_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_isVarArgs_R_boolean 25
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_isVarArgs_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_invoke_java_lang_Object_Array1_java_lang_Object_R_java_lang_Object 26
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Method_invoke_java_lang_Object_Array1_java_lang_Object_R_java_lang_Object)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_isAnnotationPresent_java_lang_Class_R_boolean 27
+typedef jbool (*func_com_badlogic_gdx_utils_reflect_Method_isAnnotationPresent_java_lang_Class_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_getDeclaredAnnotations_R_Array1_com_badlogic_gdx_utils_reflect_Annotation 28
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Method_getDeclaredAnnotations_R_Array1_com_badlogic_gdx_utils_reflect_Annotation)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_reflect_Method_getDeclaredAnnotation_java_lang_Class_R_com_badlogic_gdx_utils_reflect_Annotation 29
+typedef jobject (*func_com_badlogic_gdx_utils_reflect_Method_getDeclaredAnnotation_java_lang_Class_R_com_badlogic_gdx_utils_reflect_Annotation)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_utils_reflect_Method(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_utils_reflect_Method(jcontext ctx);
+void init_com_badlogic_gdx_utils_reflect_Method_java_lang_reflect_Method(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_reflect_Method_getName_R_java_lang_String(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_reflect_Method_getReturnType_R_java_lang_Class(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_reflect_Method_getParameterTypes_R_Array1_java_lang_Class(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_reflect_Method_getDeclaringClass_R_java_lang_Class(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Method_isAccessible_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_reflect_Method_setAccessible_boolean(jcontext ctx, jobject self, jbool param0);
+jbool M_com_badlogic_gdx_utils_reflect_Method_isAbstract_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Method_isDefaultAccess_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Method_isFinal_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Method_isPrivate_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Method_isProtected_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Method_isPublic_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Method_isNative_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Method_isStatic_R_boolean(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_utils_reflect_Method_isVarArgs_R_boolean(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_reflect_Method_invoke_java_lang_Object_Array1_java_lang_Object_R_java_lang_Object(jcontext ctx, jobject self, jobject param0, jobject param1);
+jbool M_com_badlogic_gdx_utils_reflect_Method_isAnnotationPresent_java_lang_Class_R_boolean(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_reflect_Method_getDeclaredAnnotations_R_Array1_com_badlogic_gdx_utils_reflect_Annotation(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_reflect_Method_getDeclaredAnnotation_java_lang_Class_R_com_badlogic_gdx_utils_reflect_Annotation(jcontext ctx, jobject self, jobject param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

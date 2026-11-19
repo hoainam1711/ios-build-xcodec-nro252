@@ -1,0 +1,405 @@
+#include "com/badlogic/gdx/scenes/scene2d/actions/ColorAction.h"
+#include "com/badlogic/gdx/scenes/scene2d/actions/ColorAction.h"
+#include "com/badlogic/gdx/scenes/scene2d/actions/TemporalAction.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/scenes/scene2d/Actor.h"
+#include "com/badlogic/gdx/graphics/Color.h"
+#include "com/badlogic/gdx/scenes/scene2d/Action.h"
+
+extern "C" {
+
+
+void mark_com_badlogic_gdx_scenes_scene2d_actions_ColorAction(jobject object, jint mark, jint depth) {
+	if (!object) {
+		return;
+	}
+	if (depth > GC_DEPTH_ALWAYS && (object->gcMark < GC_MARK_START || object->gcMark == mark))
+		return;
+	if (depth > MAX_GC_MARK_DEPTH) {
+		markDeepObject(object);
+		return;
+	}
+	mark_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction(object, mark, depth);
+	if (object->gcMark >= GC_MARK_START)
+		object->gcMark = mark;
+	auto self = (com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) object;
+	if (self->F_color)
+		((gc_mark_ptr) ((jclass) ((jobject) self->F_color)->clazz)->markFunction)((jobject) self->F_color, mark, depth + 1);
+	if (self->F_end)
+		((gc_mark_ptr) ((jclass) ((jobject) self->F_end)->clazz)->markFunction)((jobject) self->F_end, mark, depth + 1);
+}
+
+void clinit_com_badlogic_gdx_scenes_scene2d_actions_ColorAction(jcontext ctx) {
+	static bool initialized;
+	if (initialized) return;
+	initialized = true;
+	clinit_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction(ctx);
+}
+
+void init_com_badlogic_gdx_scenes_scene2d_actions_ColorAction(jcontext ctx, jobject self) {
+	NULL_CHECK(self);
+	jtype frame[4];
+	auto stack = &frame[1];
+	jtype *sp = stack;
+	FrameInfo frameInfo { "com/badlogic/gdx/scenes/scene2d/actions/ColorAction:<init>", 4 };
+	auto frameRef = pushStackFrame(ctx, &frameInfo, frame, nullptr);
+
+	clinit_com_badlogic_gdx_scenes_scene2d_actions_ColorAction(ctx);
+	frame[0].o = self;
+	{
+	LINE_NUMBER(26);
+	init_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction(ctx, (frame[0].o));
+	LINE_NUMBER(29);
+	sp[0].o = frame[0].o;
+	clinit_com_badlogic_gdx_graphics_Color(ctx);
+	sp[1].o = gcAlloc(ctx, &class_com_badlogic_gdx_graphics_Color);
+	init_com_badlogic_gdx_graphics_Color(ctx, sp[1].o);
+	((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK(sp[0].o))->F_end = (jref) sp[1].o;
+	popStackFrame(ctx);
+	return;
+	}
+
+	popStackFrame(ctx);
+}
+
+void M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_begin(jcontext ctx, jobject self) {
+	NULL_CHECK(self);
+	jtype frame[3];
+	auto stack = &frame[1];
+	jtype *sp = stack;
+	FrameInfo frameInfo { "com/badlogic/gdx/scenes/scene2d/actions/ColorAction:begin", 3 };
+	auto frameRef = pushStackFrame(ctx, &frameInfo, frame, nullptr);
+
+	frame[0].o = self;
+	{
+	LINE_NUMBER(32);
+	sp[0].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_color;
+	if (sp[0].o != nullptr) goto label_1;
+	}
+	{
+	sp[0].o = frame[0].o;
+	sp[1].o = (jobject)((com_badlogic_gdx_scenes_scene2d_Action *) NULL_CHECK((frame[0].o)))->F_target;
+	sp[1].o = (jobject)((func_com_badlogic_gdx_scenes_scene2d_Actor_getColor_R_com_badlogic_gdx_graphics_Color) ((void **) nullCheck(ctx, sp[1].o)->vtable)[VTABLE_com_badlogic_gdx_scenes_scene2d_Actor_getColor_R_com_badlogic_gdx_graphics_Color])(ctx, sp[1].o);
+	((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK(sp[0].o))->F_color = (jref) sp[1].o;
+	}
+label_1:;
+	{
+	LINE_NUMBER(33);
+	sp[0].o = frame[0].o;
+	sp[1].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_color;
+	((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK(sp[0].o))->F_startR = ((jfloat)((com_badlogic_gdx_graphics_Color *) NULL_CHECK(sp[1].o))->F_r);
+	LINE_NUMBER(34);
+	sp[0].o = frame[0].o;
+	sp[1].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_color;
+	((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK(sp[0].o))->F_startG = ((jfloat)((com_badlogic_gdx_graphics_Color *) NULL_CHECK(sp[1].o))->F_g);
+	LINE_NUMBER(35);
+	sp[0].o = frame[0].o;
+	sp[1].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_color;
+	((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK(sp[0].o))->F_startB = ((jfloat)((com_badlogic_gdx_graphics_Color *) NULL_CHECK(sp[1].o))->F_b);
+	LINE_NUMBER(36);
+	sp[0].o = frame[0].o;
+	sp[1].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_color;
+	((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK(sp[0].o))->F_startA = ((jfloat)((com_badlogic_gdx_graphics_Color *) NULL_CHECK(sp[1].o))->F_a);
+	LINE_NUMBER(37);
+	popStackFrame(ctx);
+	return;
+	}
+
+	popStackFrame(ctx);
+}
+
+void M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_update_float(jcontext ctx, jobject self, jfloat param0) {
+	NULL_CHECK(self);
+	jtype frame[11];
+	auto stack = &frame[6];
+	jtype *sp = stack;
+	FrameInfo frameInfo { "com/badlogic/gdx/scenes/scene2d/actions/ColorAction:update", 11 };
+	auto frameRef = pushStackFrame(ctx, &frameInfo, frame, nullptr);
+
+	frame[0].o = self;
+	frame[1].f = param0;
+	{
+	LINE_NUMBER(40);
+	if ((floatCompare((frame[1].f), (jfloat(0)), -1)) != 0) goto label_1;
+	}
+	{
+	LINE_NUMBER(41);
+	sp[0].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_color;
+	sp[0].o = (jobject)((func_com_badlogic_gdx_graphics_Color_set_float_float_float_float_R_com_badlogic_gdx_graphics_Color) ((void **) nullCheck(ctx, sp[0].o)->vtable)[VTABLE_com_badlogic_gdx_graphics_Color_set_float_float_float_float_R_com_badlogic_gdx_graphics_Color])(ctx, sp[0].o, ((jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startR), ((jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startG), ((jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startB), ((jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startA));
+	goto label_3;
+	}
+label_1:;
+	{
+	LINE_NUMBER(42);
+	if ((floatCompare((frame[1].f), (jfloat(1)), -1)) != 0) goto label_4;
+	}
+	{
+	LINE_NUMBER(43);
+	sp[0].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_color;
+	sp[1].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_end;
+	sp[0].o = (jobject)((func_com_badlogic_gdx_graphics_Color_set_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color) ((void **) nullCheck(ctx, sp[0].o)->vtable)[VTABLE_com_badlogic_gdx_graphics_Color_set_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color])(ctx, sp[0].o, sp[1].o);
+	goto label_3;
+	}
+label_4:;
+	{
+	LINE_NUMBER(45);
+	jfloat temp0 = (jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startR;
+	sp[0].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_end;
+	frame[2].f = (temp0 + ((((jfloat)((com_badlogic_gdx_graphics_Color *) NULL_CHECK(sp[0].o))->F_r) - ((jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startR)) * (frame[1].f)));
+	LINE_NUMBER(46);
+	jfloat temp1 = (jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startG;
+	sp[0].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_end;
+	frame[3].f = (temp1 + ((((jfloat)((com_badlogic_gdx_graphics_Color *) NULL_CHECK(sp[0].o))->F_g) - ((jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startG)) * (frame[1].f)));
+	LINE_NUMBER(47);
+	jfloat temp2 = (jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startB;
+	sp[0].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_end;
+	frame[4].f = (temp2 + ((((jfloat)((com_badlogic_gdx_graphics_Color *) NULL_CHECK(sp[0].o))->F_b) - ((jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startB)) * (frame[1].f)));
+	LINE_NUMBER(48);
+	jfloat temp3 = (jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startA;
+	sp[0].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_end;
+	frame[5].f = (temp3 + ((((jfloat)((com_badlogic_gdx_graphics_Color *) NULL_CHECK(sp[0].o))->F_a) - ((jfloat)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_startA)) * (frame[1].f)));
+	LINE_NUMBER(49);
+	sp[0].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_color;
+	sp[0].o = (jobject)((func_com_badlogic_gdx_graphics_Color_set_float_float_float_float_R_com_badlogic_gdx_graphics_Color) ((void **) nullCheck(ctx, sp[0].o)->vtable)[VTABLE_com_badlogic_gdx_graphics_Color_set_float_float_float_float_R_com_badlogic_gdx_graphics_Color])(ctx, sp[0].o, (frame[2].f), (frame[3].f), (frame[4].f), (frame[5].f));
+	}
+label_3:;
+	LINE_NUMBER(51);
+	popStackFrame(ctx);
+	INST_RETURN();
+
+	popStackFrame(ctx);
+}
+
+void M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_reset(jcontext ctx, jobject self) {
+	NULL_CHECK(self);
+	jtype frame[3];
+	auto stack = &frame[1];
+	jtype *sp = stack;
+	FrameInfo frameInfo { "com/badlogic/gdx/scenes/scene2d/actions/ColorAction:reset", 3 };
+	auto frameRef = pushStackFrame(ctx, &frameInfo, frame, nullptr);
+
+	frame[0].o = self;
+	{
+	LINE_NUMBER(54);
+	M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_reset(ctx, (frame[0].o));
+	LINE_NUMBER(55);
+	((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_color = (jref) (jobject(nullptr));
+	LINE_NUMBER(56);
+	popStackFrame(ctx);
+	return;
+	}
+
+	popStackFrame(ctx);
+}
+
+jobject M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_getColor_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self) {
+	NULL_CHECK(self);
+	jtype frame[2];
+	auto stack = &frame[1];
+	jtype *sp = stack;
+	FrameInfo frameInfo { "com/badlogic/gdx/scenes/scene2d/actions/ColorAction:getColor", 2 };
+	auto frameRef = pushStackFrame(ctx, &frameInfo, frame, nullptr);
+
+	frame[0].o = self;
+	{
+	LINE_NUMBER(59);
+	sp[0].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_color;
+	popStackFrame(ctx);
+	return sp[0].o;
+	}
+
+	popStackFrame(ctx);
+}
+
+void M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_setColor_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0) {
+	NULL_CHECK(self);
+	jtype frame[4];
+	auto stack = &frame[2];
+	jtype *sp = stack;
+	FrameInfo frameInfo { "com/badlogic/gdx/scenes/scene2d/actions/ColorAction:setColor", 4 };
+	auto frameRef = pushStackFrame(ctx, &frameInfo, frame, nullptr);
+
+	frame[0].o = self;
+	frame[1].o = param0;
+	{
+	LINE_NUMBER(65);
+	((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_color = (jref) (frame[1].o);
+	LINE_NUMBER(66);
+	popStackFrame(ctx);
+	return;
+	}
+
+	popStackFrame(ctx);
+}
+
+jobject M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_getEndColor_R_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self) {
+	NULL_CHECK(self);
+	jtype frame[2];
+	auto stack = &frame[1];
+	jtype *sp = stack;
+	FrameInfo frameInfo { "com/badlogic/gdx/scenes/scene2d/actions/ColorAction:getEndColor", 2 };
+	auto frameRef = pushStackFrame(ctx, &frameInfo, frame, nullptr);
+
+	frame[0].o = self;
+	{
+	LINE_NUMBER(69);
+	sp[0].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_end;
+	popStackFrame(ctx);
+	return sp[0].o;
+	}
+
+	popStackFrame(ctx);
+}
+
+void M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_setEndColor_com_badlogic_gdx_graphics_Color(jcontext ctx, jobject self, jobject param0) {
+	NULL_CHECK(self);
+	jtype frame[4];
+	auto stack = &frame[2];
+	jtype *sp = stack;
+	FrameInfo frameInfo { "com/badlogic/gdx/scenes/scene2d/actions/ColorAction:setEndColor", 4 };
+	auto frameRef = pushStackFrame(ctx, &frameInfo, frame, nullptr);
+
+	frame[0].o = self;
+	frame[1].o = param0;
+	{
+	LINE_NUMBER(74);
+	sp[0].o = (jobject)((com_badlogic_gdx_scenes_scene2d_actions_ColorAction *) NULL_CHECK((frame[0].o)))->F_end;
+	sp[0].o = (jobject)((func_com_badlogic_gdx_graphics_Color_set_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color) ((void **) nullCheck(ctx, sp[0].o)->vtable)[VTABLE_com_badlogic_gdx_graphics_Color_set_com_badlogic_gdx_graphics_Color_R_com_badlogic_gdx_graphics_Color])(ctx, sp[0].o, (frame[1].o));
+	LINE_NUMBER(75);
+	popStackFrame(ctx);
+	return;
+	}
+
+	popStackFrame(ctx);
+}
+
+void *vtable_com_badlogic_gdx_scenes_scene2d_actions_ColorAction[] {
+	(void *) M_java_lang_Object_hashCode_R_int,
+	(void *) M_java_lang_Object_equals_java_lang_Object_R_boolean,
+	(void *) M_java_lang_Object_clone_R_java_lang_Object,
+	(void *) M_java_lang_Object_getClass_R_java_lang_Class,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_Action_toString_R_java_lang_String,
+	(void *) M_java_lang_Object_finalize,
+	(void *) M_java_lang_Object_notify,
+	(void *) M_java_lang_Object_notifyAll,
+	(void *) M_java_lang_Object_wait,
+	(void *) M_java_lang_Object_wait_long,
+	(void *) M_java_lang_Object_wait_long_int,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_reset,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_act_float_R_boolean,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_restart,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_Action_setActor_com_badlogic_gdx_scenes_scene2d_Actor,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_Action_getActor_R_com_badlogic_gdx_scenes_scene2d_Actor,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_Action_setTarget_com_badlogic_gdx_scenes_scene2d_Actor,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_Action_getTarget_R_com_badlogic_gdx_scenes_scene2d_Actor,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_Action_getPool_R_com_badlogic_gdx_utils_Pool,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_Action_setPool_com_badlogic_gdx_utils_Pool,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_finish,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_begin,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_end,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_update_float,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_getTime_R_float,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_setTime_float,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_getDuration_R_float,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_setDuration_float,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_getInterpolation_R_com_badlogic_gdx_math_Interpolation,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_setInterpolation_com_badlogic_gdx_math_Interpolation,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_isReverse_R_boolean,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_setReverse_boolean,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction_isComplete_R_boolean,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_getColor_R_com_badlogic_gdx_graphics_Color,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_setColor_com_badlogic_gdx_graphics_Color,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_getEndColor_R_com_badlogic_gdx_graphics_Color,
+	(void *) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_setEndColor_com_badlogic_gdx_graphics_Color,
+};
+
+static VtableEntry vtableEntries[] {
+	{ "hashCode", "()I" },
+	{ "equals", "(Ljava/lang/Object;)Z" },
+	{ "clone", "()Ljava/lang/Object;" },
+	{ "getClass", "()Ljava/lang/Class;" },
+	{ "toString", "()Ljava/lang/String;" },
+	{ "finalize", "()V" },
+	{ "notify", "()V" },
+	{ "notifyAll", "()V" },
+	{ "wait", "()V" },
+	{ "wait", "(J)V" },
+	{ "wait", "(JI)V" },
+	{ "reset", "()V" },
+	{ "act", "(F)Z" },
+	{ "restart", "()V" },
+	{ "setActor", "(Lcom/badlogic/gdx/scenes/scene2d/Actor;)V" },
+	{ "getActor", "()Lcom/badlogic/gdx/scenes/scene2d/Actor;" },
+	{ "setTarget", "(Lcom/badlogic/gdx/scenes/scene2d/Actor;)V" },
+	{ "getTarget", "()Lcom/badlogic/gdx/scenes/scene2d/Actor;" },
+	{ "getPool", "()Lcom/badlogic/gdx/utils/Pool;" },
+	{ "setPool", "(Lcom/badlogic/gdx/utils/Pool;)V" },
+	{ "finish", "()V" },
+	{ "begin", "()V" },
+	{ "end", "()V" },
+	{ "update", "(F)V" },
+	{ "getTime", "()F" },
+	{ "setTime", "(F)V" },
+	{ "getDuration", "()F" },
+	{ "setDuration", "(F)V" },
+	{ "getInterpolation", "()Lcom/badlogic/gdx/math/Interpolation;" },
+	{ "setInterpolation", "(Lcom/badlogic/gdx/math/Interpolation;)V" },
+	{ "isReverse", "()Z" },
+	{ "setReverse", "(Z)V" },
+	{ "isComplete", "()Z" },
+	{ "getColor", "()Lcom/badlogic/gdx/graphics/Color;" },
+	{ "setColor", "(Lcom/badlogic/gdx/graphics/Color;)V" },
+	{ "getEndColor", "()Lcom/badlogic/gdx/graphics/Color;" },
+	{ "setEndColor", "(Lcom/badlogic/gdx/graphics/Color;)V" },
+};
+
+static FieldMetadata fields[] {
+	{ "startR", &class_float, offsetof(com_badlogic_gdx_scenes_scene2d_actions_ColorAction, F_startR), "F", 2 },
+	{ "startG", &class_float, offsetof(com_badlogic_gdx_scenes_scene2d_actions_ColorAction, F_startG), "F", 2 },
+	{ "startB", &class_float, offsetof(com_badlogic_gdx_scenes_scene2d_actions_ColorAction, F_startB), "F", 2 },
+	{ "startA", &class_float, offsetof(com_badlogic_gdx_scenes_scene2d_actions_ColorAction, F_startA), "F", 2 },
+	{ "color", &class_com_badlogic_gdx_graphics_Color, offsetof(com_badlogic_gdx_scenes_scene2d_actions_ColorAction, F_color), "Lcom/badlogic/gdx/graphics/Color;", 2 },
+	{ "end", &class_com_badlogic_gdx_graphics_Color, offsetof(com_badlogic_gdx_scenes_scene2d_actions_ColorAction, F_end), "Lcom/badlogic/gdx/graphics/Color;", 18 },
+};
+
+static MethodMetadata methods[] {
+	{ "<init>", (intptr_t) init_com_badlogic_gdx_scenes_scene2d_actions_ColorAction, 0, "()V", 1 },
+	{ "begin", (intptr_t) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_begin, VTABLE_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_begin, "()V", 4 },
+	{ "update", (intptr_t) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_update_float, VTABLE_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_update_float, "(F)V", 4 },
+	{ "reset", (intptr_t) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_reset, VTABLE_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_reset, "()V", 1 },
+	{ "getColor", (intptr_t) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_getColor_R_com_badlogic_gdx_graphics_Color, VTABLE_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_getColor_R_com_badlogic_gdx_graphics_Color, "()Lcom/badlogic/gdx/graphics/Color;", 1 },
+	{ "setColor", (intptr_t) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_setColor_com_badlogic_gdx_graphics_Color, VTABLE_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_setColor_com_badlogic_gdx_graphics_Color, "(Lcom/badlogic/gdx/graphics/Color;)V", 1 },
+	{ "getEndColor", (intptr_t) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_getEndColor_R_com_badlogic_gdx_graphics_Color, VTABLE_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_getEndColor_R_com_badlogic_gdx_graphics_Color, "()Lcom/badlogic/gdx/graphics/Color;", 1 },
+	{ "setEndColor", (intptr_t) M_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_setEndColor_com_badlogic_gdx_graphics_Color, VTABLE_com_badlogic_gdx_scenes_scene2d_actions_ColorAction_setEndColor_com_badlogic_gdx_graphics_Color, "(Lcom/badlogic/gdx/graphics/Color;)V", 1 },
+};
+
+Class class_com_badlogic_gdx_scenes_scene2d_actions_ColorAction{
+		.nativeName = (intptr_t) "com/badlogic/gdx/scenes/scene2d/actions/ColorAction",
+		.parentClass = (intptr_t) &class_com_badlogic_gdx_scenes_scene2d_actions_TemporalAction,
+		.size = sizeof(com_badlogic_gdx_scenes_scene2d_actions_ColorAction),
+		.classVtable = (intptr_t) vtable_com_badlogic_gdx_scenes_scene2d_actions_ColorAction,
+		.staticInitializer = (intptr_t) clinit_com_badlogic_gdx_scenes_scene2d_actions_ColorAction,
+		.annotationInitializer = (intptr_t) nullptr,
+		.markFunction = (intptr_t) mark_com_badlogic_gdx_scenes_scene2d_actions_ColorAction,
+		.primitive = false,
+		.arrayDimensions = 0,
+		.componentClass = (intptr_t) nullptr,
+		.outerClass = (intptr_t) nullptr,
+		.innerClassCount = 0,
+		.nativeInnerClasses = (intptr_t) nullptr,
+		.access = 33,
+		.interfaceCount = 0,
+		.nativeInterfaces = (intptr_t) nullptr,
+		.fieldCount = 6,
+		.nativeFields = (intptr_t) fields,
+		.methodCount = 8,
+		.nativeMethods = (intptr_t) methods,
+		.vtableSize = 37,
+		.vtableEntries = (intptr_t) vtableEntries,
+		.anonymous = false,
+		.synthetic = false,
+};
+static bool registered_com_badlogic_gdx_scenes_scene2d_actions_ColorAction = registerClass(&class_com_badlogic_gdx_scenes_scene2d_actions_ColorAction);
+
+}
+

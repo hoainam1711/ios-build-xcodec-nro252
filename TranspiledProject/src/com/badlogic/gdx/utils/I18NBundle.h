@@ -1,0 +1,92 @@
+#ifndef HEADER_com_badlogic_gdx_utils_I18NBundle
+#define HEADER_com_badlogic_gdx_utils_I18NBundle
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_utils_I18NBundle {
+	java_lang_Object parent;
+	jref F_parent;
+	jref F_locale;
+	jref F_properties;
+	jref F_formatter;
+} com_badlogic_gdx_utils_I18NBundle;
+
+extern Class class_com_badlogic_gdx_utils_I18NBundle;
+
+extern jobject SF_com_badlogic_gdx_utils_I18NBundle_DEFAULT_ENCODING;
+extern jbool SF_com_badlogic_gdx_utils_I18NBundle_simpleFormatter;
+extern jbool SF_com_badlogic_gdx_utils_I18NBundle_exceptionOnMissingKey;
+
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_utils_I18NBundle_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_utils_I18NBundle_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_utils_I18NBundle_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_utils_I18NBundle_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_utils_I18NBundle_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_finalize 5
+typedef void (*func_com_badlogic_gdx_utils_I18NBundle_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_notify 6
+typedef void (*func_com_badlogic_gdx_utils_I18NBundle_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_notifyAll 7
+typedef void (*func_com_badlogic_gdx_utils_I18NBundle_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_wait 8
+typedef void (*func_com_badlogic_gdx_utils_I18NBundle_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_wait_long 9
+typedef void (*func_com_badlogic_gdx_utils_I18NBundle_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_utils_I18NBundle_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_load_java_io_Reader 11
+typedef void (*func_com_badlogic_gdx_utils_I18NBundle_load_java_io_Reader)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_getLocale_R_java_util_Locale 12
+typedef jobject (*func_com_badlogic_gdx_utils_I18NBundle_getLocale_R_java_util_Locale)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_setLocale_java_util_Locale 13
+typedef void (*func_com_badlogic_gdx_utils_I18NBundle_setLocale_java_util_Locale)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_get_java_lang_String_R_java_lang_String 14
+typedef jobject (*func_com_badlogic_gdx_utils_I18NBundle_get_java_lang_String_R_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_keys_R_java_util_Set 15
+typedef jobject (*func_com_badlogic_gdx_utils_I18NBundle_keys_R_java_util_Set)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_format_java_lang_String_Array1_java_lang_Object_R_java_lang_String 16
+typedef jobject (*func_com_badlogic_gdx_utils_I18NBundle_format_java_lang_String_Array1_java_lang_Object_R_java_lang_String)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_utils_I18NBundle_debug_java_lang_String 17
+typedef void (*func_com_badlogic_gdx_utils_I18NBundle_debug_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_utils_I18NBundle(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_utils_I18NBundle(jcontext ctx);
+void init_com_badlogic_gdx_utils_I18NBundle(jcontext ctx, jobject self);
+jbool SM_com_badlogic_gdx_utils_I18NBundle_getSimpleFormatter_R_boolean(jcontext ctx);
+void SM_com_badlogic_gdx_utils_I18NBundle_setSimpleFormatter_boolean(jcontext ctx, jbool param0);
+jbool SM_com_badlogic_gdx_utils_I18NBundle_getExceptionOnMissingKey_R_boolean(jcontext ctx);
+void SM_com_badlogic_gdx_utils_I18NBundle_setExceptionOnMissingKey_boolean(jcontext ctx, jbool param0);
+jobject SM_com_badlogic_gdx_utils_I18NBundle_createBundle_com_badlogic_gdx_files_FileHandle_R_com_badlogic_gdx_utils_I18NBundle(jcontext ctx, jobject param0);
+jobject SM_com_badlogic_gdx_utils_I18NBundle_createBundle_com_badlogic_gdx_files_FileHandle_java_util_Locale_R_com_badlogic_gdx_utils_I18NBundle(jcontext ctx, jobject param0, jobject param1);
+jobject SM_com_badlogic_gdx_utils_I18NBundle_createBundle_com_badlogic_gdx_files_FileHandle_java_lang_String_R_com_badlogic_gdx_utils_I18NBundle(jcontext ctx, jobject param0, jobject param1);
+jobject SM_com_badlogic_gdx_utils_I18NBundle_createBundle_com_badlogic_gdx_files_FileHandle_java_util_Locale_java_lang_String_R_com_badlogic_gdx_utils_I18NBundle(jcontext ctx, jobject param0, jobject param1, jobject param2);
+jobject SM_com_badlogic_gdx_utils_I18NBundle_createBundleImpl_com_badlogic_gdx_files_FileHandle_java_util_Locale_java_lang_String_R_com_badlogic_gdx_utils_I18NBundle(jcontext ctx, jobject param0, jobject param1, jobject param2);
+jobject SM_com_badlogic_gdx_utils_I18NBundle_getCandidateLocales_java_util_Locale_R_java_util_List(jcontext ctx, jobject param0);
+jobject SM_com_badlogic_gdx_utils_I18NBundle_getFallbackLocale_java_util_Locale_R_java_util_Locale(jcontext ctx, jobject param0);
+jobject SM_com_badlogic_gdx_utils_I18NBundle_loadBundleChain_com_badlogic_gdx_files_FileHandle_java_lang_String_java_util_List_int_com_badlogic_gdx_utils_I18NBundle_R_com_badlogic_gdx_utils_I18NBundle(jcontext ctx, jobject param0, jobject param1, jobject param2, jint param3, jobject param4);
+jobject SM_com_badlogic_gdx_utils_I18NBundle_loadBundle_com_badlogic_gdx_files_FileHandle_java_lang_String_java_util_Locale_R_com_badlogic_gdx_utils_I18NBundle(jcontext ctx, jobject param0, jobject param1, jobject param2);
+jbool SM_com_badlogic_gdx_utils_I18NBundle_checkFileExistence_com_badlogic_gdx_files_FileHandle_R_boolean(jcontext ctx, jobject param0);
+void M_com_badlogic_gdx_utils_I18NBundle_load_java_io_Reader(jcontext ctx, jobject self, jobject param0);
+jobject SM_com_badlogic_gdx_utils_I18NBundle_toFileHandle_com_badlogic_gdx_files_FileHandle_java_util_Locale_R_com_badlogic_gdx_files_FileHandle(jcontext ctx, jobject param0, jobject param1);
+jobject M_com_badlogic_gdx_utils_I18NBundle_getLocale_R_java_util_Locale(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_utils_I18NBundle_setLocale_java_util_Locale(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_I18NBundle_get_java_lang_String_R_java_lang_String(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_utils_I18NBundle_keys_R_java_util_Set(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_utils_I18NBundle_format_java_lang_String_Array1_java_lang_Object_R_java_lang_String(jcontext ctx, jobject self, jobject param0, jobject param1);
+void M_com_badlogic_gdx_utils_I18NBundle_debug_java_lang_String(jcontext ctx, jobject self, jobject param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

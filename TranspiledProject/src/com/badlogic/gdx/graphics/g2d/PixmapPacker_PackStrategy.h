@@ -1,0 +1,30 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g2d_PixmapPacker$PackStrategy
+#define HEADER_com_badlogic_gdx_graphics_g2d_PixmapPacker$PackStrategy
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g2d_PixmapPacker$PackStrategy {
+	java_lang_Object parent;
+} com_badlogic_gdx_graphics_g2d_PixmapPacker$PackStrategy;
+
+extern Class class_com_badlogic_gdx_graphics_g2d_PixmapPacker$PackStrategy;
+
+
+#define INDEX_com_badlogic_gdx_graphics_g2d_PixmapPacker$PackStrategy_sort_com_badlogic_gdx_utils_Array 0
+typedef void (*func_com_badlogic_gdx_graphics_g2d_PixmapPacker$PackStrategy_sort_com_badlogic_gdx_utils_Array)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_graphics_g2d_PixmapPacker$PackStrategy_pack_com_badlogic_gdx_graphics_g2d_PixmapPacker_java_lang_String_com_badlogic_gdx_graphics_g2d_PixmapPacker$Bounds_R_com_badlogic_gdx_graphics_g2d_PixmapPacker$Page 1
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_PixmapPacker$PackStrategy_pack_com_badlogic_gdx_graphics_g2d_PixmapPacker_java_lang_String_com_badlogic_gdx_graphics_g2d_PixmapPacker$Bounds_R_com_badlogic_gdx_graphics_g2d_PixmapPacker$Page)(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2);
+
+void mark_com_badlogic_gdx_graphics_g2d_PixmapPacker$PackStrategy(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g2d_PixmapPacker$PackStrategy(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

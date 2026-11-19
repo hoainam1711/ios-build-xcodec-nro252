@@ -1,0 +1,14 @@
+{
+  "translation_units": 1668,
+  "project_inputs_present": true,
+  "xcode_build_verified": false,
+  "device_verified": false,
+  "declared_native_methods": 0,
+  "missing_native_methods": 0,
+  "engine": "ClearwingVM",
+  "clearwing_version": "v3.1.3",
+  "gateway_url": "wss://play.ngocrongonline.win/",
+  "transpiler_verified": true,
+  "app_name": "NRO252",
+  "configuration": "Release"
+}

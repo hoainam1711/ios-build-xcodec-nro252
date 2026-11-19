@@ -1,0 +1,46 @@
+#ifndef HEADER_com_badlogic_gdx_Files
+#define HEADER_com_badlogic_gdx_Files
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_Files {
+	java_lang_Object parent;
+} com_badlogic_gdx_Files;
+
+extern Class class_com_badlogic_gdx_Files;
+
+
+#define INDEX_com_badlogic_gdx_Files_getFileHandle_java_lang_String_com_badlogic_gdx_Files$FileType_R_com_badlogic_gdx_files_FileHandle 0
+typedef jobject (*func_com_badlogic_gdx_Files_getFileHandle_java_lang_String_com_badlogic_gdx_Files$FileType_R_com_badlogic_gdx_files_FileHandle)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define INDEX_com_badlogic_gdx_Files_classpath_java_lang_String_R_com_badlogic_gdx_files_FileHandle 1
+typedef jobject (*func_com_badlogic_gdx_Files_classpath_java_lang_String_R_com_badlogic_gdx_files_FileHandle)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Files_internal_java_lang_String_R_com_badlogic_gdx_files_FileHandle 2
+typedef jobject (*func_com_badlogic_gdx_Files_internal_java_lang_String_R_com_badlogic_gdx_files_FileHandle)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Files_external_java_lang_String_R_com_badlogic_gdx_files_FileHandle 3
+typedef jobject (*func_com_badlogic_gdx_Files_external_java_lang_String_R_com_badlogic_gdx_files_FileHandle)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Files_absolute_java_lang_String_R_com_badlogic_gdx_files_FileHandle 4
+typedef jobject (*func_com_badlogic_gdx_Files_absolute_java_lang_String_R_com_badlogic_gdx_files_FileHandle)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Files_local_java_lang_String_R_com_badlogic_gdx_files_FileHandle 5
+typedef jobject (*func_com_badlogic_gdx_Files_local_java_lang_String_R_com_badlogic_gdx_files_FileHandle)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_Files_getExternalStoragePath_R_java_lang_String 6
+typedef jobject (*func_com_badlogic_gdx_Files_getExternalStoragePath_R_java_lang_String)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Files_isExternalStorageAvailable_R_boolean 7
+typedef jbool (*func_com_badlogic_gdx_Files_isExternalStorageAvailable_R_boolean)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Files_getLocalStoragePath_R_java_lang_String 8
+typedef jobject (*func_com_badlogic_gdx_Files_getLocalStoragePath_R_java_lang_String)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_Files_isLocalStorageAvailable_R_boolean 9
+typedef jbool (*func_com_badlogic_gdx_Files_isLocalStorageAvailable_R_boolean)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_Files(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_Files(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

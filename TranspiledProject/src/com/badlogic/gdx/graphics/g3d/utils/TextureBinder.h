@@ -1,0 +1,40 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g3d_utils_TextureBinder
+#define HEADER_com_badlogic_gdx_graphics_g3d_utils_TextureBinder
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g3d_utils_TextureBinder {
+	java_lang_Object parent;
+} com_badlogic_gdx_graphics_g3d_utils_TextureBinder;
+
+extern Class class_com_badlogic_gdx_graphics_g3d_utils_TextureBinder;
+
+
+#define INDEX_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_begin 0
+typedef void (*func_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_begin)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_end 1
+typedef void (*func_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_end)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_bind_com_badlogic_gdx_graphics_g3d_utils_TextureDescriptor_R_int 2
+typedef jint (*func_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_bind_com_badlogic_gdx_graphics_g3d_utils_TextureDescriptor_R_int)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_bind_com_badlogic_gdx_graphics_GLTexture_R_int 3
+typedef jint (*func_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_bind_com_badlogic_gdx_graphics_GLTexture_R_int)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_getBindCount_R_int 4
+typedef jint (*func_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_getBindCount_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_getReuseCount_R_int 5
+typedef jint (*func_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_getReuseCount_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_resetCounts 6
+typedef void (*func_com_badlogic_gdx_graphics_g3d_utils_TextureBinder_resetCounts)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_g3d_utils_TextureBinder(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g3d_utils_TextureBinder(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

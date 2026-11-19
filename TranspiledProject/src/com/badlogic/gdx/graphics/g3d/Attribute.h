@@ -1,0 +1,67 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g3d_Attribute
+#define HEADER_com_badlogic_gdx_graphics_g3d_Attribute
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "java/lang/Comparable.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g3d_Attribute {
+	java_lang_Object parent;
+	jlong F_type;
+	jint F_typeBit;
+} com_badlogic_gdx_graphics_g3d_Attribute;
+
+extern Class class_com_badlogic_gdx_graphics_g3d_Attribute;
+
+extern jobject SF_com_badlogic_gdx_graphics_g3d_Attribute_types;
+extern jint SF_com_badlogic_gdx_graphics_g3d_Attribute_MAX_ATTRIBUTE_COUNT;
+
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_g3d_Attribute_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_g3d_Attribute_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_Attribute_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_Attribute_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_Attribute_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_g3d_Attribute_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_g3d_Attribute_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_g3d_Attribute_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_g3d_Attribute_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_g3d_Attribute_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_g3d_Attribute_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_compareTo_java_lang_Object_R_int 11
+typedef jint (*func_com_badlogic_gdx_graphics_g3d_Attribute_compareTo_java_lang_Object_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_copy_R_com_badlogic_gdx_graphics_g3d_Attribute 12
+typedef jobject (*func_com_badlogic_gdx_graphics_g3d_Attribute_copy_R_com_badlogic_gdx_graphics_g3d_Attribute)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g3d_Attribute_equals_com_badlogic_gdx_graphics_g3d_Attribute_R_boolean 13
+typedef jbool (*func_com_badlogic_gdx_graphics_g3d_Attribute_equals_com_badlogic_gdx_graphics_g3d_Attribute_R_boolean)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_graphics_g3d_Attribute(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g3d_Attribute(jcontext ctx);
+jlong SM_com_badlogic_gdx_graphics_g3d_Attribute_getAttributeType_java_lang_String_R_long(jcontext ctx, jobject param0);
+jobject SM_com_badlogic_gdx_graphics_g3d_Attribute_getAttributeAlias_long_R_java_lang_String(jcontext ctx, jlong param0);
+jlong SM_com_badlogic_gdx_graphics_g3d_Attribute_register_java_lang_String_R_long(jcontext ctx, jobject param0);
+void init_com_badlogic_gdx_graphics_g3d_Attribute_long(jcontext ctx, jobject self, jlong param0);
+jbool M_com_badlogic_gdx_graphics_g3d_Attribute_equals_com_badlogic_gdx_graphics_g3d_Attribute_R_boolean(jcontext ctx, jobject self, jobject param0);
+jbool M_com_badlogic_gdx_graphics_g3d_Attribute_equals_java_lang_Object_R_boolean(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_graphics_g3d_Attribute_toString_R_java_lang_String(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_g3d_Attribute_hashCode_R_int(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

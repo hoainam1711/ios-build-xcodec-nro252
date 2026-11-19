@@ -1,0 +1,160 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node
+#define HEADER_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_ui_Tree$Node {
+	java_lang_Object parent;
+	jref F_actor;
+	jref F_parent;
+	jref F_children;
+	jbool F_selectable;
+	jbool F_expanded;
+	jref F_icon;
+	jfloat F_height;
+	jref F_value;
+} com_badlogic_gdx_scenes_scene2d_ui_Tree$Node;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node;
+
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setExpanded_boolean 11
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setExpanded_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_addToTree_com_badlogic_gdx_scenes_scene2d_ui_Tree_int_R_int 12
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_addToTree_com_badlogic_gdx_scenes_scene2d_ui_Tree_int_R_int)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_removeFromTree_com_badlogic_gdx_scenes_scene2d_ui_Tree_int 13
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_removeFromTree_com_badlogic_gdx_scenes_scene2d_ui_Tree_int)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_add_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node 14
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_add_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_addAll_com_badlogic_gdx_utils_Array 15
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_addAll_com_badlogic_gdx_utils_Array)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_insert_int_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node 16
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_insert_int_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node)(jcontext ctx, jobject self, jint param0, jobject param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_countActors_R_int 17
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_countActors_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_remove 18
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_remove)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_remove_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node 19
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_remove_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_clearChildren 20
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_clearChildren)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getTree_R_com_badlogic_gdx_scenes_scene2d_ui_Tree 21
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getTree_R_com_badlogic_gdx_scenes_scene2d_ui_Tree)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setActor_com_badlogic_gdx_scenes_scene2d_Actor 22
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setActor_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getActor_R_com_badlogic_gdx_scenes_scene2d_Actor 23
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getActor_R_com_badlogic_gdx_scenes_scene2d_Actor)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isExpanded_R_boolean 24
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isExpanded_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getChildren_R_com_badlogic_gdx_utils_Array 25
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getChildren_R_com_badlogic_gdx_utils_Array)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_hasChildren_R_boolean 26
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_hasChildren_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_updateChildren 27
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_updateChildren)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getParent_R_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node 28
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getParent_R_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setIcon_com_badlogic_gdx_scenes_scene2d_utils_Drawable 29
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setIcon_com_badlogic_gdx_scenes_scene2d_utils_Drawable)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getValue_R_java_lang_Object 30
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getValue_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setValue_java_lang_Object 31
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setValue_java_lang_Object)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getIcon_R_com_badlogic_gdx_scenes_scene2d_utils_Drawable 32
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getIcon_R_com_badlogic_gdx_scenes_scene2d_utils_Drawable)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getLevel_R_int 33
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getLevel_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_findNode_java_lang_Object_R_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node 34
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_findNode_java_lang_Object_R_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_collapseAll 35
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_collapseAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_expandAll 36
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_expandAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_expandTo 37
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_expandTo)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isSelectable_R_boolean 38
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isSelectable_R_boolean)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setSelectable_boolean 39
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setSelectable_boolean)(jcontext ctx, jobject self, jbool param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_findExpandedValues_com_badlogic_gdx_utils_Array 40
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_findExpandedValues_com_badlogic_gdx_utils_Array)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_restoreExpandedValues_com_badlogic_gdx_utils_Array 41
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_restoreExpandedValues_com_badlogic_gdx_utils_Array)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getHeight_R_float 42
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getHeight_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isAscendantOf_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_R_boolean 43
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isAscendantOf_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isDescendantOf_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_R_boolean 44
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isDescendantOf_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_R_boolean)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_com_badlogic_gdx_scenes_scene2d_Actor(jcontext ctx, jobject self, jobject param0);
+void init_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setExpanded_boolean(jcontext ctx, jobject self, jbool param0);
+jint M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_addToTree_com_badlogic_gdx_scenes_scene2d_ui_Tree_int_R_int(jcontext ctx, jobject self, jobject param0, jint param1);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_removeFromTree_com_badlogic_gdx_scenes_scene2d_ui_Tree_int(jcontext ctx, jobject self, jobject param0, jint param1);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_add_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_addAll_com_badlogic_gdx_utils_Array(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_insert_int_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node(jcontext ctx, jobject self, jint param0, jobject param1);
+jint M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_countActors_R_int(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_remove(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_remove_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_clearChildren(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getTree_R_com_badlogic_gdx_scenes_scene2d_ui_Tree(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setActor_com_badlogic_gdx_scenes_scene2d_Actor(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getActor_R_com_badlogic_gdx_scenes_scene2d_Actor(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isExpanded_R_boolean(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getChildren_R_com_badlogic_gdx_utils_Array(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_hasChildren_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_updateChildren(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getParent_R_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setIcon_com_badlogic_gdx_scenes_scene2d_utils_Drawable(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getValue_R_java_lang_Object(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setValue_java_lang_Object(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getIcon_R_com_badlogic_gdx_scenes_scene2d_utils_Drawable(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getLevel_R_int(jcontext ctx, jobject self);
+jobject M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_findNode_java_lang_Object_R_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_collapseAll(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_expandAll(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_expandTo(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isSelectable_R_boolean(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_setSelectable_boolean(jcontext ctx, jobject self, jbool param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_findExpandedValues_com_badlogic_gdx_utils_Array(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_restoreExpandedValues_com_badlogic_gdx_utils_Array(jcontext ctx, jobject self, jobject param0);
+jfloat M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_getHeight_R_float(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isAscendantOf_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_R_boolean(jcontext ctx, jobject self, jobject param0);
+jbool M_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_isDescendantOf_com_badlogic_gdx_scenes_scene2d_ui_Tree$Node_R_boolean(jcontext ctx, jobject self, jobject param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

@@ -1,0 +1,66 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState
+#define HEADER_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState
+
+#include "Clearwing.h"
+#include "java/lang/Enum.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState {
+	java_lang_Enum parent;
+} com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState;
+
+extern Class class_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState;
+
+extern jobject SF_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_notWrapped;
+extern jobject SF_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_wrapped;
+extern jobject SF_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_lastWrapped;
+extern jobject SF_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_$VALUES;
+
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_compareTo_java_lang_Object_R_int 11
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_compareTo_java_lang_Object_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_compareTo_java_lang_Enum_R_int 12
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_compareTo_java_lang_Enum_R_int)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_name_R_java_lang_String 13
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_name_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_ordinal_R_int 14
+typedef jint (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_ordinal_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_getDeclaringClass_R_java_lang_Class 15
+typedef jobject (*func_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_getDeclaringClass_R_java_lang_Class)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState(jcontext ctx);
+jobject SM_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_values_R_Array1_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState(jcontext ctx);
+jobject SM_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_valueOf_java_lang_String_R_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState(jcontext ctx, jobject param0);
+void init_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_java_lang_String_int(jcontext ctx, jobject self, jobject param0, jint param1);
+jobject SM_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState_$values_R_Array1_com_badlogic_gdx_graphics_g2d_GlyphLayout$WrapState(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

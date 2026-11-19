@@ -1,0 +1,77 @@
+#ifndef HEADER_com_badlogic_gdx_input_GestureDetector$GestureAdapter
+#define HEADER_com_badlogic_gdx_input_GestureDetector$GestureAdapter
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/input/GestureDetector_GestureListener.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_input_GestureDetector$GestureAdapter {
+	java_lang_Object parent;
+} com_badlogic_gdx_input_GestureDetector$GestureAdapter;
+
+extern Class class_com_badlogic_gdx_input_GestureDetector$GestureAdapter;
+
+
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_finalize 5
+typedef void (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_notify 6
+typedef void (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_notifyAll 7
+typedef void (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_wait 8
+typedef void (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_wait_long 9
+typedef void (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_touchDown_float_float_int_int_R_boolean 11
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_touchDown_float_float_int_int_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2, jint param3);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_tap_float_float_int_int_R_boolean 12
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_tap_float_float_int_int_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2, jint param3);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_longPress_float_float_R_boolean 13
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_longPress_float_float_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_fling_float_float_int_R_boolean 14
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_fling_float_float_int_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_pan_float_float_float_float_R_boolean 15
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_pan_float_float_float_float_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_panStop_float_float_int_int_R_boolean 16
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_panStop_float_float_int_int_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2, jint param3);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_zoom_float_float_R_boolean 17
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_zoom_float_float_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_pinch_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_R_boolean 18
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_pinch_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_R_boolean)(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2, jobject param3);
+#define VTABLE_com_badlogic_gdx_input_GestureDetector$GestureAdapter_pinchStop 19
+typedef void (*func_com_badlogic_gdx_input_GestureDetector$GestureAdapter_pinchStop)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_input_GestureDetector$GestureAdapter(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_input_GestureDetector$GestureAdapter(jcontext ctx);
+void init_com_badlogic_gdx_input_GestureDetector$GestureAdapter(jcontext ctx, jobject self);
+jbool M_com_badlogic_gdx_input_GestureDetector$GestureAdapter_touchDown_float_float_int_int_R_boolean(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2, jint param3);
+jbool M_com_badlogic_gdx_input_GestureDetector$GestureAdapter_tap_float_float_int_int_R_boolean(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2, jint param3);
+jbool M_com_badlogic_gdx_input_GestureDetector$GestureAdapter_longPress_float_float_R_boolean(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+jbool M_com_badlogic_gdx_input_GestureDetector$GestureAdapter_fling_float_float_int_R_boolean(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2);
+jbool M_com_badlogic_gdx_input_GestureDetector$GestureAdapter_pan_float_float_float_float_R_boolean(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+jbool M_com_badlogic_gdx_input_GestureDetector$GestureAdapter_panStop_float_float_int_int_R_boolean(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2, jint param3);
+jbool M_com_badlogic_gdx_input_GestureDetector$GestureAdapter_zoom_float_float_R_boolean(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+jbool M_com_badlogic_gdx_input_GestureDetector$GestureAdapter_pinch_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_R_boolean(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2, jobject param3);
+void M_com_badlogic_gdx_input_GestureDetector$GestureAdapter_pinchStop(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

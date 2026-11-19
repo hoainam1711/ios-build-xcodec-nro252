@@ -1,0 +1,50 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer
+#define HEADER_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer {
+	java_lang_Object parent;
+} com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer;
+
+extern Class class_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer;
+
+
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_begin_com_badlogic_gdx_math_Matrix4_int 0
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_begin_com_badlogic_gdx_math_Matrix4_int)(jcontext ctx, jobject self, jobject param0, jint param1);
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_flush 1
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_flush)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_color_com_badlogic_gdx_graphics_Color 2
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_color_com_badlogic_gdx_graphics_Color)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_color_float_float_float_float 3
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_color_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_color_float 4
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_color_float)(jcontext ctx, jobject self, jfloat param0);
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_texCoord_float_float 5
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_texCoord_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_normal_float_float_float 6
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_normal_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_vertex_float_float_float 7
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_vertex_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2);
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_end 8
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_end)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_getNumVertices_R_int 9
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_getNumVertices_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_getMaxVertices_R_int 10
+typedef jint (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_getMaxVertices_R_int)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_dispose 11
+typedef void (*func_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer_dispose)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_glutils_ImmediateModeRenderer(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

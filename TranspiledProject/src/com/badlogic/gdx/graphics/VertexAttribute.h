@@ -1,0 +1,82 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_VertexAttribute
+#define HEADER_com_badlogic_gdx_graphics_VertexAttribute
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_VertexAttribute {
+	java_lang_Object parent;
+	jint F_usage;
+	jint F_numComponents;
+	jbool F_normalized;
+	jint F_type;
+	jint F_offset;
+	jref F_alias;
+	jint F_unit;
+	jint F_usageIndex;
+} com_badlogic_gdx_graphics_VertexAttribute;
+
+extern Class class_com_badlogic_gdx_graphics_VertexAttribute;
+
+
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_graphics_VertexAttribute_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_graphics_VertexAttribute_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_graphics_VertexAttribute_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_graphics_VertexAttribute_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_graphics_VertexAttribute_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_finalize 5
+typedef void (*func_com_badlogic_gdx_graphics_VertexAttribute_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_notify 6
+typedef void (*func_com_badlogic_gdx_graphics_VertexAttribute_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_notifyAll 7
+typedef void (*func_com_badlogic_gdx_graphics_VertexAttribute_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_wait 8
+typedef void (*func_com_badlogic_gdx_graphics_VertexAttribute_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_wait_long 9
+typedef void (*func_com_badlogic_gdx_graphics_VertexAttribute_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_graphics_VertexAttribute_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_copy_R_com_badlogic_gdx_graphics_VertexAttribute 11
+typedef jobject (*func_com_badlogic_gdx_graphics_VertexAttribute_copy_R_com_badlogic_gdx_graphics_VertexAttribute)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_equals_com_badlogic_gdx_graphics_VertexAttribute_R_boolean 12
+typedef jbool (*func_com_badlogic_gdx_graphics_VertexAttribute_equals_com_badlogic_gdx_graphics_VertexAttribute_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_getKey_R_int 13
+typedef jint (*func_com_badlogic_gdx_graphics_VertexAttribute_getKey_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_graphics_VertexAttribute_getSizeInBytes_R_int 14
+typedef jint (*func_com_badlogic_gdx_graphics_VertexAttribute_getSizeInBytes_R_int)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_graphics_VertexAttribute(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_VertexAttribute(jcontext ctx);
+void init_com_badlogic_gdx_graphics_VertexAttribute_int_int_java_lang_String(jcontext ctx, jobject self, jint param0, jint param1, jobject param2);
+void init_com_badlogic_gdx_graphics_VertexAttribute_int_int_java_lang_String_int(jcontext ctx, jobject self, jint param0, jint param1, jobject param2, jint param3);
+void init_com_badlogic_gdx_graphics_VertexAttribute_int_int_int_boolean_java_lang_String(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jbool param3, jobject param4);
+void init_com_badlogic_gdx_graphics_VertexAttribute_int_int_int_boolean_java_lang_String_int(jcontext ctx, jobject self, jint param0, jint param1, jint param2, jbool param3, jobject param4, jint param5);
+jobject M_com_badlogic_gdx_graphics_VertexAttribute_copy_R_com_badlogic_gdx_graphics_VertexAttribute(jcontext ctx, jobject self);
+jobject SM_com_badlogic_gdx_graphics_VertexAttribute_Position_R_com_badlogic_gdx_graphics_VertexAttribute(jcontext ctx);
+jobject SM_com_badlogic_gdx_graphics_VertexAttribute_TexCoords_int_R_com_badlogic_gdx_graphics_VertexAttribute(jcontext ctx, jint param0);
+jobject SM_com_badlogic_gdx_graphics_VertexAttribute_Normal_R_com_badlogic_gdx_graphics_VertexAttribute(jcontext ctx);
+jobject SM_com_badlogic_gdx_graphics_VertexAttribute_ColorPacked_R_com_badlogic_gdx_graphics_VertexAttribute(jcontext ctx);
+jobject SM_com_badlogic_gdx_graphics_VertexAttribute_ColorUnpacked_R_com_badlogic_gdx_graphics_VertexAttribute(jcontext ctx);
+jobject SM_com_badlogic_gdx_graphics_VertexAttribute_Tangent_R_com_badlogic_gdx_graphics_VertexAttribute(jcontext ctx);
+jobject SM_com_badlogic_gdx_graphics_VertexAttribute_Binormal_R_com_badlogic_gdx_graphics_VertexAttribute(jcontext ctx);
+jobject SM_com_badlogic_gdx_graphics_VertexAttribute_BoneWeight_int_R_com_badlogic_gdx_graphics_VertexAttribute(jcontext ctx, jint param0);
+jbool M_com_badlogic_gdx_graphics_VertexAttribute_equals_java_lang_Object_R_boolean(jcontext ctx, jobject self, jobject param0);
+jbool M_com_badlogic_gdx_graphics_VertexAttribute_equals_com_badlogic_gdx_graphics_VertexAttribute_R_boolean(jcontext ctx, jobject self, jobject param0);
+jint M_com_badlogic_gdx_graphics_VertexAttribute_getKey_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_VertexAttribute_getSizeInBytes_R_int(jcontext ctx, jobject self);
+jint M_com_badlogic_gdx_graphics_VertexAttribute_hashCode_R_int(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

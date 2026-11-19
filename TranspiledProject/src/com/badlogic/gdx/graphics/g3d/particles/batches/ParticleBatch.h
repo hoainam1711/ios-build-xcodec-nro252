@@ -1,0 +1,38 @@
+#ifndef HEADER_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch
+#define HEADER_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/graphics/g3d/RenderableProvider.h"
+#include "com/badlogic/gdx/graphics/g3d/particles/ResourceData_Configurable.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch {
+	java_lang_Object parent;
+} com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch;
+
+extern Class class_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch;
+
+
+#define INDEX_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch_begin 0
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch_begin)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch_draw_com_badlogic_gdx_graphics_g3d_particles_renderers_ParticleControllerRenderData 1
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch_draw_com_badlogic_gdx_graphics_g3d_particles_renderers_ParticleControllerRenderData)(jcontext ctx, jobject self, jobject param0);
+#define INDEX_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch_end 2
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch_end)(jcontext ctx, jobject self);
+#define INDEX_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch_save_com_badlogic_gdx_assets_AssetManager_com_badlogic_gdx_graphics_g3d_particles_ResourceData 3
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch_save_com_badlogic_gdx_assets_AssetManager_com_badlogic_gdx_graphics_g3d_particles_ResourceData)(jcontext ctx, jobject self, jobject param0, jobject param1);
+#define INDEX_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch_load_com_badlogic_gdx_assets_AssetManager_com_badlogic_gdx_graphics_g3d_particles_ResourceData 4
+typedef void (*func_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch_load_com_badlogic_gdx_assets_AssetManager_com_badlogic_gdx_graphics_g3d_particles_ResourceData)(jcontext ctx, jobject self, jobject param0, jobject param1);
+
+void mark_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_graphics_g3d_particles_batches_ParticleBatch(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

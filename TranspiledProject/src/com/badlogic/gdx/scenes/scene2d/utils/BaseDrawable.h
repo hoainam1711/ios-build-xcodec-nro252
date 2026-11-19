@@ -1,0 +1,112 @@
+#ifndef HEADER_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable
+#define HEADER_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+#include "com/badlogic/gdx/scenes/scene2d/utils/Drawable.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable {
+	java_lang_Object parent;
+	jref F_name;
+	jfloat F_leftWidth;
+	jfloat F_rightWidth;
+	jfloat F_topHeight;
+	jfloat F_bottomHeight;
+	jfloat F_minWidth;
+	jfloat F_minHeight;
+} com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable;
+
+extern Class class_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable;
+
+
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_finalize 5
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_notify 6
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_notifyAll 7
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_wait 8
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_wait_long 9
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_draw_com_badlogic_gdx_graphics_g2d_Batch_float_float_float_float 11
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_draw_com_badlogic_gdx_graphics_g2d_Batch_float_float_float_float)(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getLeftWidth_R_float 12
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getLeftWidth_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setLeftWidth_float 13
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setLeftWidth_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getRightWidth_R_float 14
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getRightWidth_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setRightWidth_float 15
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setRightWidth_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getTopHeight_R_float 16
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getTopHeight_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setTopHeight_float 17
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setTopHeight_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getBottomHeight_R_float 18
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getBottomHeight_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setBottomHeight_float 19
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setBottomHeight_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setPadding_float_float_float_float 20
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setPadding_float_float_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setPadding_float 21
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setPadding_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setPadding_com_badlogic_gdx_scenes_scene2d_utils_Drawable 22
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setPadding_com_badlogic_gdx_scenes_scene2d_utils_Drawable)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getMinWidth_R_float 23
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getMinWidth_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setMinWidth_float 24
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setMinWidth_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getMinHeight_R_float 25
+typedef jfloat (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getMinHeight_R_float)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setMinHeight_float 26
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setMinHeight_float)(jcontext ctx, jobject self, jfloat param0);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setMinSize_float_float 27
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setMinSize_float_float)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getName_R_java_lang_String 28
+typedef jobject (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getName_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setName_java_lang_String 29
+typedef void (*func_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setName_java_lang_String)(jcontext ctx, jobject self, jobject param0);
+
+void mark_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable(jcontext ctx);
+void init_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_com_badlogic_gdx_scenes_scene2d_utils_Drawable(jcontext ctx, jobject self, jobject param0);
+void M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_draw_com_badlogic_gdx_graphics_g2d_Batch_float_float_float_float(jcontext ctx, jobject self, jobject param0, jfloat param1, jfloat param2, jfloat param3, jfloat param4);
+jfloat M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getLeftWidth_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setLeftWidth_float(jcontext ctx, jobject self, jfloat param0);
+jfloat M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getRightWidth_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setRightWidth_float(jcontext ctx, jobject self, jfloat param0);
+jfloat M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getTopHeight_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setTopHeight_float(jcontext ctx, jobject self, jfloat param0);
+jfloat M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getBottomHeight_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setBottomHeight_float(jcontext ctx, jobject self, jfloat param0);
+jfloat M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getMinWidth_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setMinWidth_float(jcontext ctx, jobject self, jfloat param0);
+jfloat M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getMinHeight_R_float(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setMinHeight_float(jcontext ctx, jobject self, jfloat param0);
+jobject M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_getName_R_java_lang_String(jcontext ctx, jobject self);
+void M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_setName_java_lang_String(jcontext ctx, jobject self, jobject param0);
+jobject M_com_badlogic_gdx_scenes_scene2d_utils_BaseDrawable_toString_R_java_lang_String(jcontext ctx, jobject self);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

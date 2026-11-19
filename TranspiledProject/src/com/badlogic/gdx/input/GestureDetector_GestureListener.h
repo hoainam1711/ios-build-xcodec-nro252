@@ -1,0 +1,44 @@
+#ifndef HEADER_com_badlogic_gdx_input_GestureDetector$GestureListener
+#define HEADER_com_badlogic_gdx_input_GestureDetector$GestureListener
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_input_GestureDetector$GestureListener {
+	java_lang_Object parent;
+} com_badlogic_gdx_input_GestureDetector$GestureListener;
+
+extern Class class_com_badlogic_gdx_input_GestureDetector$GestureListener;
+
+
+#define INDEX_com_badlogic_gdx_input_GestureDetector$GestureListener_touchDown_float_float_int_int_R_boolean 0
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureListener_touchDown_float_float_int_int_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2, jint param3);
+#define INDEX_com_badlogic_gdx_input_GestureDetector$GestureListener_tap_float_float_int_int_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureListener_tap_float_float_int_int_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2, jint param3);
+#define INDEX_com_badlogic_gdx_input_GestureDetector$GestureListener_longPress_float_float_R_boolean 2
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureListener_longPress_float_float_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define INDEX_com_badlogic_gdx_input_GestureDetector$GestureListener_fling_float_float_int_R_boolean 3
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureListener_fling_float_float_int_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2);
+#define INDEX_com_badlogic_gdx_input_GestureDetector$GestureListener_pan_float_float_float_float_R_boolean 4
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureListener_pan_float_float_float_float_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jfloat param2, jfloat param3);
+#define INDEX_com_badlogic_gdx_input_GestureDetector$GestureListener_panStop_float_float_int_int_R_boolean 5
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureListener_panStop_float_float_int_int_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1, jint param2, jint param3);
+#define INDEX_com_badlogic_gdx_input_GestureDetector$GestureListener_zoom_float_float_R_boolean 6
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureListener_zoom_float_float_R_boolean)(jcontext ctx, jobject self, jfloat param0, jfloat param1);
+#define INDEX_com_badlogic_gdx_input_GestureDetector$GestureListener_pinch_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_R_boolean 7
+typedef jbool (*func_com_badlogic_gdx_input_GestureDetector$GestureListener_pinch_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_com_badlogic_gdx_math_Vector2_R_boolean)(jcontext ctx, jobject self, jobject param0, jobject param1, jobject param2, jobject param3);
+#define INDEX_com_badlogic_gdx_input_GestureDetector$GestureListener_pinchStop 8
+typedef void (*func_com_badlogic_gdx_input_GestureDetector$GestureListener_pinchStop)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_input_GestureDetector$GestureListener(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_input_GestureDetector$GestureListener(jcontext ctx);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

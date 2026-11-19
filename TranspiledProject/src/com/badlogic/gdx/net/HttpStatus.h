@@ -1,0 +1,101 @@
+#ifndef HEADER_com_badlogic_gdx_net_HttpStatus
+#define HEADER_com_badlogic_gdx_net_HttpStatus
+
+#include "Clearwing.h"
+#include "java/lang/Object.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct com_badlogic_gdx_net_HttpStatus {
+	java_lang_Object parent;
+	jint F_statusCode;
+} com_badlogic_gdx_net_HttpStatus;
+
+extern Class class_com_badlogic_gdx_net_HttpStatus;
+
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_CONTINUE;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_SWITCHING_PROTOCOLS;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_PROCESSING;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_OK;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_CREATED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_ACCEPTED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_NON_AUTHORITATIVE_INFORMATION;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_NO_CONTENT;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_RESET_CONTENT;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_PARTIAL_CONTENT;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_MULTI_STATUS;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_MULTIPLE_CHOICES;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_MOVED_PERMANENTLY;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_MOVED_TEMPORARILY;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_SEE_OTHER;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_NOT_MODIFIED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_USE_PROXY;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_TEMPORARY_REDIRECT;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_BAD_REQUEST;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_UNAUTHORIZED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_PAYMENT_REQUIRED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_FORBIDDEN;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_NOT_FOUND;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_METHOD_NOT_ALLOWED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_NOT_ACCEPTABLE;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_PROXY_AUTHENTICATION_REQUIRED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_REQUEST_TIMEOUT;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_CONFLICT;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_GONE;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_LENGTH_REQUIRED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_PRECONDITION_FAILED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_REQUEST_TOO_LONG;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_REQUEST_URI_TOO_LONG;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_UNSUPPORTED_MEDIA_TYPE;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_REQUESTED_RANGE_NOT_SATISFIABLE;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_EXPECTATION_FAILED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_INSUFFICIENT_SPACE_ON_RESOURCE;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_METHOD_FAILURE;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_UNPROCESSABLE_ENTITY;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_LOCKED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_FAILED_DEPENDENCY;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_INTERNAL_SERVER_ERROR;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_NOT_IMPLEMENTED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_BAD_GATEWAY;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_SERVICE_UNAVAILABLE;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_GATEWAY_TIMEOUT;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_HTTP_VERSION_NOT_SUPPORTED;
+extern jint SF_com_badlogic_gdx_net_HttpStatus_SC_INSUFFICIENT_STORAGE;
+
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_hashCode_R_int 0
+typedef jint (*func_com_badlogic_gdx_net_HttpStatus_hashCode_R_int)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_equals_java_lang_Object_R_boolean 1
+typedef jbool (*func_com_badlogic_gdx_net_HttpStatus_equals_java_lang_Object_R_boolean)(jcontext ctx, jobject self, jobject param0);
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_clone_R_java_lang_Object 2
+typedef jobject (*func_com_badlogic_gdx_net_HttpStatus_clone_R_java_lang_Object)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_getClass_R_java_lang_Class 3
+typedef jobject (*func_com_badlogic_gdx_net_HttpStatus_getClass_R_java_lang_Class)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_toString_R_java_lang_String 4
+typedef jobject (*func_com_badlogic_gdx_net_HttpStatus_toString_R_java_lang_String)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_finalize 5
+typedef void (*func_com_badlogic_gdx_net_HttpStatus_finalize)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_notify 6
+typedef void (*func_com_badlogic_gdx_net_HttpStatus_notify)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_notifyAll 7
+typedef void (*func_com_badlogic_gdx_net_HttpStatus_notifyAll)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_wait 8
+typedef void (*func_com_badlogic_gdx_net_HttpStatus_wait)(jcontext ctx, jobject self);
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_wait_long 9
+typedef void (*func_com_badlogic_gdx_net_HttpStatus_wait_long)(jcontext ctx, jobject self, jlong param0);
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_wait_long_int 10
+typedef void (*func_com_badlogic_gdx_net_HttpStatus_wait_long_int)(jcontext ctx, jobject self, jlong param0, jint param1);
+#define VTABLE_com_badlogic_gdx_net_HttpStatus_getStatusCode_R_int 11
+typedef jint (*func_com_badlogic_gdx_net_HttpStatus_getStatusCode_R_int)(jcontext ctx, jobject self);
+
+void mark_com_badlogic_gdx_net_HttpStatus(jobject object, jint mark, jint depth);
+void clinit_com_badlogic_gdx_net_HttpStatus(jcontext ctx);
+jint M_com_badlogic_gdx_net_HttpStatus_getStatusCode_R_int(jcontext ctx, jobject self);
+void init_com_badlogic_gdx_net_HttpStatus_int(jcontext ctx, jobject self, jint param0);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
